@@ -1,0 +1,103 @@
+INSERT INTO role (
+	role_name,
+    brief_desc,
+    permission1
+    )
+VALUES (
+	'ADMIN',
+    'Admin has all read/write/exec privileges',
+    TRUE);
+
+INSERT INTO role (
+	role_name,
+    brief_desc,
+    permission1
+    )
+VALUES (
+	'STAFF',
+    'Like admin but more limited privileges',
+    TRUE);
+
+INSERT INTO role (
+	role_name,
+    brief_desc,
+    permission1
+    )
+VALUES (
+	'USER_BASIC',
+    'Base level user - can read, but no write/exec',
+    TRUE);
+    
+-- Add test users (ADMIN, STAFF, USER_BASIC)
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role
+    )
+VALUES (
+	'admin1',
+    'admin1',
+    'fake1@mail.com',
+    1);
+
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role
+    )
+VALUES (
+	'staff1',
+    'staff1',
+    'fake2@mail.com',
+    2);
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role
+    )
+VALUES (
+	'user1',
+    'user1',
+    'fake3@mail.com',
+    3);
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role
+    )
+VALUES (
+	'user2',
+    'user2',
+    'fake4@mail.com',
+    3);
+
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role
+    )
+VALUES (
+	'staff2',
+    'staff2',
+    'fake5@mail.com',
+    2);
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role
+    )
+VALUES (
+	'user3',
+    'user3',
+    'fake6@mail.com',
+    3);
