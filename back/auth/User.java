@@ -1,4 +1,3 @@
-package devdepot.com.demo;
 import java.util.Collection;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class User {
     private String lastName;
     private String email;
     private String password;
-    private String orders[];
+    private List<String> orders;
     private boolean enabled;
     private boolean tokenExpired;
 
@@ -66,10 +65,16 @@ public class User {
       this.password = pass;
     }
     public void setRoles(List<Role> newRoles){
-        roles.addAll(newRoles);
+      this.roles.addAll(newRoles);
     }
-    public boolean addOrder(){
-      return false;
+    public void addOrder(String temp){//Order object? 
+      orders.add(temp);
+    }
+    public void setEnabled(Boolean enable){
+      this.enabled = enable;
+    }
+    public void updateToken(Boolean token){
+      this.tokenExpired = token;
     }
 
     //Getter methods
@@ -86,8 +91,15 @@ public class User {
       return this.password;
     }
     public Collection<Role> getRoles(){
-      return roles;
+      return this.roles;
     }
-    
-
+    public List<String> getOrders(){
+      return this.orders;
+    }
+    public Boolean isEnabled(){
+      return this.enabled;
+    }
+    public Boolean isExpired(){
+      return this.tokenExpired;
+    }
 }
