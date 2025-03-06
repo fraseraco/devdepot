@@ -20,10 +20,9 @@ USE `devdepot` ;
 CREATE TABLE IF NOT EXISTS `role` (
   `role_id` BIGINT NOT NULL AUTO_INCREMENT,
   `role_name` VARCHAR(50) NOT NULL,
-  `brief_desc` VARCHAR(50) NULL DEFAULT NULL,
+  `brief_desc` VARCHAR(255) NULL DEFAULT NULL,
   `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
   `last_update` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `permission1` TINYINT(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`role_id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 5
@@ -32,6 +31,40 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE UNIQUE INDEX `role_name` ON `role` (`role_name` ASC) VISIBLE;
 
+-- -----------------------------------------------------
+-- Table `permission`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `permission` (
+  `permission_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `permission_name` VARCHAR(50) NOT NULL,
+  `description` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`permission_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE UNIQUE INDEX `permission_name` ON `permission` (`permission_name` ASC) VISIBLE;
+
+-- -----------------------------------------------------
+-- Table `role_permission`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `role_permission` (
+  `role_id` BIGINT NOT NULL,
+  `permission_id` BIGINT NOT NULL,
+  PRIMARY KEY (`role_id`, `permission_id`),
+  CONSTRAINT `fk_role_permission_role`
+    FOREIGN KEY (`role_id`)
+    REFERENCES `role` (`role_id`)
+    ON DELETE CASCADE,
+  CONSTRAINT `fk_role_permission_permission`
+    FOREIGN KEY (`permission_id`)
+    REFERENCES `permission` (`permission_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE INDEX `fk_role_permission_permission` ON `role_permission` (`permission_id` ASC) VISIBLE;
 
 -- -----------------------------------------------------
 -- Table `user`
@@ -41,12 +74,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `username` VARCHAR(32) NOT NULL,
   `password_hash` VARCHAR(255) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
-  `role` BIGINT NULL DEFAULT NULL,
+  `role_id` BIGINT NULL DEFAULT NULL, -- role_id instead of role
+  `first_name` VARCHAR(50) NULL DEFAULT NULL, -- name?
+  `last_name` VARCHAR(50) NULL DEFAULT NULL,
+  `is_active` BOOLEAN NOT NULL DEFAULT TRUE, --is_active
   `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
-  `last_login` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `last_login` DATETIME NULL DEFAULT NULL,
   PRIMARY KEY (`user_id`),
-  CONSTRAINT `fk_role_roleid`
-    FOREIGN KEY (`role`)
+  CONSTRAINT `fk_user_role`
+    FOREIGN KEY (`role_id`) -- role_id instead of role
     REFERENCES `role` (`role_id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 7
@@ -54,10 +90,8 @@ DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE UNIQUE INDEX `username` ON `user` (`username` ASC) VISIBLE;
-
 CREATE UNIQUE INDEX `email` ON `user` (`email` ASC) VISIBLE;
-
-CREATE INDEX `fk_role_roleid` ON `user` (`role` ASC) VISIBLE;
+CREATE INDEX `fk_user_role` ON `user` (`role_id` ASC) VISIBLE;
 
 
 -- -----------------------------------------------------
