@@ -1,4 +1,3 @@
-package devdepot.com.demo;
 import java.util.Collection;
 
 import jakarta.persistence.Entity;
@@ -29,15 +28,36 @@ public class Role {
           name = "privilege_id", referencedColumnName = "id"))
     private Collection<Privilege> privileges;
 
+    //Default constructor
+    public Role(){
+        this.name = "";
+    }
+
+    //Full parameter constructor
+    public Role(String name){
+        this.name = name;
+    }
+
+    //Setters
     public void setName(String name){
         this.name = name;
     }
     public void setPrivileges(Collection<Privilege> newPrivileges){
-        privileges.addAll(newPrivileges);
+        this.privileges.addAll(newPrivileges);
+    }
+    public void setUsers(Collection<User> newUsers){
+        this.users.addAll(newUsers);
     }
 
+    //Getters
     public String getName(){
         return this.name;
+    }
+    public Collection<Privilege> getPrivileges(){
+        return this.privileges;
+    }
+    public Collection<User> getUsers(){
+        return this.users;
     }
 }
 
