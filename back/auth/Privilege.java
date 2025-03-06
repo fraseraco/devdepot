@@ -1,4 +1,3 @@
-package devdepot.com.demo;
 import java.util.Collection;
 
 import jakarta.persistence.Entity;
@@ -17,4 +16,30 @@ public class Privilege {
 
     @ManyToMany(mappedBy = "privileges")
     private Collection<Role> roles;
+
+    //Default constructor
+    public Privilege(){
+        this.name = "";
+    }
+
+    //Full parameter constructor
+    public Privilege(String name){
+        this.name = name;
+    }
+
+    //Setters
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setRoles(Collection<Role> newRoles){
+        this.roles.addAll(newRoles);
+    }
+
+    //Getters
+    public String getName(){
+        return this.name;
+    }
+    public Collection<Role> getRoles(){
+        return this.roles;
+    }
 }
