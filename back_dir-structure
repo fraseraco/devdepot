@@ -1,0 +1,31 @@
+
+├── auth
+├── back
+│└── src
+│    ├── main
+│    │ ├── java
+│    │ │ └── com
+│    │ │     └── devdepot
+│    │ │         ├── config
+│    │ │         ├── controller
+│    │ │         ├── dto
+│    │ │         ├── exception
+│    │ │         ├── model
+│    │ │         ├── repository
+│    │ │         ├── security
+│    │ │         ├── service
+│    │ │         ├── util
+│    │ │         └── validation
+│    │ └── resources
+│    │     ├── static
+│    │     └── templates
+│    └── test
+│        └── java
+│            └── com
+│              └── devdepot
+├── db
+├── docs
+├── front
+├── resources
+└── untracked
+    └── json
