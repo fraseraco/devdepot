@@ -1,0 +1,205 @@
+-- PERMISSIONS --
+INSERT INTO permission (
+    permission_name,
+    description
+) VALUES (
+    'delete-product',
+    'allows role to delete products'
+);
+
+INSERT INTO permission (
+    permission_name,
+    description
+) VALUES (
+    'create-product',
+    'allows role to create products'
+);
+
+INSERT INTO permission (
+    permission_name,
+    description
+) VALUES (
+    'update-product-info',
+    'allows role to update/write all product info'
+);
+
+INSERT INTO permission (
+    permission_name,
+    description
+) VALUES (
+    'read-product-info',
+    'allows role to read all product info'
+);
+
+INSERT INTO permission (
+    permission_name,
+    description
+) VALUES (
+    'premium-feature1',
+    'allows role to access premium feature1'
+);
+
+-- ROLES --
+INSERT INTO role (
+	role_name,
+    brief_desc
+    )
+VALUES (
+	'ADMIN',
+    'Admin has all read/write/exec privileges');
+
+INSERT INTO role (
+	role_name,
+    brief_desc
+) VALUES (
+	'STAFF',
+    'Like admin but more limited privileges');
+
+INSERT INTO role (
+	role_name,
+    brief_desc
+) VALUES (
+	'USER_BASIC',
+    'Base level user - can read, but no write/exec');
+
+INSERT INTO role (
+	role_name,
+    brief_desc
+) VALUES (
+	'USER_PREM',
+    'Premium level user - basic user + premium features');
+
+-- PERMISSION-ROLE ASSC --
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 1, 1);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 1, 2);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 1, 3);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 1, 4);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 1, 5);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 2, 2);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 2, 3);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 2, 4);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 2, 5);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 3, 4);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 4, 4);
+
+INSERT INTO role_permission (
+    role_id,
+    permission_id
+) VALUES ( 4, 5);
+    
+-- Add test users (ADMIN, STAFF, USER_BASIC)
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role_id
+    )
+VALUES (
+	'admin1',
+    'admin1',
+    'fake1@mail.com',
+    1);
+
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role_id
+    )
+VALUES (
+	'staff1',
+    'staff1',
+    'fake2@mail.com',
+    2);
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role_id
+    )
+VALUES (
+	'user1',
+    'user1',
+    'fake3@mail.com',
+    3);
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role_id
+    )
+VALUES (
+	'user2',
+    'user2',
+    'fake4@mail.com',
+    3);
+
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role_id
+    )
+VALUES (
+	'staff2',
+    'staff2',
+    'fake5@mail.com',
+    2);
+    
+INSERT INTO user (
+	username, 
+    password_hash,
+    email,
+    role_id
+    )
+VALUES (
+	'user3',
+    'user3',
+    'fake6@mail.com',
+    3);
