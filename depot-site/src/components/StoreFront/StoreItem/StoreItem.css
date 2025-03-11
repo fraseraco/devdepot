@@ -1,0 +1,6 @@
+.item-container {
+    height: 33.3vh;
+    width: 100hw;
+    display: flex;
+    background-color: lightblue;
+}
