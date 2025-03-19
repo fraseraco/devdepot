@@ -2,6 +2,11 @@
     height: 80vh;
     width: 100vw;
     display: flex;
-    background-color: bisque;
+
     flex-direction: column;
+    background-image: url('src/assets/herographic.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px; /* Adjust this value based on your navbar height */
 }
+

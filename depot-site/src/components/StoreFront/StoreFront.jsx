@@ -6,8 +6,7 @@ const StoreFront = () => {
     return (
         <div className='storefront-container'>
             <StoreItem/>
-            <StoreItem/>
-            <StoreItem/>
+            
         </div>
     );
 };

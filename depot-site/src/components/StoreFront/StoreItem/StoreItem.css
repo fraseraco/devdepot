@@ -1,6 +1,18 @@
-.item-container {
-    height: 33.3vh;
-    width: 100hw;
+
+
+
+
+  
+
+
+.slick-list {
+    width:90vw;
+    background-color: white;
+    
     display: flex;
-    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
+

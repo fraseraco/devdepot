@@ -3,8 +3,11 @@ import './HeroSection.css';
 import StoreFront from '../StoreFront/StoreFront';
 const HeroSection = () => {
     return (
+        <div>
         <div className="hero-container">
-            <img src='src\assets\herographic.png'></img>
+            
+        
+        </div>
         <StoreFront />
         </div>
 
