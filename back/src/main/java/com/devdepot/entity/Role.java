@@ -1,13 +1,12 @@
 package com.devdepot.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.time.Instant;
 
+@Setter
 @Entity(name = Role.ENTITY_NAME)
 @Table(name = Role.TABLE_NAME)
 public class Role {
@@ -19,7 +18,8 @@ public class Role {
     public static final String COLUMN_CREATEDAT_NAME = "created_at";
     public static final String COLUMN_LASTUPDATE_NAME = "last_update";
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String roleName;
@@ -36,26 +36,14 @@ public class Role {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Column(name = COLUMN_ROLENAME_NAME, nullable = false, length = 50)
     public String getRoleName() {
         return roleName;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
-
     @Column(name = COLUMN_BRIEFDESC_NAME, length = 50)
     public String getBriefDesc() {
         return briefDesc;
-    }
-
-    public void setBriefDesc(String briefDesc) {
-        this.briefDesc = briefDesc;
     }
 
     @ColumnDefault("CURRENT_TIMESTAMP")
@@ -64,18 +52,10 @@ public class Role {
         return createdAt;
     }
 
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
-
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = COLUMN_LASTUPDATE_NAME)
     public Instant getLastUpdate() {
         return lastUpdate;
-    }
-
-    public void setLastUpdate(Instant lastUpdate) {
-        this.lastUpdate = lastUpdate;
     }
 
 }

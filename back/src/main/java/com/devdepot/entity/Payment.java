@@ -19,7 +19,8 @@ public class Payment {
     public static final String COLUMN_PAYMENTSTATUS_NAME = "payment_status";
     public static final String COLUMN_PAYMENTDATE_NAME = "payment_date";
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Long orderId;
@@ -81,7 +82,6 @@ public class Payment {
         this.taxTotal = taxTotal;
     }
 
-    @ColumnDefault("'PENDING'")
     @Lob
     @Column(name = COLUMN_PAYMENTSTATUS_NAME)
     public String getPaymentStatus() {

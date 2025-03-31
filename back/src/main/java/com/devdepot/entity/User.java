@@ -21,7 +21,8 @@ public class User {
     public static final String COLUMN_CREATEDAT_NAME = "created_at";
     public static final String COLUMN_LASTLOGIN_NAME = "last_login";
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String username;
@@ -71,7 +72,7 @@ public class User {
         return lastName;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
+//    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id")
     public Role getRole() {
         return role;

@@ -23,7 +23,8 @@ public class Product {
     public static final String COLUMN_SKU_NAME = "sku";
     public static final String COLUMN_SPECIFICATIONS_NAME = "specifications";
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;

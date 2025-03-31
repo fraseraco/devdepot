@@ -1,10 +1,9 @@
 package com.devdepot.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Setter;
 
+@Setter
 @Entity(name = Permission.ENTITY_NAME)
 @Table(name = Permission.TABLE_NAME)
 public class Permission {
@@ -14,7 +13,8 @@ public class Permission {
     public static final String COLUMN_PERMISSIONNAME_NAME = "permission_name";
     public static final String COLUMN_DESCRIPTION_NAME = "description";
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String permissionName;
@@ -27,26 +27,14 @@ public class Permission {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Column(name = COLUMN_PERMISSIONNAME_NAME, nullable = false, length = 50)
     public String getPermissionName() {
         return permissionName;
     }
 
-    public void setPermissionName(String permissionName) {
-        this.permissionName = permissionName;
-    }
-
     @Column(name = COLUMN_DESCRIPTION_NAME)
     public String getDescription() {
         return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
 }

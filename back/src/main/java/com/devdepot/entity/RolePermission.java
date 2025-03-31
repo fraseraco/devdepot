@@ -10,6 +10,8 @@ public class RolePermission {
     public static final String ENTITY_NAME = "RolePermission";
     public static final String TABLE_NAME = "role_permission";
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private RolePermissionId id;
 
     private Role role;

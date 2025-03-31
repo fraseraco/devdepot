@@ -5,6 +5,7 @@ import jakarta.persistence.Embeddable;
 import lombok.Setter;
 import org.hibernate.Hibernate;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -13,6 +14,7 @@ import java.util.Objects;
 public class OrderItemId implements Serializable {
     public static final String COLUMN_ORDERID_NAME = "order_id";
     public static final String COLUMN_PRODUCTID_NAME = "product_id";
+    @Serial
     private static final long serialVersionUID = -1332370531775171840L;
 
     private Long orderId;

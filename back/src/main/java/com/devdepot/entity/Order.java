@@ -24,7 +24,8 @@ public class Order {
     public static final String COLUMN_TRACKINGNUM_NAME = "tracking_num";
     public static final String COLUMN_DISCOUNTPROMOTION_NAME = "discount_promotion";
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private User customer;
@@ -92,7 +93,6 @@ public class Order {
         this.shippingAddress = shippingAddress;
     }
 
-    @ColumnDefault("'PROCESSED'")
     @Lob
     @Column(name = COLUMN_ORDERSTATUS_NAME, nullable = false)
     public String getOrderStatus() {
