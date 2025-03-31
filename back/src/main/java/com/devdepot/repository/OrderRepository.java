@@ -1,7 +1,0 @@
-package com.devdepot.repository;
-
-import com.devdepot.entity.Order;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface OrderRepository extends JpaRepository<Order, Long> {
-}
