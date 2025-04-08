@@ -198,3 +198,36 @@ COLLATE = utf8mb4_0900_ai_ci;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Table `cart`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS cart;
+
+CREATE TABLE IF NOT EXISTS cart (
+  cart_id BIGINT NOT NULL AUTO_INCREMENT,
+  user_id BIGINT NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (cart_id),
+  FOREIGN KEY (user_id) REFERENCES user(user_id) ON DELETE CASCADE
+) ENGINE = InnoDB
+  DEFAULT CHARACTER SET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci;
+
+-- -----------------------------------------------------
+-- Table `cart_item`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS cart_item;
+
+CREATE TABLE IF NOT EXISTS cart_item (
+  cart_item_id BIGINT NOT NULL AUTO_INCREMENT,
+  cart_id BIGINT NOT NULL,
+  product_id BIGINT NOT NULL,
+  quantity INT NOT NULL DEFAULT 1,
+  added_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (cart_item_id),
+  FOREIGN KEY (cart_id) REFERENCES cart(cart_id) ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES product(product_id) ON DELETE CASCADE
+) ENGINE = InnoDB
+  DEFAULT CHARACTER SET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci;
