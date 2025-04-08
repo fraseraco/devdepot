@@ -1,15 +1,44 @@
 import React from 'react';
 import Tile from '../Tile/Tile';
 import CheckOutItem from './CheckOutItem/CheckOutItem';
+import { useEffect, useState } from 'react';
 import './CheckOut.css';
 const CheckOut = () => {
+    const [products, setProducts] = useState([]);
+
+    // Fetch product data from the API
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('http://localhost:8080/products/all', {
+                    headers: {
+                        'Accept': '*/*',
+                    },
+                });
+                const data = await response.json();
+                setProducts(data); // Assuming the API returns an array of products
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    const subtotal = products.reduce((sum, product) => sum + product.price * product.quantity, 0);
     return (
-        <div className="checkout">
+        
+            <div className="checkout">
             <div>
-                <CheckOutItem />
-                <CheckOutItem />
-                <CheckOutItem />
-                <CheckOutItem />
+                {/* Dynamically render CheckOutItem components */}
+                {products.map((product, index) => (
+                    <CheckOutItem
+                        key={index}
+                        name={product.name}
+                        price={product.price}
+                        quantity={product.quantity}
+                    />
+                ))}
             </div>
             <div className='checkout-summary'>
                 <h2>Order Summary</h2>

@@ -1,19 +1,13 @@
 import React from 'react';
 import './CheckOutItem.css';
 
-const CheckOutItem = ({ item, onRemove }) => {
-    
+const CheckOutItem = ({ name, price, quantity }) => {
     return (
-        
         <div className="checkout-item">
-            
-            <img src="https://cdn-icons-png.flaticon.com/512/618/618310.png" alt="placeholder" />
-            <div>
-                <h3>Gaming PC</h3>
-                <h3>49.99</h3>
-            </div>
+            <h3>{name}</h3>
+            <p>Price: ${price.toFixed(2)}</p>
+            <p>Quantity: {quantity}</p>
         </div>
-
     );
 };
 
