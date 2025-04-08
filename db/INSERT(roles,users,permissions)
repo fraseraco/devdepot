@@ -137,7 +137,7 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    active
+    isActive
     )
 VALUES (
 	'admin1',
@@ -152,7 +152,7 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    active
+    isActive
     )
 VALUES (
 	'staff1',
@@ -167,7 +167,7 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    active
+    isActive
     )
 VALUES (
 	'user1',
@@ -181,7 +181,7 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    active
+    isActive
     )
 VALUES (
 	'user2',
@@ -196,7 +196,7 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    active
+    isActive
     )
 VALUES (
 	'staff2',
@@ -210,7 +210,7 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    active
+    isActive
     )
 VALUES (
 	'user3',
