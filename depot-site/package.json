@@ -1,5 +1,6 @@
 {
   "name": "depot-site",
+  "proxy": "http://localhost:8080",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -28,3 +29,4 @@
     "vite": "^6.2.5"
   }
 }
+
