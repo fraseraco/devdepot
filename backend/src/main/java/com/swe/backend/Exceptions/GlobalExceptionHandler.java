@@ -37,13 +37,18 @@ public class GlobalExceptionHandler {
         return errors;
     }
 
-    @ExceptionHandler(UserIdNotFoundException.class)
-    public ResponseEntity<Map<String, Object>> handleUserNotFoundException(UserIdNotFoundException ex, HttpServletRequest req) {
+    @ExceptionHandler(CartException.class)
+    public ResponseEntity<Map<String, Object>> handleUserNotFoundException(CartException ex, HttpServletRequest req) {
         return getMapResponseEntity(req, ex.getMessage(), ex);
     }
 
     @ExceptionHandler(ProductException.class)
     public ResponseEntity<Map<String, Object>> handleProductException(ProductException ex, HttpServletRequest req) {
+        return getMapResponseEntity(req, ex.getMessage(), ex);
+    }
+
+    @ExceptionHandler(UserIdNotFoundException.class)
+    public ResponseEntity<Map<String, Object>> handleUserNotFoundException(UserIdNotFoundException ex, HttpServletRequest req) {
         return getMapResponseEntity(req, ex.getMessage(), ex);
     }
 
