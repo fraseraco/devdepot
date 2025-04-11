@@ -1,9 +1,9 @@
-.storefront-container {
+
+.storefront-container{
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-color: lightblue;
     flex-direction: column;
-    align-items: center;
+    background-color: red;
     justify-content: center;
 }

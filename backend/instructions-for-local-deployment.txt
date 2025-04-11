@@ -1,0 +1,68 @@
+
+DATABASE CONFIG
+First navigate to `devdepot/backend/src/main/resources` so we can make sure the config is correct for your local database connection. 
+
+There should be an application.properties file whose content looks like this: 
+
+spring.application.name=BackendApplication
+spring.datasource.url=jdbc:mysql://localhost:3306/devdepot
+spring.datasource.username=root
+spring.datasource.password=password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.show-sql=true
+springdoc.api-docs.path=/api-docs
+springdoc.swagger-ui.path=/api-docs.html
+
+You need to change these three lines to match the config of your local mysql server instance. 
+spring.datasource.url=jdbc:mysql://localhost:<PORT>/<DATABASE>
+spring.datasource.username=<USERNAME>
+spring.datasource.password=<PASSWORD>
+
+The above tells you that my root user for my local mysql server is called 'root' and the password is 'password' and the server is open on port 3306, etc) 
+In addition, the database `devdepot` must already exist. It would help to also populate with the INSERT files found in /devdepot/db
+
+
+RUN MAVEN
+Maven is an automation build tool. It has many different "goals" that you can run with various commands. 
+
+These commands are tested in a bash shell on Ubuntu. They should be similar for mac and if you're on Windows idk get rekt, download WSL or go Google <3
+
+>> Navigate to /devdepot/backend
+
+Run `mvn install` from the command line
+This will add the dependencies it finds in pom.xml to the project.
+
+Run `mvn compile`
+This actually compiles and packages the project
+
+Run `mvn spring-boot:run`
+This will startup the Spring Boot application (referred to as the backend from here)
+
+From here, you can access the application from your web browser at `localhost:8080`
+or better, on the commandline run `curl -v localhost:8080` and you can see the http response to your request that includes the body "Howdy Partner".
+
+Try navigating to `localhost:8080/products/all` to see a JSON response with all of the products. (Chromium browsers have a "prettier" feature that makes it a lot easier to read)
+
+API DOCS
+With the backend running, you can access the API docs in your browser by going to `localhost:8080/api-docs.html`
+Click around and you'll find information pertaining to each of the API endpoints. 
+
+For example, /user/{id} is expecting an int64 for the parameter, and will return a JSON with the format:
+{
+  "username": "string",
+  "firstName": "string",
+  "role": {
+    "roleName": "string"
+  }
+}
+
+
+ADDITIONAL NOTES
+* MySQL server needs to be running before you spin up the backend
+* You may run into issues. Screenshot the error messages and post them to the discord with the command(s) you've run to get that output
+
+
+
+
+
