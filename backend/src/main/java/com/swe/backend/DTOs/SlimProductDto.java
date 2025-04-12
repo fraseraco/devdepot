@@ -16,6 +16,7 @@ public class SlimProductDto implements Serializable {
     String name;
     BigDecimal price;
 
+
     public SlimProductDto(Product product) {
         this.id = product.getId();
         this.name = product.getName();
