@@ -31,9 +31,8 @@ public class UserService {
 
         User user = new User();
         user.setUsername(dto.getUsername());
-        // ⚠️ ⚠️ PLAINTEXT PASSWORD ⚠️ ⚠️
-        user.setPasswordHash(dto.getPassword()); // NEED TO CHANGE USING PASSWORD ENCODER
-        // ⚠️ ⚠️ PLAINTEXT PASSWORD ⚠️ ⚠️
+        user.setPasswordHash(dto.getPassword()); //  ⚠️ ⚠️  NEED TO CHANGE USING PASSWORD ENCODER  ⚠️ ⚠️
+
         user.setEmail(dto.getEmail());
         Role role = roleRepository.findByRoleName("USER_BASIC"); // Need to implement better business logic ***
         System.out.println("Role fetched: " + role);

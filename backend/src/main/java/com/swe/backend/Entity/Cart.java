@@ -73,7 +73,6 @@ public class Cart{
         isActive = active;
     }
 
-
     @Column(name = COLUMN_UPDATEDAT_NAME)
     public Instant getUpdatedAt() {
         return updatedAt;
