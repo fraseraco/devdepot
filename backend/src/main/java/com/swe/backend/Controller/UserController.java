@@ -30,6 +30,9 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
     }
 
+    // Login endpoint
+    // Respond with UID for user
+
     @JsonView(Views.Internal.class)
     @GetMapping("/all")
     public ResponseEntity<List<User>> getUsers() {
@@ -37,7 +40,7 @@ public class UserController {
     }
 
     @JsonView(Views.Public.class)
-    @GetMapping("/{id}")
+    // authentication check @GetMapping("/{id}")
     public ResponseEntity<User> getUserByID(@PathVariable Long id) {
         return userService.getUserByID(id);
     }
