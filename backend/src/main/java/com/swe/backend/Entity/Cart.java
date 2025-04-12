@@ -10,6 +10,8 @@ import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = Cart.TABLE_NAME, schema = "devdepot", indexes = {
@@ -70,6 +72,7 @@ public class Cart{
     public void setActive(Boolean active) {
         isActive = active;
     }
+
 
     @Column(name = COLUMN_UPDATEDAT_NAME)
     public Instant getUpdatedAt() {
