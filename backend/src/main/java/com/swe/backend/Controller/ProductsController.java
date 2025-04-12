@@ -25,12 +25,12 @@ public class ProductsController {
         this.productService = productService;
     }
 
-    @PostMapping("/add")
-    public ResponseEntity<ProductDto> registerUser(@RequestBody UserRegistrationDto userRegistrationDto) {
-        User user = userService.registerNewUser(userRegistrationDto);
-        UserDto userDto = new UserDto(user);
-        return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
-    }
+//    @PostMapping("/add")
+//    public ResponseEntity<ProductDto> registerUser(@RequestBody UserRegistrationDto userRegistrationDto) {
+//        User user = userService.registerNewUser(userRegistrationDto);
+//        UserDto userDto = new UserDto(user);
+//        return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
+//    }
 
     @JsonView(Views.Public.class)
     @GetMapping("/all")
@@ -40,7 +40,7 @@ public class ProductsController {
 
     @JsonView(Views.Public.class)
     @GetMapping("/count")
-    public ResponseEntity<Long>  getAllProductsCount(){
+    public ResponseEntity<Long> getProductsCount(){
         return productService.getCount();
     }
 
