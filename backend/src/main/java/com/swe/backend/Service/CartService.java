@@ -1,6 +1,7 @@
 package com.swe.backend.Service;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import com.swe.backend.DTOs.CartItemDto;
 import com.swe.backend.Entity.Cart;
 import com.swe.backend.Entity.CartItem;
 import com.swe.backend.Entity.Product;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CartService {
@@ -34,6 +36,13 @@ public class CartService {
         List<Cart> carts=  cartRepository.findAllByUserId(uid);
         if (carts == null) { throw new CartException(uid); }
         return ResponseEntity.ok(carts);
+    }
+
+    public ResponseEntity<List<CartItemDto>> getCurrentCartContents(Long uid) {
+        Cart cart =  cartRepository.findCartByUserIdAndIsActive(uid, true);
+        if (cart == null) { throw new CartException(uid); }
+        List<CartItemDto> items = cartItemRepository.findByCart(cart).stream().map(CartItemDto::new).toList();
+        return ResponseEntity.ok(items);
     }
 
     @JsonView(Views.Public.class)
