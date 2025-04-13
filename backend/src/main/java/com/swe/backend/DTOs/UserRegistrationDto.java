@@ -17,7 +17,7 @@ public class UserRegistrationDto implements Serializable {
     private String username;
 
     @NotBlank
-    @Size(min = 6)
+    @Size(min = 6, max = 32)
     private String password;
 
     @NotBlank
