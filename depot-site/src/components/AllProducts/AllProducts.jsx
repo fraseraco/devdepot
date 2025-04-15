@@ -1,11 +1,11 @@
 import React from 'react';
-import './StoreFront.css';
-import StoreItem from './StoreItem/StoreItem';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import './AllProducts.css';
 
-const StoreFront = () => {
+
+const AllProducts = () => {
     const [products, setProducts] = useState([]);
+    
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -22,16 +22,19 @@ const StoreFront = () => {
     }, []);
 
     return (
-        <div className='storefront-container'>
-            <StoreItem products = {products}/>
-            
-            <div className="button-container">
-                <Link to="/products/all" className="show-all-button">
-                    Show All Products
-                </Link>
+        <div className="all-products-container">
+            <h1>All Products</h1>
+            <div className="products-grid">
+                {products.map((product, index) => (
+                    <div key={index} className="product-box">
+                        <img src= '/src/resources/6523595.jpg'/>
+                        <h3>{product.name}</h3>
+                        <p>Price: ${product.price.toFixed(2)}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );
 };
 
-export default StoreFront;
+export default AllProducts;

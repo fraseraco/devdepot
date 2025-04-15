@@ -4,8 +4,42 @@
   box-sizing: border-box;
 }
 
-.body {
-  width: 100vw;
-  height: 80vh;
+:root {
+  --primary-color: #504B38;
+  --secondary-color: #B9B28A;
+  --accent-color: #EBE5C2;
+  --background-color: #F8F3D9;
+  --text-color: #333;
 }
-  
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.navbar {
+  position: static;
+  height: 15vh; /* Navbar occupies 15% of the viewport height */
+  width: 100%; /* Full width */
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.router-container {
+  height:85vh; /* Router section occupies 85% of the viewport height */
+ /* Enable scrolling if content overflows */
+  width: 100vw;
+}

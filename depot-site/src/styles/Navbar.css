@@ -4,14 +4,6 @@
     box-sizing: border-box;
   }
 
-.navbar {
-    background-color: #b88aa1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20vh;
-    width: 100vw;
-}
 
 .navbar__menu {
     display: flex;
@@ -19,4 +11,19 @@
     align-items: center;
     width: 60vw;
     list-style: none;
+
+    padding-right: 40px;
+}
+
+.navbar a {
+    color: var(--background-color); /* Set the text color to black */
+    text-decoration: none; 
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+body {
+    overflow-x: hidden;
 }

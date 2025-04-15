@@ -5,12 +5,12 @@ import Tile from '/src/components/Tile/Tile.jsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const StoreItem = () => {
+const StoreItem = ({products}) => {
     var settings = {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 4,
         initialSlide: 0,
         responsive: [
@@ -40,38 +40,20 @@ const StoreItem = () => {
           }
         ]
       };
-    return (
+      return (
         <div className="store-item">
-            
-      <div className="slider-container">
-        <Slider {...settings}>
-        <div className="slider-div">
-          <h3>1</h3>
+            <div className="slider-container">
+                <Slider {...settings}>
+                    {products.map((product, index) => (
+                        <div key={index} className="slider-div">
+                            <img src= '/src/resources/6523595.jpg'/>
+                            <h3>{product.name}</h3>
+                            <p>Price: ${product.price.toFixed(2)}</p>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
         </div>
-        <div className="slider-div">
-          <h3>2</h3>
-        </div>
-        <div className="slider-div">
-          <h3>3</h3>
-        </div>
-        <div className="slider-div">
-          <h3>4</h3>
-        </div>
-        <div className="slider-div">
-          <h3>5</h3>
-        </div>
-        <div className="slider-div">
-          <h3>6</h3>
-        </div>
-        <div className="slider-div">
-          <h3>7</h3>
-        </div>
-        <div className="slider-div">
-          <h3>8</h3>
-        </div>
-        </Slider>
-      </div>
-      </div>
     );
     }
     

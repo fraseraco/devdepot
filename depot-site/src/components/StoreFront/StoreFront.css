@@ -4,6 +4,38 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: var(--background-color);
+    justify-content: space-around;
+    
+}
+
+.show-all-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    
+    text-decoration: none; /* Remove underline from the link */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 20vw;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    width: 100%;            /* Ensure it spans the full width of the container */
 }
