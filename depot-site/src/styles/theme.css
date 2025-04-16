@@ -1,0 +1,53 @@
+/* theme.css */
+
+body.light {
+    --bg: white;
+    --text: #1a202c;
+  }
+  
+  body.dark {
+    --bg: #1a202c;
+    --text: white;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* 🔁 Reusable Components */
+  .button {
+    background-color: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--text);
+    color: var(--bg);
+  }
+  
+  .navbar {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease;
+  }
+  
+  .tile {
+    background-color: var(--bg);
+    border: 1px solid var(--text);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--text);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .tile:hover {
+    box-shadow: 0 0 8px var(--text);
+  }
+  

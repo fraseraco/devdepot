@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import StoreFront from './components/StoreFront/StoreFront';
 import CheckOut from './components/Checkout/CheckOut';
 import SignIn from './components/SignIn/SignIn';
+import './styles/theme.css';
 
 function App() {
   return (
