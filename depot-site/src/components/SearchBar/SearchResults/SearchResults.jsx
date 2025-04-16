@@ -18,7 +18,7 @@ const SearchResults = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No results found.</p>
+                    <h1 className='no-results'>No results found.</h1>
                 )}
             </div>
         </div>

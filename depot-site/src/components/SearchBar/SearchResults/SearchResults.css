@@ -34,3 +34,16 @@
     font-size: 16px;
     color: #555;
 }
+
+.no-results {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure it takes up the full height of the container */
+    /* Optional: Adjust font size */
+    color: black; /* Optional: Adjust text color */
+    width: 100vw;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+

@@ -5,15 +5,15 @@ import './Search.css';
 const Search = () => {
     const [query, setQuery] = useState('');
     const [products, setProducts] = useState([]);
-    const navigate = useNavigate(); // Initialize navigation
+    const navigate = useNavigate(); 
 
-    // Fetch products from the API
+   
     useEffect(() => {
         const fetchProducts = async () => {
             try {
                 const response = await fetch('/products/all');
                 const data = await response.json();
-                setProducts(data); // Store all products
+                setProducts(data); 
             } catch (error) {
                 console.error('Error fetching products:', error);
             }
@@ -22,12 +22,12 @@ const Search = () => {
         fetchProducts();
     }, []);
 
-    // Handle search button click
+
     const handleSearch = () => {
         const filtered = products.filter((product) =>
             product.name.toLowerCase().includes(query.toLowerCase())
         );
-        navigate('/search', { state: { results: filtered } }); // Navigate to SearchResults with filtered data
+        navigate('/search', { state: { results: filtered } }); 
     };
 
     return (
@@ -37,10 +37,10 @@ const Search = () => {
                 placeholder="Search..."
                 className="search-input"
                 value={query}
-                onChange={(e) => setQuery(e.target.value)} // Update query state on input change
+                onChange={(e) => setQuery(e.target.value)} 
             />
             <button className="search-button" onClick={handleSearch}>
-                Search
+                <i className="fas fa-search"></i> {/* Font Awesome icon */}
             </button>
         </div>
     );
