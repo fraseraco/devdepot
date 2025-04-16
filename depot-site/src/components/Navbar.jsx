@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/Navbar.css';
 import Search from './SearchBar/Search.jsx';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
+
 
 function Navbar() {
   function toggleMode() {
@@ -9,6 +11,8 @@ function Navbar() {
     document.body.classList.remove(current);
     document.body.classList.add(current === 'dark' ? 'light' : 'dark');
   }
+  // 🔢 Replace with actual state or context later
+  const cartItemCount = 3;
 
   return (
     <nav className="navbar">
@@ -18,6 +22,14 @@ function Navbar() {
       <ul className="navbar__menu">
         <li><Search /></li>
         <li><Link to="/checkout">Checkout</Link></li>
+        <li className="cart-container">
+          <Link to="/checkout">
+            <FaShoppingCart className="cart-icon" />
+            {cartItemCount > 0 && (
+              <span className="cart-badge">{cartItemCount}</span>
+            )}
+          </Link>
+        </li>
         <li><Link to="/signin">Sign In</Link></li>
         <li>
           <button className="button" onClick={toggleMode}>Toggle Mode</button>

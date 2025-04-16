@@ -20,3 +20,24 @@
     width: 60vw;
     list-style: none;
 }
+.cart-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-icon {
+    font-size: 1.5rem;
+    color: var(--text);
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+  
