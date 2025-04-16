@@ -1,0 +1,541 @@
+[
+  {
+    "name": "Logitech G Pro X Superlight",
+    "category": "gaming-mouse",
+    "brand": "Logitech",
+    "inventory_qty": 300,
+    "price": 129.99,
+    "sku": 6904755,
+    "specifications": {
+      "sensor": "HERO 25K",
+      "dpi": [100, 25600],
+      "buttons": 5,
+      "weight_grams": 63,
+      "wireless": true,
+      "battery_life_hours": 70
+    }
+  },
+  {
+    "name": "Razer DeathAdder V2 Pro",
+    "category": "gaming-mouse",
+    "brand": "Razer",
+    "inventory_qty": 250,
+    "price": 99.99,
+    "sku": 9411108,
+    "specifications": {
+      "sensor": "Focus+ Optical Sensor",
+      "dpi": [100, 20000],
+      "buttons": 8,
+      "weight_grams": 88,
+      "wireless": true,
+      "battery_life_hours": 70
+    }
+  },
+  {
+    "name": "SteelSeries Aerox 5 Wireless",
+    "category": "gaming-mouse",
+    "brand": "SteelSeries",
+    "inventory_qty": 200,
+    "price": 139.99,
+    "sku": 3065240,
+    "specifications": {
+      "sensor": "TrueMove Air",
+      "dpi": [100, 18000],
+      "buttons": 9,
+      "weight_grams": 74,
+      "wireless": true,
+      "battery_life_hours": 80
+    }
+  },
+  {
+    "name": "Logitech G305 LIGHTSPEED",
+    "category": "gaming-mouse",
+    "brand": "Logitech",
+    "inventory_qty": 350,
+    "price": 49.99,
+    "sku": 6068930,
+    "specifications": {
+      "sensor": "HERO",
+      "dpi": [200, 12000],
+      "buttons": 6,
+      "weight_grams": 99,
+      "wireless": true,
+      "battery_life_hours": 250
+    }
+  },
+  {
+    "name": "Razer Basilisk V3",
+    "category": "gaming-mouse",
+    "brand": "Razer",
+    "inventory_qty": 280,
+    "price": 69.99,
+    "sku": 7851506,
+    "specifications": {
+      "sensor": "Focus+ Optical Sensor",
+      "dpi": [100, 26000],
+      "buttons": 11,
+      "weight_grams": 101,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "SteelSeries Rival 3",
+    "category": "gaming-mouse",
+    "brand": "SteelSeries",
+    "inventory_qty": 320,
+    "price": 29.99,
+    "sku": 9653620,
+    "specifications": {
+      "sensor": "TrueMove Core",
+      "dpi": [200, 8500],
+      "buttons": 6,
+      "weight_grams": 77,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "Glorious Model O Wireless",
+    "category": "gaming-mouse",
+    "brand": "Glorious",
+    "inventory_qty": 220,
+    "price": 79.99,
+    "sku": 3113843,
+    "specifications": {
+      "sensor": "BAMF Sensor",
+      "dpi": [100, 19000],
+      "buttons": 6,
+      "weight_grams": 69,
+      "wireless": true,
+      "battery_life_hours": 71
+    }
+  },
+  {
+    "name": "Finalmouse Starlight-12",
+    "category": "gaming-mouse",
+    "brand": "Finalmouse",
+    "inventory_qty": 100,
+    "price": 189.99,
+    "sku": 2065596,
+    "specifications": {
+      "sensor": "Final Sensor",
+      "dpi": [400, 3200],
+      "buttons": 5,
+      "weight_grams": 42,
+      "wireless": true
+    }
+  },
+  {
+    "name": "BenQ ZOWIE EC2",
+    "category": "gaming-mouse",
+    "brand": "BenQ ZOWIE",
+    "inventory_qty": 260,
+    "price": 69.99,
+    "sku": 6099833,
+    "specifications": {
+      "sensor": "PMW3360",
+      "dpi": [400, 800, 1600, 3200],
+      "buttons": 5,
+      "weight_grams": 90,
+      "wired": true
+    }
+  },
+  {
+    "name": "HyperX Pulsefire Haste Wireless",
+    "category": "gaming-mouse",
+    "brand": "HyperX",
+    "inventory_qty": 290,
+    "price": 79.99,
+    "sku": 3089224,
+    "specifications": {
+      "sensor": "Pixart PAW3335",
+      "dpi": [200, 16000],
+      "buttons": 6,
+      "weight_grams": 61,
+      "wireless": true,
+      "battery_life_hours": 100
+    }
+  },
+  {
+    "name": "Logitech G502 HERO",
+    "category": "gaming-mouse",
+    "brand": "Logitech",
+    "inventory_qty": 310,
+    "price": 59.99,
+    "sku": 1112995,
+    "specifications": {
+      "sensor": "HERO 25K",
+      "dpi": [100, 25600],
+      "buttons": 11,
+      "weight_grams": 121,
+      "wired": true,
+      "adjustable_weights": true
+    }
+  },
+  {
+    "name": "Razer Viper Mini",
+    "category": "gaming-mouse",
+    "brand": "Razer",
+    "inventory_qty": 240,
+    "price": 39.99,
+    "sku": 2599154,
+    "specifications": {
+      "sensor": "Optical Sensor",
+      "dpi": [200, 8500],
+      "buttons": 6,
+      "weight_grams": 61,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "SteelSeries Sensei Ten",
+    "category": "gaming-mouse",
+    "brand": "SteelSeries",
+    "inventory_qty": 180,
+    "price": 69.99,
+    "sku": 7589908,
+    "specifications": {
+      "sensor": "TrueMove Pro",
+      "dpi": [50, 18000],
+      "buttons": 8,
+      "weight_grams": 92,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "Glorious Model D- Wireless",
+    "category": "gaming-mouse",
+    "brand": "Glorious",
+    "inventory_qty": 210,
+    "price": 79.99,
+    "sku": 4118019,
+    "specifications": {
+      "sensor": "BAMF Sensor",
+      "dpi": [100, 19000],
+      "buttons": 6,
+      "weight_grams": 67,
+      "wireless": true,
+      "battery_life_hours": 71
+    }
+  },
+  {
+    "name": "BenQ ZOWIE FK2",
+    "category": "gaming-mouse",
+    "brand": "BenQ ZOWIE",
+    "inventory_qty": 270,
+    "price": 69.99,
+    "sku": 4114006,
+    "specifications": {
+      "sensor": "PMW3360",
+      "dpi": [400, 800, 1600, 3200],
+      "buttons": 5,
+      "weight_grams": 85,
+      "wired": true
+    }
+  },
+  {
+    "name": "HyperX Pulsefire Surge",
+    "category": "gaming-mouse",
+    "brand": "HyperX",
+    "inventory_qty": 230,
+    "price": 49.99,
+    "sku": 2368187,
+    "specifications": {
+      "sensor": "Pixart PMW3389",
+      "dpi": [100, 16000],
+      "buttons": 6,
+      "weight_grams": 100,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "Cooler Master MM711",
+    "category": "gaming-mouse",
+    "brand": "Cooler Master",
+    "inventory_qty": 190,
+    "price": 59.99,
+    "sku": 5722390,
+    "specifications": {
+      "sensor": "Pixart PMW3389",
+      "dpi": [400, 16000],
+      "buttons": 6,
+      "weight_grams": 60,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "Corsair M65 RGB Elite",
+    "category": "gaming-mouse",
+    "brand": "Corsair",
+    "inventory_qty": 250,
+    "price": 59.99,
+    "sku": 5277202,
+    "specifications": {
+      "sensor": "Pixart PMW3391",
+      "dpi": [100, 18000],
+      "buttons": 8,
+      "weight_grams": 97,
+      "wired": true,
+      "adjustable_weights": true
+    }
+  },
+  {
+    "name": "ASUS ROG Gladius III Wireless",
+    "category": "gaming-mouse",
+    "brand": "ASUS ROG",
+    "inventory_qty": 170,
+    "price": 99.99,
+    "sku": 6563646,
+    "specifications": {
+      "sensor": "ROG Optical Sensor",
+      "dpi": [100, 19000],
+      "buttons": 6,
+      "weight_grams": 79,
+      "wireless": true,
+      "battery_life_hours": 55
+    }
+  },
+  {
+    "name": "EVGA X17",
+    "category": "gaming-mouse",
+    "brand": "EVGA",
+    "inventory_qty": 200,
+    "price": 49.99,
+    "sku": 3572090,
+    "specifications": {
+      "sensor": "Pixart 3389",
+      "dpi": [100, 16000],
+      "buttons": 10,
+      "weight_grams": 103,
+      "wired": true,
+      "rgb": true,
+      "lift_off_distance_detection": true
+    }
+  },
+  {
+    "name": "Pulsar X2 Wireless",
+    "category": "gaming-mouse",
+    "brand": "Pulsar",
+    "inventory_qty": 150,
+    "price": 79.99,
+    "sku": 3718771,
+    "specifications": {
+      "sensor": "PixArt PAW3395",
+      "dpi": [50, 26000],
+      "buttons": 5,
+      "weight_grams": 56,
+      "wireless": true,
+      "battery_life_hours": 70
+    }
+  },
+  {
+    "name": "Lamzu Atlantis Mini 4K",
+    "category": "gaming-mouse",
+    "brand": "Lamzu",
+    "inventory_qty": 120,
+    "price": 99.99,
+    "sku": 7304430,
+    "specifications": {
+      "sensor": "PixArt PAW3395",
+      "dpi": [50, 26000],
+      "buttons": 5,
+      "weight_grams": 49,
+      "wireless": true,
+      "polling_rate_hz": 4000
+    }
+  },
+  {
+    "name": "Cooler Master MM720",
+    "category": "gaming-mouse",
+    "brand": "Cooler Master",
+    "inventory_qty": 200,
+    "price": 39.99,
+    "sku": 4513774,
+    "specifications": {
+      "sensor": "PixArt PMW3389",
+      "dpi": [400, 16000],
+      "buttons": 6,
+      "weight_grams": 49,
+      "wired": true,
+      "ultralight": true
+    }
+  },
+  {
+    "name": "ASUS ROG Harpe Ace Aim Lab Edition",
+    "category": "gaming-mouse",
+    "brand": "ASUS ROG",
+    "inventory_qty": 130,
+    "price": 159.99,
+    "sku": 4127715,
+    "specifications": {
+      "sensor": "ROG AimPoint Optical Sensor",
+      "dpi": [100, 36000],
+      "buttons": 5,
+      "weight_grams": 54,
+      "wireless": true,
+      "polling_rate_hz": 1000
+    }
+  },
+  {
+    "name": "Fnatic Bolt",
+    "category": "gaming-mouse",
+    "brand": "Fnatic",
+    "inventory_qty": 160,
+    "price": 89.99,
+    "sku": 9331061,
+    "specifications": {
+      "sensor": "PixArt PAW3370",
+      "dpi": [400, 800, 1600, 3200],
+      "buttons": 6,
+      "weight_grams": 69,
+      "wireless": true,
+      "battery_life_hours": 80
+    }
+  },
+  {
+    "name": "Corsair Katar Pro XT",
+    "category": "gaming-mouse",
+    "brand": "Corsair",
+    "inventory_qty": 220,
+    "price": 29.99,
+    "sku": 5326222,
+    "specifications": {
+      "sensor": "PixArt PMW3391",
+      "dpi": [200, 18000],
+      "buttons": 6,
+      "weight_grams": 73,
+      "wired": true
+    }
+  },
+  {
+    "name": "Endgame Gear XM2we",
+    "category": "gaming-mouse",
+    "brand": "Endgame Gear",
+    "inventory_qty": 140,
+    "price": 79.99,
+    "sku": 2611528,
+    "specifications": {
+      "sensor": "PixArt PAW3395",
+      "dpi": [50, 19000],
+      "buttons": 5,
+      "weight_grams": 63,
+      "wireless": true,
+      "battery_life_hours": 80
+    }
+  },
+  {
+    "name": "Roccat Kone XP Air",
+    "category": "gaming-mouse",
+    "brand": "Roccat",
+    "inventory_qty": 170,
+    "price": 129.99,
+    "sku": 8221512,
+    "specifications": {
+      "sensor": "Owl-Eye Optical Sensor",
+      "dpi": [100, 19000],
+      "buttons": 15,
+      "weight_grams": 99,
+      "wireless": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "Redragon M908 Impact",
+    "category": "gaming-mouse",
+    "brand": "Redragon",
+    "inventory_qty": 250,
+    "price": 39.99,
+    "sku": 7046378,
+    "specifications": {
+      "sensor": "Pixart PMW3327",
+      "dpi": [100, 12400],
+      "buttons": 19,
+      "weight_grams": 145,
+      "wired": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "ASUS ROG Chakram X Origin",
+    "category": "gaming-mouse",
+    "brand": "ASUS ROG",
+    "inventory_qty": 110,
+    "price": 149.99,
+    "sku": 4342785,
+    "specifications": {
+      "sensor": "ROG AimPoint Optical Sensor",
+      "dpi": [100, 36000],
+      "buttons": 11,
+      "weight_grams": 127,
+      "wireless": true,
+      "joystick": true,
+      "rgb": true
+    }
+  },
+  {
+    "name": "Fnatic Clutch 2",
+    "category": "gaming-mouse",
+    "brand": "Fnatic",
+    "inventory_qty": 170,
+    "price": 59.99,
+    "sku": 3974253,
+    "specifications": {
+      "sensor": "PixArt PMW3360",
+      "dpi": [400, 800, 1600, 3200],
+      "buttons": 6,
+      "weight_grams": 97,
+      "wired": true
+    }
+  },
+  {
+    "name": "Redragon M808 Storm",
+    "category": "gaming-mouse",
+    "brand": "Redragon",
+    "inventory_qty": 230,
+    "price": 29.99,
+    "sku": 8175775,
+    "specifications": {
+      "sensor": "Pixart PMW3325",
+      "dpi": [100, 10000],
+      "buttons": 7,
+      "weight_grams": 85,
+      "wired": true,
+      "honeycomb_shell": true
+    }
+  },
+  {
+    "name": "ASUS ROG Keris Wireless AimPoint",
+    "category": "gaming-mouse",
+    "brand": "ASUS ROG",
+    "inventory_qty": 120,
+    "price": 99.99,
+    "sku": 9582230,
+    "specifications": {
+      "sensor": "ROG AimPoint Optical Sensor",
+      "dpi": [100, 36000],
+      "buttons": 7,
+      "weight_grams": 75,
+      "wireless": true
+    }
+  },
+  {
+    "name": "Endgame Gear OP1we",
+    "category": "gaming-mouse",
+    "brand": "Endgame Gear",
+    "inventory_qty": 130,
+    "price": 69.99,
+    "sku": 3719026,
+    "specifications": {
+      "sensor": "PixArt PAW3370",
+      "dpi": [50, 19000],
+      "buttons": 5,
+      "weight_grams": 67,
+      "wireless": true
+    }
+  }
+]
