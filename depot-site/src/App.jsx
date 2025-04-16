@@ -7,6 +7,7 @@ import StoreFront from './components/StoreFront/StoreFront';
 import CheckOut from './components/Checkout/CheckOut';
 import SignIn from './components/SignIn/SignIn';
 import AllProducts from './components/AllProducts/AllProducts';
+import SearchResults from './components/SearchBar/SearchResults/SearchResults';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/checkout" element={<CheckOut/>} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/products/all" element={<AllProducts />} />
+          <Route path="/search" element={<SearchResults />} />
         </Routes>
       </div>
        
