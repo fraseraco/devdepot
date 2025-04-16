@@ -1,0 +1,420 @@
+[
+  {
+    "name": "H510 Flow",
+    "category": "pc-case",
+    "brand": "NZXT",
+    "inventory_qty": 300,
+    "price": 89.99,
+    "sku": 8765425,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.2 Gen 1 Type-A", "USB 3.2 Gen 2 Type-C", "Headset Audio Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Corsair 4000D Airflow",
+    "category": "pc-case",
+    "brand": "Corsair",
+    "inventory_qty": 350,
+    "price": 94.99,
+    "sku": 2394579,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.0", "USB 3.1 Type-C", "Headphone/Microphone Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Fractal Design Meshify 2 Compact",
+    "category": "pc-case",
+    "brand": "Fractal Design",
+    "inventory_qty": 280,
+    "price": 109.99,
+    "sku": 9045542,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 4},
+      "front_panel_io": ["USB 3.0", "USB 3.1 Gen 2 Type-C", "Audio In/Out"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Lian Li Lancool II Mesh",
+    "category": "pc-case",
+    "brand": "Lian Li",
+    "inventory_qty": 320,
+    "price": 99.99,
+    "sku": 3658790,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "E-ATX (up to 280mm)", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.0", "USB 3.1 Type-C", "Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Phanteks Eclipse P400A Digital",
+    "category": "pc-case",
+    "brand": "Phanteks",
+    "inventory_qty": 250,
+    "price": 84.99,
+    "sku": 5933467,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX", "E-ATX (up to 272mm)"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.0", "Microphone", "Headphone", "RGB Mode Button", "RGB Power Button"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Cooler Master MasterBox TD500 Mesh",
+    "category": "pc-case",
+    "brand": "Cooler Master",
+    "inventory_qty": 290,
+    "price": 89.99,
+    "sku": 8377890,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.2 Gen 1 Type-A", "USB 3.2 Gen 1 Type-A", "Audio In & Out"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "be quiet! Pure Base 500DX",
+    "category": "pc-case",
+    "brand": "be quiet!",
+    "inventory_qty": 260,
+    "price": 99.99,
+    "sku": 3754568,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "M-ATX", "Mini-ITX"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 2, "2.5": 5},
+      "front_panel_io": ["USB 3.2 Gen 2 Type C", "USB 3.2 Gen 1 Type A", "HD Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Corsair iCUE 4000X RGB",
+    "category": "pc-case",
+    "brand": "Corsair",
+    "inventory_qty": 270,
+    "price": 129.99,
+    "sku": 8688012,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.0", "USB 3.1 Type-C", "Headphone/Microphone Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "NZXT H7 Flow",
+    "category": "pc-case",
+    "brand": "NZXT",
+    "inventory_qty": 240,
+    "price": 129.99,
+    "sku": 2749013,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX", "E-ATX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 4+2},
+      "front_panel_io": ["2x USB 3.2 Gen 1 Type-A", "1x USB 3.2 Gen 2 Type-C", "Headset Audio Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Lian Li O11 Dynamic EVO",
+    "category": "pc-case",
+    "brand": "Lian Li",
+    "inventory_qty": 220,
+    "price": 159.99,
+    "sku": 8994735,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "E-ATX (up to 280mm)", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 0,
+      "drive_bays": {"3.5": 2, "2.5": 4},
+      "front_panel_io": ["2x USB 3.0", "1x USB 3.1 Type-C", "Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Phanteks Enthoo Pro",
+    "category": "pc-case",
+    "brand": "Phanteks",
+    "inventory_qty": 200,
+    "price": 99.99,
+    "sku": 9042946,
+    "specifications": {
+      "form_factor": "Full-Tower",
+      "motherboard_support": ["E-ATX", "ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 6, "2.5": 7},
+      "front_panel_io": ["2x USB 3.0", "2x USB 2.0", "Headphone", "Microphone"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Cooler Master HAF 500",
+    "category": "pc-case",
+    "brand": "Cooler Master",
+    "inventory_qty": 230,
+    "price": 119.99,
+    "sku": 9375458,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["USB 3.2 Gen 1 Type-A", "USB 3.2 Gen 2 Type-C", "Audio In & Out"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "be quiet! Silent Base 802",
+    "category": "pc-case",
+    "brand": "be quiet!",
+    "inventory_qty": 190,
+    "price": 169.99,
+    "sku": 3852579,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "E-ATX", "M-ATX", "Mini-ITX"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 3, "2.5": 7},
+      "front_panel_io": ["USB 3.2 Gen 2 Type C", "USB 3.2 Gen 1 Type A", "HD Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Corsair Obsidian Series 5000D Airflow",
+    "category": "pc-case",
+    "brand": "Corsair",
+    "inventory_qty": 210,
+    "price": 164.99,
+    "sku": 9574670,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "E-ATX (up to 277mm)", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 2+3"},
+      "front_panel_io": ["2x USB 3.0", "1x USB 3.1 Type-C", "Headphone/Microphone Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "NZXT H9 Flow",
+    "category": "pc-case",
+    "brand": "NZXT",
+    "inventory_qty": 180,
+    "price": 159.99,
+    "sku": 3839490,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX", "E-ATX"],
+      "included_fans": 0,
+      "drive_bays": {"3.5": 2, "2.5": 4+2},
+      "front_panel_io": ["2x USB 3.2 Gen 1 Type-A", "1x USB 3.2 Gen 2 Type-C", "Headset Audio Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Fractal Design Torrent",
+    "category": "pc-case",
+    "brand": "Fractal Design",
+    "inventory_qty": 160,
+    "price": 199.99,
+    "sku": 4961901,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["E-ATX (up to 274mm)", "ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 5,
+      "drive_bays": {"3.5": 2, "2.5": 4},
+      "front_panel_io": ["2x USB 3.0", "1x USB 3.1 Gen 2 Type-C", "Audio In/Out"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Lian Li O11 Air Mini",
+    "category": "pc-case",
+    "brand": "Lian Li",
+    "inventory_qty": 170,
+    "price": 109.99,
+    "sku": 1042012,
+    "specifications": {
+      "form_factor": "Mid-Tower",
+      "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX"],
+      "included_fans": 3,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["2x USB 3.0", "1x USB 3.1 Type-C", "Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "NR200P",
+    "category": "pc-case",
+    "brand": "Cooler Master",
+    "inventory_qty": 250,
+    "price": 89.99,
+    "sku": 1830334,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX", "Mini-DTX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 1, "2.5": 2},
+      "front_panel_io": ["2x USB 3.2 Gen 1 Type-A", "Headset Audio Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Lian Li A4-H2O",
+    "category": "pc-case",
+    "brand": "Lian Li",
+    "inventory_qty": 200,
+    "price": 159.99,
+    "sku": 9416778,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 0,
+      "drive_bays": {"2.5": 3},
+      "front_panel_io": ["1x USB 3.1 Type-C", "1x USB 3.0 Type-A", "Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Fractal Design Terra",
+    "category": "pc-case",
+    "brand": "Fractal Design",
+    "inventory_qty": 180,
+    "price": 179.99,
+    "sku": 9904766,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 0,
+      "drive_bays": {"2.5": 2},
+      "front_panel_io": ["1x USB 3.1 Gen 2 Type-C", "2x USB 3.0 Type-A"],
+      "color": "Graphite Black"
+    }
+  },
+  {
+    "name": "HYTE Revolt 3",
+    "category": "pc-case",
+    "brand": "HYTE",
+    "inventory_qty": 220,
+    "price": 129.99,
+    "sku": 3329570,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 1,
+      "drive_bays": {"3.5": 1, "2.5": 2},
+      "front_panel_io": ["1x USB 3.2 Gen 2 Type-C", "2x USB 3.2 Gen 1 Type-A", "Audio/Mic Combo"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Corsair 2000D Airflow",
+    "category": "pc-case",
+    "brand": "Corsair",
+    "inventory_qty": 190,
+    "price": 139.99,
+    "sku": 4403767,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 0,
+      "drive_bays": {"2.5": 3},
+      "front_panel_io": ["2x USB 3.0", "1x USB 3.1 Type-C", "Headphone/Microphone Jack"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "NZXT H1 (2022)",
+    "category": "pc-case",
+    "brand": "NZXT",
+    "inventory_qty": 150,
+    "price": 199.99,
+    "sku": 66778911,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"2.5": 2},
+      "front_panel_io": ["2x USB 3.2 Gen 1 Type-A", "1x USB 3.2 Gen 2 Type-C", "Headset Audio Jack"],
+      "psu_wattage": 750,
+      "aio_size": 140,
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Thermaltake The Tower 100",
+    "category": "pc-case",
+    "brand": "Thermaltake",
+    "inventory_qty": 170,
+    "price": 119.99,
+    "sku": 9856335,
+    "specifications": {
+      "form_factor": "Mini-Tower",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 2,
+      "drive_bays": {"3.5": 2, "2.5": 2},
+      "front_panel_io": ["2x USB 3.0", "HD Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "SilverStone SUGO 16",
+    "category": "pc-case",
+    "brand": "SilverStone",
+    "inventory_qty": 210,
+    "price": 99.99,
+    "sku": 3856779,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX", "DTX"],
+      "included_fans": 0,
+      "drive_bays": {"3.5": 1, "2.5": 2},
+      "front_panel_io": ["2x USB 3.0", "Audio"],
+      "color": "Black"
+    }
+  },
+  {
+    "name": "Jonsbo N1",
+    "category": "pc-case",
+    "brand": "Jonsbo",
+    "inventory_qty": 160,
+    "price": 79.99,
+    "sku": 9983951,
+    "specifications": {
+      "form_factor": "Mini-ITX",
+      "motherboard_support": ["Mini-ITX"],
+      "included_fans": 1,
+      "drive_bays": {"3.5": 5},
+      "front_panel_io": ["1x USB 3.0", "1x USB 2.0"],
+      "color": "Black"
+    }
+  }
+]

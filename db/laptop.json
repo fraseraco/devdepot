@@ -1,0 +1,342 @@
+[
+  {
+    "name": "ASUS ROG Zephyrus G14 (2024)",
+    "category": "gaming-laptop",
+    "brand": "ASUS ROG",
+    "inventory_qty": 150,
+    "price": 1599.99,
+    "sku": 3289346,
+    "specifications": {
+      "cpu": "AMD Ryzen 9 8945HS",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 14,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "Razer Blade 16 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Razer",
+    "inventory_qty": 120,
+    "price": 2799.99,
+    "sku": 8045312,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "ram": 32,
+      "storage_gb": 2000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Alienware m18 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Alienware",
+    "inventory_qty": 100,
+    "price": 2199.99,
+    "sku": 7044151,
+    "specifications": {
+      "cpu": "Intel Core i7-14700HX",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 18,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "MSI Titan GT77 HX 1490HX",
+    "category": "gaming-laptop",
+    "brand": "MSI",
+    "inventory_qty": 80,
+    "price": 4999.99,
+    "sku": 8332713,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "ram": 64,
+      "storage_gb": 4000,
+      "display_size_inches": 17.3,
+      "display_resolution": "UHD (3840 x 2160)",
+      "refresh_rate_hz": 144
+    }
+  },
+  {
+    "name": "Lenovo Legion Pro 7i (2024)",
+    "category": "gaming-laptop",
+    "brand": "Lenovo",
+    "inventory_qty": 130,
+    "price": 2399.99,
+    "sku": 8173809,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "ram": 32,
+      "storage_gb": 2000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Acer Predator Helios 18",
+    "category": "gaming-laptop",
+    "brand": "Acer",
+    "inventory_qty": 110,
+    "price": 2099.99,
+    "sku": 5900735,
+    "specifications": {
+      "cpu": "Intel Core i7-14700HX",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 18,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "HP Omen 16 (2024)",
+    "category": "gaming-laptop",
+    "brand": "HP",
+    "inventory_qty": 140,
+    "price": 1499.99,
+    "sku": 5391564,
+    "specifications": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "ram": 16,
+      "storage_gb": 512,
+      "display_size_inches": 16.1,
+      "display_resolution": "QHD (2560 x 1440)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "Gigabyte AORUS 17X (2024)",
+    "category": "gaming-laptop",
+    "brand": "Gigabyte",
+    "inventory_qty": 90,
+    "price": 3199.99,
+    "sku": 9963433,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "ram": 32,
+      "storage_gb": 2000,
+      "display_size_inches": 17.3,
+      "display_resolution": "QHD (2560 x 1440)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "ASUS ROG Strix SCAR 18 (2024)",
+    "category": "gaming-laptop",
+    "brand": "ASUS ROG",
+    "inventory_qty": 105,
+    "price": 2599.99,
+    "sku": 4508839,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "ram": 32,
+      "storage_gb": 2000,
+      "display_size_inches": 18,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Razer Blade 14 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Razer",
+    "inventory_qty": 115,
+    "price": 2199.99,
+    "sku": 8061667,
+    "specifications": {
+      "cpu": "AMD Ryzen 9 8945HS",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 14,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Alienware m16 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Alienware",
+    "inventory_qty": 125,
+    "price": 1899.99,
+    "sku": 8864503,
+    "specifications": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "MSI Stealth 16 Studio A14VG",
+    "category": "gaming-laptop",
+    "brand": "MSI",
+    "inventory_qty": 95,
+    "price": 2299.99,
+    "sku": 3538626,
+    "specifications": {
+      "cpu": "Intel Core i7-14700H",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Lenovo Legion Slim 7i (2024)",
+    "category": "gaming-laptop",
+    "brand": "Lenovo",
+    "inventory_qty": 135,
+    "price": 1799.99,
+    "sku": 9548197,
+    "specifications": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "Acer Predator Helios Neo 16",
+    "category": "gaming-laptop",
+    "brand": "Acer",
+    "inventory_qty": 120,
+    "price": 1699.99,
+    "sku": 5987442,
+    "specifications": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "ram": 16,
+      "storage_gb": 512,
+      "display_size_inches": 16,
+      "display_resolution": "QHD (2560 x 1600)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "HP Omen Transcend 16 (2024)",
+    "category": "gaming-laptop",
+    "brand": "HP",
+    "inventory_qty": 110,
+    "price": 1899.99,
+    "sku": 7316143,
+    "specifications": {
+      "cpu": "Intel Core i7-14700H",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Gigabyte AORUS 15 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Gigabyte",
+    "inventory_qty": 145,
+    "price": 1799.99,
+    "sku": 5407191,
+    "specifications": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "ram": 16,
+      "storage_gb": 1000,
+      "display_size_inches": 15.6,
+      "display_resolution": "QHD (2560 x 1440)",
+      "refresh_rate_hz": 165
+    }
+  },
+  {
+    "name": "ASUS TUF Gaming A15 (2024)",
+    "category": "gaming-laptop",
+    "brand": "ASUS TUF",
+    "inventory_qty": 160,
+    "price": 1199.99,
+    "sku": 1395052,
+    "specifications": {
+      "cpu": "AMD Ryzen 7 8845HS",
+      "gpu": "NVIDIA GeForce RTX 4050",
+      "ram": 16,
+      "storage_gb": 512,
+      "display_size_inches": 15.6,
+      "display_resolution": "FHD (1920 x 1080)",
+      "refresh_rate_hz": 144
+    }
+  },
+  {
+    "name": "Razer Blade 18 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Razer",
+    "inventory_qty": 75,
+    "price": 3299.99,
+    "sku": 2055958,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "ram": 32,
+      "storage_gb": 2000,
+      "display_size_inches": 18,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "Alienware x16 (2024)",
+    "category": "gaming-laptop",
+    "brand": "Alienware",
+    "inventory_qty": 90,
+    "price": 2799.99,
+    "sku": 1143174,
+    "specifications": {
+      "cpu": "Intel Core i9-14900HX",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "ram": 32,
+      "storage_gb": 2000,
+      "display_size_inches": 16,
+      "display_resolution": "QHD+ (2560 x 1600)",
+      "refresh_rate_hz": 240
+    }
+  },
+  {
+    "name": "MSI Katana GF66 12UC",
+    "category": "gaming-laptop",
+    "brand": "MSI",
+    "inventory_qty": 170,
+    "price": 999.99,
+    "sku": 7497115,
+    "specifications": {
+      "cpu": "Intel Core i7-12700H",
+      "gpu": "NVIDIA GeForce RTX 3050",
+      "ram": 16,
+      "storage_gb": 512,
+      "display_size_inches": 15.6,
+      "display_resolution": "FHD (1920 x 1080)",
+      "refresh_rate_hz": 144
+    }
+  }
+]

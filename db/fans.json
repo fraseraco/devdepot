@@ -1,0 +1,424 @@
+[
+  {
+    "name": "Noctua NF-A12x25 PWM",
+    "category": "pc-fan",
+    "brand": "Noctua",
+    "inventory_qty": 500,
+    "price": 29.99,
+    "sku": 4828813,
+    "specifications": {
+      "size": 120,
+      "rpm": [450, 2000],
+      "cfm": 102.1,
+      "noise_level": [6.7, 22.6],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Corsair iCUE SP120 RGB Elite",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 450,
+    "price": 24.99,
+    "sku": 9685291,
+    "specifications": {
+      "size": 120,
+      "rpm": [400, 1500],
+      "cfm": 47.73,
+      "noise_level": [18, 26],
+      "connector": "4-Pin PWM",
+      "rgb": true
+    }
+  },
+  {
+    "name": "be quiet! Silent Wings 4 120mm PWM",
+    "category": "pc-fan",
+    "brand": "be quiet!",
+    "inventory_qty": 400,
+    "price": 21.99,
+    "sku": 5194580,
+    "specifications": {
+      "size": 120,
+      "rpm": [300, 1900],
+      "cfm": 51.2,
+      "noise_level": [7.8, 28.7],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Arctic P12 PWM PST",
+    "category": "pc-fan",
+    "brand": "Arctic",
+    "inventory_qty": 600,
+    "price": 8.99,
+    "sku": 5263232,
+    "specifications": {
+      "size": 120,
+      "rpm": [200, 1800],
+      "cfm": 56.3,
+      "noise_level": 0.3,
+      "connector": "4-Pin PWM PST"
+    }
+  },
+  {
+    "name": "Lian Li UNI FAN SL120 V2",
+    "category": "pc-fan",
+    "brand": "Lian Li",
+    "inventory_qty": 350,
+    "price": 29.99,
+    "sku": 5585363,
+    "specifications": {
+      "size": 120,
+      "rpm": [250, 2000],
+      "cfm": 64.5,
+      "noise_level": [17.5, 29.2],
+      "connector": "Proprietary (7-Pin)",
+      "rgb": true,
+      "daisy_chain": true
+    }
+  },
+  {
+    "name": "Noctua NF-A14 PWM",
+    "category": "pc-fan",
+    "brand": "Noctua",
+    "inventory_qty": 480,
+    "price": 31.99,
+    "sku": 7985030,
+    "specifications": {
+      "size": 140,
+      "rpm": [300, 1500],
+      "cfm": 82.5,
+      "noise_level": [15, 24.6],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Corsair iCUE SP140 RGB Elite",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 420,
+    "price": 26.99,
+    "sku": 3356403,
+    "specifications": {
+      "size": 140,
+      "rpm": [400, 1200],
+      "cfm": 68.11,
+      "noise_level": [18, 26],
+      "connector": "4-Pin PWM",
+      "rgb": true
+    }
+  },
+  {
+    "name": "be quiet! Silent Wings 4 140mm PWM",
+    "category": "pc-fan",
+    "brand": "be quiet!",
+    "inventory_qty": 380,
+    "price": 23.99,
+    "sku": 4965925,
+    "specifications": {
+      "size": 140,
+      "rpm": [300, 1500],
+      "cfm": 67.8,
+      "noise_level": [9.8, 29.3],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Arctic P14 PWM PST",
+    "category": "pc-fan",
+    "brand": "Arctic",
+    "inventory_qty": 550,
+    "price": 9.99,
+    "sku": 6407580,
+    "specifications": {
+      "size": 140,
+      "rpm": [200, 1700],
+      "cfm": 72.8,
+      "noise_level": 0.3,
+      "connector": "4-Pin PWM PST"
+    }
+  },
+  {
+    "name": "Lian Li UNI FAN SL140 V2",
+    "category": "pc-fan",
+    "brand": "Lian Li",
+    "inventory_qty": 320,
+    "price": 34.99,
+    "sku": 8071757,
+    "specifications": {
+      "size": 140,
+      "rpm": [250, 1600],
+      "cfm": 77.6,
+      "noise_level": [18.3, 30.1],
+      "connector": "Proprietary (7-Pin)",
+      "rgb": true,
+      "daisy_chain": true
+    }
+  },
+  {
+    "name": "Noctua NF-S12A PWM",
+    "category": "pc-fan",
+    "brand": "Noctua",
+    "inventory_qty": 460,
+    "price": 26.99,
+    "sku": 5301117,
+    "specifications": {
+      "size": 120,
+      "rpm": [300, 1200],
+      "cfm": 63.3,
+      "noise_level": [8, 17.8],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Corsair iCUE QL120 RGB",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 390,
+    "price": 34.99,
+    "sku": 4739884,
+    "specifications": {
+      "size": 120,
+      "rpm": [0, 1500],
+      "cfm": 41.8,
+      "noise_level": 25,
+      "connector": "4-Pin PWM",
+      "rgb": true
+    }
+  },
+  {
+    "name": "be quiet! Pure Wings 2 120mm PWM",
+    "category": "pc-fan",
+    "brand": "be quiet!",
+    "inventory_qty": 520,
+    "price": 12.99,
+    "sku": 7962882,
+    "specifications": {
+      "size": 120,
+      "rpm": [950, 1500],
+      "cfm": 51.4,
+      "noise_level": 19.2,
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Arctic F12 PWM PST",
+    "category": "pc-fan",
+    "brand": "Arctic",
+    "inventory_qty": 700,
+    "price": 7.99,
+    "sku": 4613193,
+    "specifications": {
+      "size": 120,
+      "rpm": [200, 1350],
+      "cfm": 53,
+      "noise_level": 0.3,
+      "connector": "4-Pin PWM PST"
+    }
+  },
+  {
+    "name": "Lian Li ST120",
+    "category": "pc-fan",
+    "brand": "Lian Li",
+    "inventory_qty": 360,
+    "price": 19.99,
+    "sku": 5714659,
+    "specifications": {
+      "size": 120,
+      "rpm": [800, 1900],
+      "cfm": 58.54,
+      "noise_level": [17, 31],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Noctua NF-P12 redux-1700 PWM",
+    "category": "pc-fan",
+    "brand": "Noctua",
+    "inventory_qty": 410,
+    "price": 16.99,
+    "sku": 9369707,
+    "specifications": {
+      "size": 120,
+      "rpm": [450, 1700],
+      "cfm": 70.8,
+      "noise_level": [0.8, 25.1],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Corsair AF120",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 580,
+    "price": 14.99,
+    "sku": 7126675,
+    "specifications": {
+      "size": 120,
+      "rpm": 1400,
+      "cfm": 52,
+      "noise_level": 26,
+      "connector": "3-Pin"
+    }
+  },
+  {
+    "name": "be quiet! Shadow Wings 2 120mm PWM",
+    "category": "pc-fan",
+    "brand": "be quiet!",
+    "inventory_qty": 370,
+    "price": 19.99,
+    "sku": 5460061,
+    "specifications": {
+      "size": 120,
+      "rpm": 1100,
+      "cfm": 38.5,
+      "noise_level": 15.7,
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Lian Li AL120",
+    "category": "pc-fan",
+    "brand": "Lian Li",
+    "inventory_qty": 340,
+    "price": 27.99,
+    "sku": 2675010,
+    "specifications": {
+      "size": 120,
+      "rpm": [800, 1900],
+      "cfm": 64.5,
+      "noise_level": [17, 31],
+      "connector": "Proprietary (4-Pin + RGB)",
+      "rgb": true,
+      "daisy_chain": true
+    }
+  },
+  {
+    "name": "Noctua NF-A15 PWM",
+    "category": "pc-fan",
+    "brand": "Noctua",
+    "inventory_qty": 300,
+    "price": 34.99,
+    "sku": 5688122,
+    "specifications": {
+      "size": 140,
+      "rpm": [300, 1500],
+      "cfm": 140.2,
+      "noise_level": [18.6, 24.6],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Corsair ML120 PRO RGB",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 250,
+    "price": 29.99,
+    "sku": 2754982,
+    "specifications": {
+      "size": 120,
+      "rpm": [400, 1600],
+      "cfm": 47.3,
+      "noise_level": 25,
+      "connector": "4-Pin PWM",
+      "rgb": true,
+      "magnetic_levitation_bearing": true
+    }
+  },
+  {
+    "name": "be quiet! Silent Wings Pro 4 120mm PWM",
+    "category": "pc-fan",
+    "brand": "be quiet!",
+    "inventory_qty": 280,
+    "price": 27.99,
+    "sku": 8081805,
+    "specifications": {
+      "size": 120,
+      "rpm": [400, 2500],
+      "cfm": 73.3,
+      "noise_level": [6.1, 36.9],
+      "connector": "4-Pin PWM"
+    }
+  },
+  {
+    "name": "Lian Li UNI FAN AL120",
+    "category": "pc-fan",
+    "brand": "Lian Li",
+    "inventory_qty": 220,
+    "price": 31.99,
+    "sku": 7337202,
+    "specifications": {
+      "size": 120,
+      "rpm": [800, 1900],
+      "cfm": 64.5,
+      "noise_level": [17, 31],
+      "connector": "Proprietary (4-Pin + RGB)",
+      "rgb": true,
+      "daisy_chain": true
+    }
+  },
+  {
+    "name": "Corsair LL120 RGB",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 280,
+    "price": 31.99,
+    "sku": 4288090,
+    "specifications": {
+      "size": 120,
+      "rpm": [600, 1500],
+      "cfm": 43.25,
+      "noise_level": 24.8,
+      "connector": "4-Pin PWM",
+      "rgb": true
+    }
+  },
+  {
+    "name": "Corsair QL140 RGB",
+    "category": "pc-fan",
+    "brand": "Corsair",
+    "inventory_qty": 240,
+    "price": 39.99,
+    "sku": 1595438,
+    "specifications": {
+      "size": 140,
+      "rpm": [0, 1250],
+      "cfm": 50.2,
+      "noise_level": 26,
+      "connector": "4-Pin PWM",
+      "rgb": true
+    }
+  },
+  {
+    "name": "Arctic P8 PWM PST",
+    "category": "pc-fan",
+    "brand": "Arctic",
+    "inventory_qty": 500,
+    "price": 6.99,
+    "sku": 7515775,
+    "specifications": {
+      "size": 80,
+      "rpm": [200, 2000],
+      "cfm": 31,
+      "noise_level": 0.3,
+      "connector": "4-Pin PWM PST"
+    }
+  },
+  {
+    "name": "Lian Li AL140",
+    "category": "pc-fan",
+    "brand": "Lian Li",
+    "inventory_qty": 200,
+    "price": 36.99,
+    "sku": 4845706,
+    "specifications": {
+      "size": 140,
+      "rpm": [400, 1200],
+      "cfm": 70.5,
+      "noise_level": [19.4, 28.1],
+      "connector": "Proprietary (4-Pin + RGB)",
+      "rgb": true,
+      "daisy_chain": true
+    }
+  }
+]
