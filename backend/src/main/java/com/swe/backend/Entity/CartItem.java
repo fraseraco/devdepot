@@ -2,12 +2,14 @@ package com.swe.backend.Entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import java.time.Instant;
 
+@Setter
 @Entity
 @Table(name = CartItem.TABLE_NAME, schema = "devdepot", indexes = {
         @Index(name = "cart_id", columnList = "cart_id"),
@@ -38,20 +40,12 @@ public class CartItem {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @NotNull
     @ManyToOne(optional = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "cart_id", nullable = false)
     public Cart getCart() {
         return cart;
-    }
-
-    public void setCart(Cart cart) {
-        this.cart = cart;
     }
 
     @NotNull
@@ -62,10 +56,6 @@ public class CartItem {
         return product;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
     @NotNull
     @ColumnDefault("1")
     @Column(name = COLUMN_QUANTITY_NAME, nullable = false)
@@ -73,18 +63,10 @@ public class CartItem {
         return quantity;
     }
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = COLUMN_ADDEDAT_NAME)
     public Instant getAddedAt() {
         return addedAt;
-    }
-
-    public void setAddedAt(Instant addedAt) {
-        this.addedAt = addedAt;
     }
 
 }
