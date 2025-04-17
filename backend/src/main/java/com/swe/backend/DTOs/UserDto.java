@@ -1,6 +1,7 @@
 package com.swe.backend.DTOs;
 
 import com.swe.backend.Entity.User;
+import lombok.Data;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -9,7 +10,7 @@ import java.time.Instant;
 /**
  * DTO for {@link User}
  */
-@Value
+@Data
 public class UserDto implements Serializable {
     Long id;
     String username;

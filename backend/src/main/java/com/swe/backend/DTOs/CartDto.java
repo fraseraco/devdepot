@@ -4,6 +4,7 @@ import com.swe.backend.Entity.Cart;
 import com.swe.backend.Entity.CartItem;
 import com.swe.backend.Entity.User;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -16,7 +17,7 @@ import java.util.stream.Collectors;
 /**
  * DTO for {@link com.swe.backend.Entity.Cart}
  */
-@Value
+@Data
 public class CartDto implements Serializable {
     @NotNull
     Long cartId;

@@ -2,6 +2,7 @@ package com.swe.backend.DTOs;
 
 import com.swe.backend.Entity.Product;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -12,7 +13,7 @@ import java.util.Map;
 /**
  * DTO for {@link Product}
  */
-@Value
+@Data
 public class ProductDto implements Serializable {
     @NotNull
     Long id;
