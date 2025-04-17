@@ -12,6 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserRegistrationDto implements Serializable {
+
     private String username;
 
     @Size(min = 6, max = 32)
