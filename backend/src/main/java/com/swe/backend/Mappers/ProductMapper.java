@@ -8,13 +8,13 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface ProductMapper {
 
     ProductMapper INSTANCE = Mappers.getMapper(ProductMapper.class);
 
-    ProductDto productToProductDto(Product product);
-    SlimProductDto productToSlimProductDto(Product product);
-    Product productDtoToProduct(ProductDto productDto);
+    ProductDto toProductDto(Product product);
+    SlimProductDto toSlimProductDto(Product product);
+    Product toProduct(ProductDto productDto);
 
 }
