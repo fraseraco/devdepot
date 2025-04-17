@@ -1,49 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+:root {
+  --navbar-bg: #e2e9f4;
+  --text-dark: #3c4b66;
+  --accent: #6b7b8f;
+  --shadow-light: rgba(255, 255, 255, 0.7);
+  --shadow-dark: #c5d4e3;
+  --radius: 12px;
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: var(--navbar-bg, white);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  .navbar__left {
-    flex: 1;
-  }
-  
-  .navbar__center {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    flex: 1;
-    justify-content: flex-end;
-  }
-  
-  .cart-container {
-    position: relative;
-  }
-  
-  .cart-icon {
-    font-size: 20px;
-  }
-  
-  .cart-badge {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 50%;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: var(--navbar-bg, #e2e9f4);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow:
+    -2px -2px 6px rgba(255, 255, 255, 0.6),
+    2px 2px 12px #c8d8e7;
+}
+
+.navbar__left h1 a {
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-size: 1.8rem;
+  background: linear-gradient(45deg, #6b7b8f, #3c4b66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Neumorphic button style */
+.neumorphic-btn {
+  background-color: #e3edf7;
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow:
+    -2px -2px 5px #fff,
+    2px 2px 8px #c8d8e7;
+  font-family: 'Orbitron', sans-serif;
+  border: none;
+  cursor: pointer;
+  color: #3c4b66;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.neumorphic-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Cart icon */
+.cart-container {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 22px;
+  color: #3c4b66;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

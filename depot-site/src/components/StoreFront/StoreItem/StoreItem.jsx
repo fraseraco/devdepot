@@ -44,32 +44,17 @@ const StoreItem = () => {
         <div className="store-item">
             
       <div className="slider-container">
-        <Slider {...settings}>
-        <div className="slider-div">
-          <h3>1</h3>
-        </div>
-        <div className="slider-div">
-          <h3>2</h3>
-        </div>
-        <div className="slider-div">
-          <h3>3</h3>
-        </div>
-        <div className="slider-div">
-          <h3>4</h3>
-        </div>
-        <div className="slider-div">
-          <h3>5</h3>
-        </div>
-        <div className="slider-div">
-          <h3>6</h3>
-        </div>
-        <div className="slider-div">
-          <h3>7</h3>
-        </div>
-        <div className="slider-div">
-          <h3>8</h3>
-        </div>
-        </Slider>
+      <Slider {...settings}>
+  <Tile />
+  <Tile />
+  <Tile />
+  <Tile />
+  <Tile />
+  <Tile />
+  <Tile />
+  <Tile />
+</Slider>
+
       </div>
       </div>
     );

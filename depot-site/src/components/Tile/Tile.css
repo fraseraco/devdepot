@@ -1,17 +1,18 @@
 .tile {
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    display: flex;
-    background-color: grey;
-    justify-content: flex-start; /* Align items to the top */
-    align-items: center;
-    flex-direction: column; /* Stack items vertically */
-    border-radius: 25px;
-}
-
-img {
-    width: 60%;
-    height: 60%;
-    margin-bottom: auto; /* Push the image to the top */
-}
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tile img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .tile h3 {
+    margin: 10px 0 0;
+  }
+  

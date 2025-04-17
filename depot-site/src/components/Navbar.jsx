@@ -15,28 +15,29 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar__left">
-        <h1 className="navbar__logo"><Link to="/">/dev/depot</Link></h1>
-      </div>
+  <div className="navbar__left">
+    <h1><Link to="/">/dev/depot</Link></h1>
+  </div>
 
-      <div className="navbar__center">
-        <Search />
-      </div>
+  <div className="navbar__center">
+    <Search />
+  </div>
 
-      <ul className="navbar__menu">
-        <li><Link to="/checkout">Checkout</Link></li>
-        <li className="cart-container">
-          <Link to="/checkout">
-            <FaShoppingCart className="cart-icon" />
-            {cartItemCount > 0 && <span className="cart-badge">{cartItemCount}</span>}
-          </Link>
-        </li>
-        <li><Link to="/signin">Sign In</Link></li>
-        <li>
-          <button className="button" onClick={toggleMode}>Toggle Mode</button>
-        </li>
-      </ul>
-    </nav>
+  <div className="navbar__right">
+    <Link to="/checkout" className="neumorphic-btn">Checkout</Link>
+    <div className="cart-container">
+      <Link to="/checkout">
+        <FaShoppingCart className="cart-icon" />
+        {cartItemCount > 0 && (
+          <span className="cart-badge">{cartItemCount}</span>
+        )}
+      </Link>
+    </div>
+    <Link to="/signin" className="neumorphic-btn">Sign In</Link>
+    <button className="neumorphic-btn" onClick={toggleMode}>Toggle Mode</button>
+  </div>
+</nav>
+
   );
 }
 
