@@ -2,7 +2,9 @@ package com.swe.backend.DTOs;
 
 import com.swe.backend.Entity.CartItem;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -12,6 +14,8 @@ import java.time.Instant;
  * DTO for {@link com.swe.backend.Entity.CartItem}
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CartItemDto implements Serializable {
     Long id;
     @NotNull

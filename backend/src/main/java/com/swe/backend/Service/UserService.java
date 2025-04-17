@@ -1,5 +1,6 @@
 package com.swe.backend.Service;
 
+import com.swe.backend.DTOs.UserDto;
 import com.swe.backend.DTOs.UserRegistrationDto;
 import com.swe.backend.Entity.Role;
 import com.swe.backend.Repository.RoleRepository;
@@ -40,7 +41,7 @@ public class UserService {
         user.setFirstName(dto.getFirstName());
         user.setLastName(dto.getLastName());
         user.setCreatedAt(Instant.now());
-
+        UserDto userDTO = new UserDto(user);
         return userRepository.save(user);
     }
 

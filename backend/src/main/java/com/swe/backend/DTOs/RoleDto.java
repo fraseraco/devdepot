@@ -1,21 +1,24 @@
 package com.swe.backend.DTOs;
 
+import com.swe.backend.Entity.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Value;
 
 import java.io.Serializable;
+import java.time.Instant;
 
 /**
- * DTO for {@link com.swe.backend.Entity.User}
+ * DTO for {@link Role}
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SlimUserDto implements Serializable {
+public class RoleDto implements Serializable {
     Long id;
-    String username;
-    String email;
-    String roleRoleName;
+    String roleName;
+    String briefDesc;
+    Instant createdAt;
+    Instant lastUpdate;
 }
