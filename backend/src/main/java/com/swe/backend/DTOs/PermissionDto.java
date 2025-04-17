@@ -1,5 +1,6 @@
 package com.swe.backend.DTOs;
 
+import com.swe.backend.Entity.Permission;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,14 +9,13 @@ import lombok.Value;
 import java.io.Serializable;
 
 /**
- * DTO for {@link com.swe.backend.Entity.User}
+ * DTO for {@link Permission}
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SlimUserDto implements Serializable {
+public class PermissionDto implements Serializable {
     Long id;
-    String username;
-    String email;
-    String roleRoleName;
+    String permissionName;
+    String description;
 }
