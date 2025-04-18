@@ -20,13 +20,13 @@ import java.util.Optional;
 public class UserService {
 
     private final UserRepository userRepository;
-    private final UserMapper userMapper = Mappers.getMapper(UserMapper.class);
     private final RoleRepository roleRepository;
+    private final UserMapper userMapper;
 
-    public UserService(UserRepository userRepository, RoleRepository roleRepository,
-                       UserMapper userMapper) {
+    public UserService(UserRepository userRepository, RoleRepository roleRepository, UserMapper userMapper) {
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
+        this.userMapper = userMapper;
     }
 
     public UserDto registerNewUser(UserRegistrationDto dto) {
@@ -34,44 +34,47 @@ public class UserService {
             throw new IllegalArgumentException("Username already taken.");
         }
         User user = userMapper.toUser(dto);
-        if (user == null)  { throw new RuntimeException(dto.getUsername() + " could not be added not exist."); }
-            return userMapper.toUserDto(userRepository.save(user));
+
+        Role defaultRole = roleRepository.findByRoleName("CUSTOMER")
+                .orElseThrow(() -> new IllegalStateException("Default role not found"));
+        user.setRole(defaultRole);
+
+        return userMapper.toUserDto(userRepository.save(user));
     }
 
     public Optional<UserDto> getUserById(Long id) {
-        User user =  userRepository.findById(id)
-                .orElse(null);
-        if (user == null) { throw new UserIdNotFoundException(id); }
-        return Optional.ofNullable(userMapper.toUserDto(user));
+        return userRepository.findById(id)
+                .map(userMapper::toUserDto);
     }
 
     public List<UserDto> getAllUsers() {
-        List<User> users = userRepository.findAll();
-        return users.stream().map(userMapper::toUserDto).toList();
-//                ResponseEntity.ok(users.stream().map(userMapper::toUserDto).collect(Collectors.toList()));
+        return userRepository.findAll().stream()
+                .map(userMapper::toUserDto)
+                .toList();
     }
 
     public List<SlimUserDto> getSlimUsers() {
-        return userRepository.findAll().stream().map(userMapper::toSlimUserDto).toList();
+        return userRepository.findAll().stream()
+                .map(userMapper::toSlimUserDto)
+                .toList();
     }
 
     public boolean deleteUserById(Long id) {
         if (userRepository.existsById(id)) {
             userRepository.deleteById(id);
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
-    public Optional<UserDto> updateUserRole(Long uid, String roleName) {
-        Optional<User> userOpt = userRepository.findById(uid);
+    public Optional<UserDto> updateUserRole(Long userId, String roleName) {
+        Optional<User> userOpt = userRepository.findById(userId);
         Optional<Role> roleOpt = roleRepository.findByRoleName(roleName);
 
         if (userOpt.isPresent() && roleOpt.isPresent()) {
             User user = userOpt.get();
             user.setRole(roleOpt.get());
-            return Optional.of(UserMapper.toDto(userRepository.save(user)));
+            return Optional.of(userMapper.toUserDto(userRepository.save(user)));
         }
 
         return Optional.empty();

@@ -22,15 +22,18 @@ public class AdminService {
     private final ProductRepository productRepository;
     private final UserRepository userRepository;
     private final CartRepository cartRepository;
-    private final UserMapper userMapper = Mappers.getMapper(UserMapper.class);
-    private final CartMapper cartMapper = Mappers.getMapper(CartMapper.class);
-    private final ProductMapper productMapper = Mappers.getMapper(ProductMapper.class);
+    private final UserMapper userMapper;
+    private final CartMapper cartMapper;
+    private final ProductMapper productMapper;
     private final CartService cartService;
 
-    public AdminService(ProductRepository productRepository, UserRepository userRepository, CartRepository cartRepository, UserRepository userRepository1, CartRepository cartRepository1, CartService cartService) {
+    public AdminService(ProductRepository productRepository, UserRepository userRepository, CartRepository cartRepository, UserMapper userMapper, CartMapper cartMapper, ProductMapper productMapper, CartService cartService) {
         this.productRepository = productRepository;
         this.userRepository = userRepository;
-        this.cartRepository = cartRepository1;
+        this.cartRepository = cartRepository;
+        this.userMapper = userMapper;
+        this.cartMapper = cartMapper;
+        this.productMapper = productMapper;
         this.cartService = cartService;
     }
 
