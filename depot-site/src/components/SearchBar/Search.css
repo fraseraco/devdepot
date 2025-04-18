@@ -36,6 +36,12 @@
   background-color: white;
 }
 
+.search-button:focus {
+  outline: none;
+}
+
 .search-button i {
   pointer-events: none; /* Prevent the icon from interfering with button clicks */
+  outline: none; /* Remove any outline that might appear when the icon is clicked */
 }
+
