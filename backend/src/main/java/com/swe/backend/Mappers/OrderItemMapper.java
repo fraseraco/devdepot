@@ -13,8 +13,7 @@ import org.mapstruct.factory.Mappers;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
-@Mapper
+@Mapper(componentModel = "spring", uses = { UserMapper.class })
 public interface OrderItemMapper {
     OrderItemMapper INSTANCE = Mappers.getMapper(OrderItemMapper.class);
     OrderItemDto toOrderItemDto(OrderItem orderItem);
