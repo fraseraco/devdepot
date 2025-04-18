@@ -1,22 +1,20 @@
 package com.swe.backend.Mappers;
 
 import com.swe.backend.DTOs.OrderDto;
-import com.swe.backend.DTOs.UserDto;
 import com.swe.backend.Entity.Order;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.time.Instant;
 
-
-@Mapper
+@Mapper(componentModel = "spring", uses = { UserMapper.class })
 public interface OrderMapper {
     OrderMapper INSTANCE = Mappers.getMapper(OrderMapper.class);
+    @Mapping(source = "customer", target = "customer")
     OrderDto toOrderDto(Order order);
+
+    @InheritInverseConfiguration
+    @Mapping(target = "customer.role", ignore = true)
     Order toOrder(OrderDto orderDto);
 }

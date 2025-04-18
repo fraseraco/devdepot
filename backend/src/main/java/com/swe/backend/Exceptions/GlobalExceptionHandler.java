@@ -12,17 +12,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-
-    private final HttpServlet httpServlet;
-
-    public GlobalExceptionHandler(HttpServlet httpServlet) {
-        this.httpServlet = httpServlet;
-    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -39,27 +32,21 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(CartException.class)
     public ResponseEntity<Map<String, Object>> handleUserNotFoundException(CartException ex, HttpServletRequest req) {
-        return getMapResponseEntity(req, ex.getMessage(), ex);
+        return getMapResponseEntity(req, ex);
     }
 
     @ExceptionHandler(ProductException.class)
     public ResponseEntity<Map<String, Object>> handleProductException(ProductException ex, HttpServletRequest req) {
-        return getMapResponseEntity(req, ex.getMessage(), ex);
-    }
-
-    @ExceptionHandler(UserIdNotFoundException.class)
-    public ResponseEntity<Map<String, Object>> handleUserNotFoundException(UserIdNotFoundException ex, HttpServletRequest req) {
-        return getMapResponseEntity(req, ex.getMessage(), ex);
+        return getMapResponseEntity(req, ex);
     }
 
     @ExceptionHandler(Exception.class)
-    private ResponseEntity<Map<String, Object>> getMapResponseEntity(HttpServletRequest req, String message, Exception ex) {
+    public ResponseEntity<Map<String, Object>> getMapResponseEntity(HttpServletRequest req, Exception ex) {
         Map<String, Object> response = new HashMap<>();
         response.put("timestamp", LocalDateTime.now());
         response.put("status", HttpStatus.NOT_FOUND.value());
         response.put("path", req.getRequestURI());
         response.put("error", "User Not Found");
-        response.put("message", message);
 
         return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
     }
