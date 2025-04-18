@@ -20,13 +20,11 @@ public class ProductsController {
         this.productService = productService;
     }
 
-    @JsonView(Views.Public.class)
     @GetMapping("/all")
     public ResponseEntity<List<ProductDto>> getProducts(){
         return productService.getProducts();
     }
 
-    @JsonView(Views.Public.class)
     @GetMapping("/count")
     public ResponseEntity<Long> getProductsCount(){
         return productService.getCount();

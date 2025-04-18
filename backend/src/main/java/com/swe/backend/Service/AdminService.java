@@ -8,6 +8,7 @@ import com.swe.backend.Repository.CartRepository;
 import com.swe.backend.Repository.ProductRepository;
 import com.swe.backend.Repository.UserRepository;
 import io.micrometer.observation.ObservationFilter;
+import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
 @Service
 public class AdminService {
     private final ProductRepository productRepository;
-
+    private final ProductMapper productMapper = Mappers.getMapper(ProductMapper.class);
     public AdminService(ProductRepository productRepository, UserRepository userRepository, CartRepository cartRepository) {
         this.productRepository = productRepository;
     }
@@ -24,7 +25,6 @@ public class AdminService {
          if (productRepository.existsProductByName(productDto.getName())){
             throw new IllegalArgumentException("Product name already taken.");
         }
-
         Product p = new Product();
         p.setId(productDto.getId());
         p.setName(productDto.getName());
@@ -36,7 +36,7 @@ public class AdminService {
         p.setSku(productDto.getSku());
         p.setSpecifications(productDto.getSpecifications());
         ProductDto productDto1;
-        productDto1 = ProductMapper.toProductDto(productRepository.save(p));
+        productDto1 = productMapper.toProductDto(productRepository.save(p));
         return productDto1;
     }
 
