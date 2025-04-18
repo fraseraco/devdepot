@@ -16,7 +16,9 @@ public interface UserMapper {
         return null;
     }
 
-    SlimUserDto toSlimUserDto(User user);
+    static SlimUserDto toSlimUserDto(User user) {
+        return null;
+    }
 
     static User toUser(UserRegistrationDto registrationDto) {
         return null;

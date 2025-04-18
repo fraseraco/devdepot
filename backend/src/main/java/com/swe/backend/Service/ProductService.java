@@ -1,26 +1,27 @@
 package com.swe.backend.Service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import com.swe.backend.DTOs.ProductDto;
+import com.swe.backend.Mappers.ProductMapper;
+import org.mapstruct.Mapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.annotation.JsonView;
 import com.swe.backend.Entity.Product;
 import com.swe.backend.Exceptions.ProductException;
 import com.swe.backend.Repository.ProductRepository;
-import com.swe.backend.Views.Views;
 
 @Service
 public class ProductService {
 
     private final ProductRepository productRepository;
+    private final ProductMapper productMapper;
 
-    public ProductService(ProductRepository productRepository) {
+    public ProductService(ProductRepository productRepository,
+                          ProductMapper productMapper) {
         this.productRepository = productRepository;
+        this.productMapper = productMapper;
     }
     
     public ResponseEntity<ProductDto> getProductByID(Long id) {
@@ -34,7 +35,7 @@ public class ProductService {
     public ResponseEntity<List<ProductDto>> getProducts() {
         List<Product> products = productRepository.findAll();
         if (products.isEmpty()) {throw new ProductException();}
-        List<ProductDto> productDtos = products.stream().map(ProductDto::new).toList();
+        List<ProductDto> productDtos = products.stream().map(ProductMapper::toProductDto).toList();
         return ResponseEntity.ok(productDtos);
     }
 

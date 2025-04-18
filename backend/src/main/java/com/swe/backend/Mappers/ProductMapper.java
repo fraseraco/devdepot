@@ -5,15 +5,14 @@ import com.swe.backend.DTOs.ProductDto;
 import com.swe.backend.DTOs.SlimProductDto;
 import com.swe.backend.Entity.Product;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ProductMapper {
 
-    ProductMapper INSTANCE = Mappers.getMapper(ProductMapper.class);
+    static ProductDto toProductDto(Product product) {
+        return null;
+    }
 
-    ProductDto toProductDto(Product product);
     SlimProductDto toSlimProductDto(Product product);
     Product toProduct(ProductDto productDto);
 
