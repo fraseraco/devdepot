@@ -5,7 +5,6 @@ import com.swe.backend.DTOs.ProductDto;
 import com.swe.backend.DTOs.SlimProductDto;
 import com.swe.backend.Entity.Product;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 
 import java.util.List;
 

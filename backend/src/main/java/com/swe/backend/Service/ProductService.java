@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.swe.backend.DTOs.ProductDto;
 import com.swe.backend.Mappers.ProductMapper;
-import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

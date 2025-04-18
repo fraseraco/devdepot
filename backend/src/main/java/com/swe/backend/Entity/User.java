@@ -4,9 +4,6 @@ import java.time.Instant;
 
 import org.hibernate.annotations.ColumnDefault;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.swe.backend.Views.Views;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -35,21 +32,13 @@ public class User {
 
 
     private Long id;
-
     private String username;
-
     private String passwordHash;
-
     private String email;
-
     private String firstName;
-
     private String lastName;
-
     private Role role;
-
     private Instant createdAt;
-
     private Instant lastLogin;
 
 

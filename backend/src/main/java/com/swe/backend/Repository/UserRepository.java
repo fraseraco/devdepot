@@ -7,4 +7,6 @@ import com.swe.backend.Entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
     boolean existsByUsername(@NotBlank String username);
+
+    User getUserById(Long id);
 }

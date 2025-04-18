@@ -36,4 +36,5 @@ public class UserDto implements Serializable {
         this.createdAt = user.getCreatedAt();
         this.lastLogin = user.getLastLogin();
     }
+
 }

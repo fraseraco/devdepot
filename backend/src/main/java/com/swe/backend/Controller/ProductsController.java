@@ -1,9 +1,7 @@
 package com.swe.backend.Controller;
 
-import com.fasterxml.jackson.annotation.JsonView;
 import com.swe.backend.DTOs.ProductDto;
 import com.swe.backend.Service.ProductService;
-import com.swe.backend.Views.Views;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
