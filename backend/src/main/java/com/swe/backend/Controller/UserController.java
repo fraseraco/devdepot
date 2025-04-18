@@ -1,15 +1,13 @@
 package com.swe.backend.Controller;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.swe.backend.Entity.User;
+import com.swe.backend.DTOs.SlimUserDto;
+import com.swe.backend.DTOs.UserDto;
+import com.swe.backend.DTOs.UserRegistrationDto;
 import com.swe.backend.Service.UserService;
-import com.swe.backend.Views.Views;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,15 +21,22 @@ public class UserController {
         this.userService = userService;         
     }
 
-    @JsonView(Views.Internal.class)
-    @GetMapping("/all")
-    public ResponseEntity<List<User>> getUsers() {
-        return userService.getUsers();
+    @PostMapping("/register")
+    public ResponseEntity<UserDto> registerUser(@RequestBody UserRegistrationDto userRegistrationDto) {
+        UserDto userDto = userService.registerNewUser(userRegistrationDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
     }
 
-    @JsonView(Views.Public.class)
-    @GetMapping("/{id}")
-    public ResponseEntity<User> getUserByID(@PathVariable Long id) {
+    // Login endpoint
+    // Respond with UID for user
+
+    @GetMapping("/all")
+    public ResponseEntity<List<SlimUserDto>> getUsers() {
+        return userService.getSlimUsers();
+    }
+
+    // authentication check @GetMapping("/{id}")
+    public ResponseEntity<UserDto> getUserByID(@PathVariable Long id) {
         return userService.getUserByID(id);
     }
 }

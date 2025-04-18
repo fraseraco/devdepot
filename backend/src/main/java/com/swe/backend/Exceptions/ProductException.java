@@ -8,4 +8,8 @@ public class ProductException extends RuntimeException {
     public ProductException(Long id) {
         super("Something went wrong when trying to find product with id: " + id);
     }
+
+    public ProductException() {
+        super("Something went wrong when trying to find products.");
+    }
 }

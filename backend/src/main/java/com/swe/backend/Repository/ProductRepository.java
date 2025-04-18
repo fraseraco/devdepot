@@ -7,4 +7,6 @@ import com.swe.backend.Entity.Product;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     Product findProductByName(String name);
      Product findProductById(Long id);
+
+    boolean existsProductByName(String name);
 }
