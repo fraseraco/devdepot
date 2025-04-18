@@ -8,6 +8,7 @@ import CheckOut from './components/Checkout/CheckOut';
 import SignIn from './components/SignIn/SignIn';
 import AllProducts from './components/AllProducts/AllProducts';
 import SearchResults from './components/SearchBar/SearchResults/SearchResults';
+import TerminalPage from './components/Terminals/TerminalPage';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/products/all" element={<AllProducts />} />
           <Route path="/search" element={<SearchResults />} />
+          <Route path="/terminal" element={<TerminalPage />} />
+          
         </Routes>
       </div>
        

@@ -22,7 +22,7 @@ const CheckOut = () => {
 
     return (
         <div className="checkout">
-            <div>
+            <div className = 'checkout-items'>
                 {/* Map over the products and pass data to CheckOutItem */}
                 {products.map((product, index) => (
                     <CheckOutItem
