@@ -7,10 +7,8 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface CartItemMapper {
-    CartItemMapper INSTANCE = Mappers.getMapper(CartItemMapper.class);
-
     @Mapping(source = "cart.id", target = "cartId")
     CartItemDto toCartItemDto(CartItem cartItem);
 
