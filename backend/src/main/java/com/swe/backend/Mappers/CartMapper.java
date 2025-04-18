@@ -17,7 +17,9 @@ public interface  CartMapper {
     @Mapping(target = "user", ignore = true)
     Cart toCart(CartDto cartDto);
 
-    static CartDto toCartDto(Cart cart) {
-        return null;
-    }
+    @Mapping(source = "id", target = "cartId")
+    @Mapping(source = "user.username", target = "username")
+    @Mapping(target = "cartItems", ignore = true)
+    CartDto toCartDto(Cart cart);
+
 }

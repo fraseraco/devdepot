@@ -8,6 +8,7 @@ import com.swe.backend.Mappers.CartMapper;
 import com.swe.backend.Repository.CartItemRepository;
 import com.swe.backend.Repository.CartRepository;
 import com.swe.backend.Repository.ProductRepository;
+import org.mapstruct.factory.Mappers;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ public class CartService {
 
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
-
+    private final CartMapper cartMapper = Mappers.getMapper(CartMapper.class);
     public CartService(CartRepository cartRepository, ProductRepository productRepository, CartItemRepository cartItemRepository) {this.cartRepository = cartRepository;
         this.cartItemRepository = cartItemRepository;
     }
@@ -28,11 +29,11 @@ public class CartService {
     public ResponseEntity<List<CartDto>> getCartByUser(Long uid) {
         List<Cart> carts=  cartRepository.findAllByUserId(uid);
         if (carts == null) { throw new CartException(uid); }
-        List<CartDto> cartDtos = carts.stream().map(CartMapper::toCartDto).toList();
+        List<CartDto> cartDtos = carts.stream().map(cartMapper::toCartDto).toList();
         return ResponseEntity.ok(cartDtos);
     }
 
-    public ResponseEntity<List<CartItemDto>> getCurrentCartContents(Long uid) {
+    public ResponseEntity<List<CartItemDto>> getCurrentCart(Long uid) {
         Cart cart =  cartRepository.findCartByUserIdAndIsActive(uid, true);
         if (cart == null) { throw new CartException(uid); }
         List<CartItemDto> items = cartItemRepository.findByCart(cart).stream().map(CartItemDto::new).toList();
@@ -42,7 +43,7 @@ public class CartService {
     public ResponseEntity<List<CartDto>> getCarts() {
         List<Cart> carts = cartRepository.findAll();
         List<CartDto> cartDtos = carts.stream()
-                .map(CartMapper::toCartDto)
+                .map(cartMapper::toCartDto)
                 .collect(Collectors.toList());
         return ResponseEntity.ok(cartDtos);
     }

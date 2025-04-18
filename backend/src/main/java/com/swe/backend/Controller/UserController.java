@@ -32,11 +32,13 @@ public class UserController {
 
     @GetMapping("/all")
     public ResponseEntity<List<SlimUserDto>> getUsers() {
-        return userService.getSlimUsers();
+        return ResponseEntity.ok(userService.getSlimUsers());
     }
 
     // authentication check @GetMapping("/{id}")
     public ResponseEntity<UserDto> getUserByID(@PathVariable Long id) {
-        return userService.getUserByID(id);
+        return userService.getUserById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 }

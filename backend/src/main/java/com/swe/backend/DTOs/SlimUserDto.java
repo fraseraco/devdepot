@@ -16,5 +16,5 @@ public class SlimUserDto implements Serializable {
     Long id;
     String username;
     String email;
-    String roleRoleName;
+    String roleName;
 }
