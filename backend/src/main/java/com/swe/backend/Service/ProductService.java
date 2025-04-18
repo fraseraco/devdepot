@@ -1,7 +1,10 @@
 package com.swe.backend.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import com.swe.backend.DTOs.ProductDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -20,21 +23,21 @@ public class ProductService {
         this.productRepository = productRepository;
     }
     
-    public ResponseEntity<Product> getProductByID(Long id) {
+    public ResponseEntity<ProductDto> getProductByID(Long id) {
         Product product =  productRepository.findById(id)
                 .orElse(null);
         if (product == null) { throw new ProductException(id); }
-        return ResponseEntity.ok(product);
+        ProductDto productDto = new ProductDto(product);
+        return ResponseEntity.ok(productDto);
     }
 
-    @JsonView(Views.Public.class)
-    public ResponseEntity<List<Product>> getProducts() {
+    public ResponseEntity<List<ProductDto>> getProducts() {
         List<Product> products = productRepository.findAll();
-
-        return ResponseEntity.ok(productRepository.findAll());
+        if (products.isEmpty()) {throw new ProductException();}
+        List<ProductDto> productDtos = products.stream().map(ProductDto::new).toList();
+        return ResponseEntity.ok(productDtos);
     }
 
-    @JsonView(Views.Public.class)
     public ResponseEntity<Long> getCount() {
         Long count = productRepository.count();
         return ResponseEntity.ok(count);

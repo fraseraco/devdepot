@@ -1,12 +1,14 @@
 package com.swe.backend.Service;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import com.swe.backend.DTOs.CartDto;
 import com.swe.backend.DTOs.CartItemDto;
 import com.swe.backend.Entity.Cart;
 import com.swe.backend.Entity.CartItem;
 import com.swe.backend.Entity.Product;
 import com.swe.backend.Exceptions.CartException;
 import com.swe.backend.Exceptions.ProductException;
+import com.swe.backend.Mappers.CartMapper;
 import com.swe.backend.Repository.CartItemRepository;
 import com.swe.backend.Repository.CartRepository;
 import com.swe.backend.Repository.ProductRepository;
@@ -32,10 +34,11 @@ public class CartService {
     }
 
     // id param here is the user id
-    public ResponseEntity<List<Cart>> getCartByUser(Long uid) {
+    public ResponseEntity<List<CartDto>> getCartByUser(Long uid) {
         List<Cart> carts=  cartRepository.findAllByUserId(uid);
         if (carts == null) { throw new CartException(uid); }
-        return ResponseEntity.ok(carts);
+        List<CartDto> cartDtos = carts.stream().map(CartMapper::toCartDto).toList();
+        return ResponseEntity.ok(cartDtos);
     }
 
     public ResponseEntity<List<CartItemDto>> getCurrentCartContents(Long uid) {
@@ -45,13 +48,14 @@ public class CartService {
         return ResponseEntity.ok(items);
     }
 
-    @JsonView(Views.Public.class)
-    public ResponseEntity<List<Cart>> getCarts() {
-//        List<Cart> carts = cartRepository.findAll();
-        return ResponseEntity.ok(cartRepository.findAll());
+    public ResponseEntity<List<CartDto>> getCarts() {
+        List<Cart> carts = cartRepository.findAll();
+        List<CartDto> cartDtos = carts.stream()
+                .map(CartMapper::toCartDto)
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(cartDtos);
     }
 
-    @JsonView(Views.Public.class)
     public ResponseEntity<Long> getCount() {
         Long count = cartRepository.count();
         return ResponseEntity.ok(count);

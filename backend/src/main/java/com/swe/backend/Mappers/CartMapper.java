@@ -7,8 +7,11 @@ import org.mapstruct.factory.Mappers;
 
 
 @Mapper
-public interface CartMapper {
+public interface  CartMapper {
     CartMapper INSTANCE = Mappers.getMapper(CartMapper.class);
     Cart toCart(CartDto cartDto);
-    CartDto toCartDto(Cart cart);
+
+    static CartDto toCartDto(Cart cart) {
+        return null;
+    }
 }

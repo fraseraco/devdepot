@@ -1,14 +1,10 @@
 package com.swe.backend.Controller;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.swe.backend.Entity.Cart;
+import com.swe.backend.DTOs.CartDto;
 import com.swe.backend.Service.CartService;
-import com.swe.backend.Util.AddCartItemRequest;
-import com.swe.backend.Views.Views;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.List;
 
 
@@ -19,14 +15,13 @@ public class CartController {
 
     public CartController(CartService cartService) { this.cartService = cartService; }
 
-    @JsonView(Views.Internal.class)
     @GetMapping("/all")
-    public ResponseEntity<List<Cart>> getCart(){
+    public ResponseEntity<List<CartDto>> getCart(){
         return cartService.getCarts();
     }
 
     @GetMapping("/{uid}")
-    public ResponseEntity<List<Cart>> getCart(@PathVariable Long uid){
+    public ResponseEntity<List<CartDto>> getCart(@PathVariable Long uid){
         return cartService.getCartByUser(uid);
     }
 
@@ -44,7 +39,6 @@ public class CartController {
 //        return ResponseEntity.ok(cartService.addItemToCart(uid, itemRequest));
 //    }
 
-    @JsonView(Views.Public.class)
     @GetMapping("/count")
     public ResponseEntity<Long>  getAllCartsCount(){
         return cartService.getCount();
