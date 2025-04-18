@@ -1,4 +1,5 @@
 untracked/
+backend/**/resources/
 .*
 
 target/
