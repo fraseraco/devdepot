@@ -1,6 +1,8 @@
 package com.swe.backend.Controller;
 
+import com.swe.backend.DTOs.CheckoutRequestDto;
 import com.swe.backend.DTOs.OrderDto;
+import com.swe.backend.Service.CheckoutService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/checkout")
+@RequestMapping("/checkout")
 @RequiredArgsConstructor
 public class CheckoutController {
 

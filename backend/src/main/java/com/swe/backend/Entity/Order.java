@@ -7,6 +7,8 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = Order.TABLE_NAME, schema = "devdepot", indexes = {
@@ -28,7 +30,7 @@ public class Order {
 
     private Long id;
 
-    private User customer;
+    private User user;
 
     private Instant orderDate;
 
@@ -44,6 +46,8 @@ public class Order {
 
     private Payment transaction;
 
+    private List<OrderItem> orderItems = new ArrayList<>();
+
     @Id
     @Column(name = COLUMN_ID_NAME, nullable = false)
     public Long getId() {
@@ -57,12 +61,12 @@ public class Order {
     @ManyToOne(optional = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "customer_id", nullable = false)
-    public User getCustomer() {
-        return customer;
+    public User getUser() {
+        return user;
     }
 
-    public void setCustomer(User customer) {
-        this.customer = customer;
+    public void setUser(User customer) {
+        this.user = customer;
     }
 
     @ColumnDefault("CURRENT_TIMESTAMP")
@@ -133,4 +137,15 @@ public class Order {
         this.transaction = transaction;
     }
 
+    @OneToMany(mappedBy = "order",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            fetch = FetchType.LAZY)
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
 }

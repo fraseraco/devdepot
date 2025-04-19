@@ -48,7 +48,6 @@ public class Product {
 
     private List<Map<String, Object>> specifications;
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = COLUMN_ID_NAME, nullable = false)

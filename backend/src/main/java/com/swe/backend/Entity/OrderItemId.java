@@ -3,11 +3,15 @@ package com.swe.backend.Entity;
 import java.io.Serializable;
 import java.util.Objects;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.hibernate.Hibernate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Embeddable
 public class OrderItemId implements Serializable {
     public static final String COLUMN_ORDERID_NAME = "order_id";
@@ -17,6 +21,7 @@ public class OrderItemId implements Serializable {
     private Long orderId;
 
     private Long productId;
+
 
     @Column(name = COLUMN_ORDERID_NAME, nullable = false)
     public Long getOrderId() {

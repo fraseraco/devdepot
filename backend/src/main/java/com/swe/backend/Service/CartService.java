@@ -27,7 +27,7 @@ public class CartService {
     private final UserService userService;
     private final CartMapper cartMapper;
 
-    User currentUser() {
+    private User currentUser() {
         UserDetails principal =
                 (UserDetails) SecurityContextHolder.getContext()
                         .getAuthentication()
