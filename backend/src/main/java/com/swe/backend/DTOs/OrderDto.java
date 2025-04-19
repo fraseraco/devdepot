@@ -1,6 +1,7 @@
 package com.swe.backend.DTOs;
 
 import com.swe.backend.Entity.Order;
+import com.swe.backend.Entity.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,6 +9,8 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * DTO for {@link Order}
@@ -17,7 +20,7 @@ import java.time.Instant;
 @NoArgsConstructor
 public class OrderDto implements Serializable {
     Long id;
-    UserDto customer;
+    UserDto user;
     Instant orderDate;
     BigDecimal totalCost;
     String shippingAddress;
@@ -25,4 +28,5 @@ public class OrderDto implements Serializable {
     String trackingNum;
     BigDecimal discountPromotion;
     PaymentDto transaction;
+    List<OrderItemDto> orderItems;
 }

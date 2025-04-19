@@ -11,10 +11,11 @@ import org.mapstruct.factory.Mappers;
 @Mapper(componentModel = "spring", uses = { UserMapper.class })
 public interface OrderMapper {
     OrderMapper INSTANCE = Mappers.getMapper(OrderMapper.class);
-    @Mapping(source = "customer", target = "customer")
+    @Mapping(source = "user", target = "user")
     OrderDto toOrderDto(Order order);
 
     @InheritInverseConfiguration
-    @Mapping(target = "customer.role", ignore = true)
+    @Mapping(target = "user.role", ignore = true)
+    @Mapping(source = "orderItems", target = "orderItems")
     Order toOrder(OrderDto orderDto);
 }
