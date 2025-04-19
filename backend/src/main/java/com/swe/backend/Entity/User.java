@@ -4,9 +4,6 @@ import java.time.Instant;
 
 import org.hibernate.annotations.ColumnDefault;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.swe.backend.Views.Views;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -35,24 +32,16 @@ public class User {
 
 
     private Long id;
-
     private String username;
-
     private String passwordHash;
-
     private String email;
-
     private String firstName;
-
     private String lastName;
-
     private Role role;
-
     private Instant createdAt;
-
     private Instant lastLogin;
 
-    @JsonView(Views.Complete.class)
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = COLUMN_ID_NAME, nullable = false)
@@ -64,7 +53,6 @@ public class User {
         this.id = id;
     }
 
-    @JsonView(Views.Public.class)
     @Column(name = COLUMN_USERNAME_NAME, nullable = false, length = 32)
     public String getUsername() {
         return username;
@@ -74,7 +62,6 @@ public class User {
         this.username = username;
     }
 
-    @JsonView(Views.Complete.class)
     @Column(name = COLUMN_PASSWORDHASH_NAME, nullable = false)
     public String getPasswordHash() {
         return passwordHash;
@@ -84,7 +71,6 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    @JsonView(Views.Internal.class)
     @Column(name = COLUMN_EMAIL_NAME, nullable = false, length = 100)
     public String getEmail() {
         return email;
@@ -94,7 +80,6 @@ public class User {
         this.email = email;
     }
 
-    @JsonView(Views.Public.class)
     @Column(name = COLUMN_FIRSTNAME_NAME, length = 50)
     public String getFirstName() {
         return firstName;
@@ -105,7 +90,6 @@ public class User {
     }
 
 
-    @JsonView(Views.Internal.class)
     @Column(name = COLUMN_LASTNAME_NAME, length = 50)
     public String getLastName() {
         return lastName;
@@ -115,7 +99,6 @@ public class User {
         this.lastName = lastName;
     }
 
-    @JsonView(Views.Public.class)
     @ManyToOne
     @JoinColumn(name = "role_id")
     public Role getRole() {
@@ -127,7 +110,6 @@ public class User {
     }
 
 
-    @JsonView(Views.Internal.class)
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = COLUMN_CREATEDAT_NAME)
     public Instant getCreatedAt() {
@@ -139,7 +121,6 @@ public class User {
     }
 
 
-    @JsonView(Views.Internal.class)
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = COLUMN_LASTLOGIN_NAME)
     public Instant getLastLogin() {

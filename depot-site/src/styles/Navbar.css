@@ -27,3 +27,44 @@
 body {
     overflow-x: hidden;
 }
+.cart-icon {
+    font-size: 30px; /* Adjust the size of the cart icon */
+    color: var(--text-color); /* Use your global text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
+
+.signin-icon {
+    text-decoration: none; /* Remove underline */
+    color: var(--text-color); /* Use your global text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the icon and text vertically */
+    font-size: 50px; /* Adjust font size for the text */
+    transition: color 0.3s ease;
+    padding-top: 20px;
+}
+
+.signin-icon:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
+
+.icon-text-container {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center align the text and icon */
+}
+
+.icon-text-container i {
+    font-size: 30px; /* Adjust the size of the icon */
+}
+
+.icon-text-container span {
+    margin-top: 5px; /* Add spacing between the icon and text */
+    font-size: 12px; /* Adjust the font size of the text */
+}

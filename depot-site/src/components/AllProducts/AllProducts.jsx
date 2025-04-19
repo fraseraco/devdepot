@@ -27,9 +27,18 @@ const AllProducts = () => {
             <div className="products-grid">
                 {products.map((product, index) => (
                     <div key={index} className="product-box">
-                        <img src= '/src/resources/6523595.jpg'/>
-                        <h3>{product.name}</h3>
-                        <p>Price: ${product.price.toFixed(2)}</p>
+                        <div className="product-inner">
+                            {/* Front Side */}
+                            <div className="product-front">
+                                <img src="/src/resources/6523595.jpg" alt={product.name} />
+                                <h3>{product.name}</h3>
+                                <p>Price: ${product.price.toFixed(2)}</p>
+                            </div>
+                            {/* Back Side */}
+                            <div className="product-back">
+                                <button className="add-to-cart-button">Add to Cart</button>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>

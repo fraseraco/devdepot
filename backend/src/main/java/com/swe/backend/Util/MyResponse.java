@@ -1,5 +1,10 @@
 package com.swe.backend.Util;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class MyResponse {
     private String additionalJSON;
     private Object originalData;
@@ -9,19 +14,4 @@ public class MyResponse {
         this.originalData = originalData;
     }
 
-    public String getAdditionalJSON() {
-        return additionalJSON;
-    }
-
-    public void setAdditionalJSON(String additionalJSON) {
-        this.additionalJSON = additionalJSON;
-    }
-
-    public Object getOriginalData() {
-        return originalData;
-    }
-
-    public void setOriginalData(Object originalData) {
-        this.originalData = originalData;
-    }
 }

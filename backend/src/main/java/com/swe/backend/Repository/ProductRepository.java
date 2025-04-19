@@ -4,7 +4,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.swe.backend.Entity.Product;
 
+import java.util.Optional;
+
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    Product findProductByName(String name);
-     Product findProductById(Long id);
+    Optional<Product> findProductByName(String name);
+     Optional<Product> findProductById(Long id);
+
+    boolean existsProductByName(String name);
 }
