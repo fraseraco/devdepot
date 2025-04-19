@@ -1,7 +1,7 @@
 package com.swe.backend.Controller;
 
-import com.swe.backend.DTOs.AuthRequestDto;
-import com.swe.backend.DTOs.AuthResponseDto;
+import com.swe.backend.DTOs.AuthRequestDto_TEMP;
+import com.swe.backend.DTOs.AuthResponseDto_TEMP;
 import com.swe.backend.DTOs.UserDto;
 import com.swe.backend.DTOs.UserRegistrationDto;
 import com.swe.backend.Service.UserService;
@@ -27,7 +27,7 @@ public class AuthController_TEMP {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody AuthRequestDto body) {
+    public ResponseEntity<AuthResponseDto_TEMP> login(@Valid @RequestBody AuthRequestDto_TEMP body) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(body.username(), body.password()));
 
@@ -37,7 +37,7 @@ public class AuthController_TEMP {
                         .map(a -> a.getAuthority())
                         .toArray(String[]::new));
 
-        return ResponseEntity.ok(new AuthResponseDto(token));
+        return ResponseEntity.ok(new AuthResponseDto_TEMP(token));
     }
 
     @PostMapping("/register")
