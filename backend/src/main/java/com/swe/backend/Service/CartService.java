@@ -24,7 +24,7 @@ public class CartService {
     private final CartRepository cartRepo;
     private final ProductRepository productRepo;
     private final UserRepository userRepo;
-    private final UserService usrv;
+    private final UserService userService;
     private final CartMapper cartMapper;
 
     User currentUser() {
