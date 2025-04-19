@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-public class AuthRequestDto {
+public class AuthRequestDto_TEMP {
     @NotBlank
     String username;
 
