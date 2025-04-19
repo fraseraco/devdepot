@@ -413,7 +413,7 @@
     "brand": "AMD",
     "inventory_qty": 350,
     "price": 449.99,
-    "sku": 8901234,
+    "sku": 3901234,
     "specifications": {
       "core_count": 8,
       "core_clock": 3.3,
