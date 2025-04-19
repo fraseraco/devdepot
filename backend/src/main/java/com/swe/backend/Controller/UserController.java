@@ -8,6 +8,7 @@ import com.swe.backend.Service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,17 +25,20 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<UserDto> registerUser(@RequestBody UserRegistrationDto userRegistrationDto) {
+    public ResponseEntity<Authentication> registerUser(@RequestBody UserRegistrationDto userRegistrationDto) {
         UserDto userDto = userService.registerNewUser(userRegistrationDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        return ResponseEntity.status(HttpStatus.CREATED).body(authentication);
     }
+
+
 
     // returns current authenticated user
     @GetMapping("/me")
     public ResponseEntity<UserDto> currentUser(Authentication authentication) {
         String username = authentication.getName();
-        return userService.findUserByUsername(username)
-                .map(ResponseEntity::ok)            
+        return userService.getUserByUsername(username)
+                .map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
 
