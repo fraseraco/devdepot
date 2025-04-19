@@ -15,6 +15,7 @@ import com.swe.backend.Exceptions.UserIdNotFoundException;
 import com.swe.backend.Repository.UserRepository;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @Service
@@ -45,6 +46,20 @@ public class UserService {
         user.setRole(defaultRole);
 
         return userMapper.toUserDto(userRepository.save(user));
+    }
+
+    // GET user by username -> THROWS error when user DNE
+    public Optional<UserDto> getUserByUsername(String username) {
+        return Optional.ofNullable(userRepository.findByUsername(username)
+                .map(userMapper::toUserDto)
+                .orElseThrow(() ->
+                        new NoSuchElementException("User '%s' not found".formatted(username))));
+    }
+
+    // FIND user by name -> doesn't throw error when user DNE
+    public Optional<UserDto> findUserByUsername(String username) {
+        return userRepository.findByUsername(username)
+                .map(userMapper::toUserDto);
     }
 
     public Optional<UserDto> getUserById(Long id) {

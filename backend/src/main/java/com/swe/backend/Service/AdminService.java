@@ -22,6 +22,9 @@ public class AdminService {
     }
 
     public ProductDto adminAddProduct(ProductDto productDto) {
+        if (productRepository.existsById(productDto.getId())) {
+            throw new IllegalArgumentException("Product already exists with id: " + productDto.getId());
+        }
         Product product = productMapper.toProduct(productDto);
         Product saved = productRepository.save(product);
         return productMapper.toProductDto(saved);
@@ -38,16 +41,16 @@ public class AdminService {
                 .map(productMapper::toProductDto);
     }
 
-    public Optional<ProductDto> updateProduct(Long id, ProductDto dto) {
+    public Optional<ProductDto> updateProduct(Long id, ProductDto productDto) {
         return productRepository.findById(id).map(product -> {
-            product.setName(dto.getName());
-            product.setCategory(dto.getCategory());
-            product.setBrand(dto.getBrand());
-            product.setInventoryQty(dto.getInventoryQty());
-            product.setPrice(dto.getPrice());
-            product.setDescription(dto.getDescription());
-            product.setSku(dto.getSku());
-            product.setSpecifications(dto.getSpecifications());
+            product.setName(productDto.getName());
+            product.setCategory(productDto.getCategory());
+            product.setBrand(productDto.getBrand());
+            product.setInventoryQty(productDto.getInventoryQty());
+            product.setPrice(productDto.getPrice());
+            product.setDescription(productDto.getDescription());
+            product.setSku(productDto.getSku());
+            product.setSpecifications(productDto.getSpecifications());
             return productMapper.toProductDto(productRepository.save(product));
         });
     }
