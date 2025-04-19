@@ -74,7 +74,7 @@
       "radiator_size": 360,
       "fan_count": 3,
       "fan_speed": [550, 2000],
-      "noise_level": 29.7,
+      "noise_level": [18, 32],
       "socket_compatibility": ["Intel LGA 1700", "Intel LGA 1200", "Intel LGA 115x", "AMD AM5", "AMD AM4", "AMD sTRX4"],
       "rgb": true,
       "lcd_display": true
@@ -172,7 +172,7 @@
       "radiator_size": 240,
       "fan_count": 2,
       "fan_speed": [800, 2500],
-      "noise_level": 37.6,
+      "noise_level": [6, 30],
       "socket_compatibility": ["Intel LGA 1700", "Intel LGA 1200", "Intel LGA 115x", "AMD AM5", "AMD AM4"],
       "rgb": true
     }
@@ -253,7 +253,7 @@
       "radiator_size": 240,
       "fan_count": 2,
       "fan_speed": [600, 2200],
-      "noise_level": 36.4,
+      "noise_level": [0.3, 24.4],
       "socket_compatibility": ["Intel LGA 1700", "Intel LGA 1200", "Intel LGA 115x", "AMD AM5", "AMD AM4"],
       "rgb": true,
       "oled_display": true
@@ -440,7 +440,7 @@
     "specifications": {
       "fan_count": 1,
       "fan_speed": [450, 2500],
-      "noise_level": 23.6,
+      "noise_level":  [4.0, 29.5],
       "socket_compatibility": ["Intel LGA 1700", "Intel LGA 1200", "Intel LGA 115x"],
       "tdp_rating": 65,
       "low_profile": true
