@@ -1,11 +1,14 @@
 package com.swe.backend.Entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = OrderItem.TABLE_NAME, schema = "devdepot", indexes = {
@@ -25,6 +28,7 @@ public class OrderItem {
     private Integer quantity;
 
     private BigDecimal pricePerUnit;
+
 
     @EmbeddedId
     public OrderItemId getId() {
@@ -77,5 +81,6 @@ public class OrderItem {
     public void setPricePerUnit(BigDecimal pricePerUnit) {
         this.pricePerUnit = pricePerUnit;
     }
+
 
 }

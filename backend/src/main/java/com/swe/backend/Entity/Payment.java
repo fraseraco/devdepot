@@ -1,11 +1,13 @@
 package com.swe.backend.Entity;
 
 import jakarta.persistence.*;
+import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 
+@Setter
 @Entity
 @Table(name = Payment.TABLE_NAME, schema = "devdepot", indexes = {
         @Index(name = "fk_payments_orderid", columnList = "order_id")
@@ -41,17 +43,9 @@ public class Payment {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Column(name = COLUMN_ORDERID_NAME, nullable = false)
     public Long getOrderId() {
         return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
     }
 
     @Lob
@@ -60,26 +54,14 @@ public class Payment {
         return paymentMethod;
     }
 
-    public void setPaymentMethod(String paymentMethod) {
-        this.paymentMethod = paymentMethod;
-    }
-
     @Column(name = COLUMN_SUBTOTAL_NAME, nullable = false, precision = 10, scale = 2)
     public BigDecimal getSubtotal() {
         return subtotal;
     }
 
-    public void setSubtotal(BigDecimal subtotal) {
-        this.subtotal = subtotal;
-    }
-
     @Column(name = COLUMN_TAXTOTAL_NAME, nullable = false, precision = 10, scale = 2)
     public BigDecimal getTaxTotal() {
         return taxTotal;
-    }
-
-    public void setTaxTotal(BigDecimal taxTotal) {
-        this.taxTotal = taxTotal;
     }
 
     @Lob
@@ -88,18 +70,10 @@ public class Payment {
         return paymentStatus;
     }
 
-    public void setPaymentStatus(String paymentStatus) {
-        this.paymentStatus = paymentStatus;
-    }
-
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = COLUMN_PAYMENTDATE_NAME)
     public Instant getPaymentDate() {
         return paymentDate;
-    }
-
-    public void setPaymentDate(Instant paymentDate) {
-        this.paymentDate = paymentDate;
     }
 
 }

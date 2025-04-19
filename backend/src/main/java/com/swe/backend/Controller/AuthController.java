@@ -1,7 +1,7 @@
 package com.swe.backend.Controller;
 
-import com.swe.backend.DTOs.AuthRequestDto_TEMP;
-import com.swe.backend.DTOs.AuthResponseDto_TEMP;
+import com.swe.backend.DTOs.AuthRequestDto;
+import com.swe.backend.DTOs.AuthResponseDto;
 import com.swe.backend.DTOs.UserDto;
 import com.swe.backend.DTOs.UserRegistrationDto;
 import com.swe.backend.Service.UserService;
@@ -17,17 +17,17 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
-public class AuthController_TEMP {
+public class AuthController {
     private final AuthenticationManager authenticationManager;
     private final UserService userService;
 
-    public AuthController_TEMP(AuthenticationManager authenticationManager, UserService userService) {
+    public AuthController(AuthenticationManager authenticationManager, UserService userService) {
         this.authenticationManager = authenticationManager;
         this.userService = userService;
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthResponseDto_TEMP> login(@Valid @RequestBody AuthRequestDto_TEMP body) {
+    public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody AuthRequestDto body) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(body.username(), body.password()));
 
@@ -37,7 +37,7 @@ public class AuthController_TEMP {
                         .map(a -> a.getAuthority())
                         .toArray(String[]::new));
 
-        return ResponseEntity.ok(new AuthResponseDto_TEMP(token));
+        return ResponseEntity.ok(new AuthResponseDto(token));
     }
 
     @PostMapping("/register")
