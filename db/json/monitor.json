@@ -1,0 +1,482 @@
+[
+  {
+    "name": "Odyssey G9",
+    "category": "monitor",
+    "brand": "Samsung",
+    "inventory_qty": 300,
+    "price": 1299.99,
+    "sku": 7890125,
+    "specifications": {
+      "screen_size": 49,
+      "resolution": "5120 x 1440",
+      "refresh_rate": 240,
+      "response_time": 1,
+      "panel_type": "VA",
+      "aspect_ratio": "32:9"
+    }
+  },
+  {
+    "name": "Alienware AW3423DW",
+    "category": "monitor",
+    "brand": "Dell",
+    "inventory_qty": 250,
+    "price": 1099.99,
+    "sku": 4567892,
+    "specifications": {
+      "screen_size": 34,
+      "resolution": "3440 x 1440",
+      "refresh_rate": 175,
+      "response_time": 0.1,
+      "panel_type": "OLED",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "ROG Swift PG27AQDM",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 350,
+    "price": 999.99,
+    "sku": 1234569,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 240,
+      "response_time": 0.03,
+      "panel_type": "OLED",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Optix MPG321UR-QD",
+    "category": "monitor",
+    "brand": "MSI",
+    "inventory_qty": 400,
+    "price": 799.99,
+    "sku": 8901236,
+    "specifications": {
+      "screen_size": 32,
+      "resolution": "3840 x 2160",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "UltraGear 27GP950-B",
+    "category": "monitor",
+    "brand": "LG",
+    "inventory_qty": 450,
+    "price": 699.99,
+    "sku": 5678903,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "3840 x 2160",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Predator XB273K",
+    "category": "monitor",
+    "brand": "Acer",
+    "inventory_qty": 500,
+    "price": 749.99,
+    "sku": 2345672,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "3840 x 2160",
+      "refresh_rate": 144,
+      "response_time": 4,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "ROG Strix XG27AQ",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 550,
+    "price": 499.99,
+    "sku": 9012346,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 170,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "G27F 2",
+    "category": "monitor",
+    "brand": "Gigabyte",
+    "inventory_qty": 600,
+    "price": 249.99,
+    "sku": 6789020,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 165,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Alienware AW2723DF",
+    "category": "monitor",
+    "brand": "Dell",
+    "inventory_qty": 650,
+    "price": 649.99,
+    "sku": 3456790,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 240,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Optix MAG274QRF-QD",
+    "category": "monitor",
+    "brand": "MSI",
+    "inventory_qty": 700,
+    "price": 399.99,
+    "sku": 0123452,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 165,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "UltraGear 34GN850-B",
+    "category": "monitor",
+    "brand": "LG",
+    "inventory_qty": 750,
+    "price": 599.99,
+    "sku": 7890126,
+    "specifications": {
+      "screen_size": 34,
+      "resolution": "3440 x 1440",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "Predator X34GS",
+    "category": "monitor",
+    "brand": "Acer",
+    "inventory_qty": 800,
+    "price": 699.99,
+    "sku": 4567893,
+    "specifications": {
+      "screen_size": 34,
+      "resolution": "3440 x 1440",
+      "refresh_rate": 180,
+      "response_time": 0.5,
+      "panel_type": "IPS",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "ROG Swift PG32UQ",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 850,
+    "price": 899.99,
+    "sku": 1234570,
+    "specifications": {
+      "screen_size": 32,
+      "resolution": "3840 x 2160",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "G32QC A",
+    "category": "monitor",
+    "brand": "Gigabyte",
+    "inventory_qty": 900,
+    "price": 349.99,
+    "sku": 8901237,
+    "specifications": {
+      "screen_size": 32,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 165,
+      "response_time": 1,
+      "panel_type": "VA",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Alienware AW2523HF",
+    "category": "monitor",
+    "brand": "Dell",
+    "inventory_qty": 950,
+    "price": 349.99,
+    "sku": 5678904,
+    "specifications": {
+      "screen_size": 24.5,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 360,
+      "response_time": 0.5,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Optix MAG251RX",
+    "category": "monitor",
+    "brand": "MSI",
+    "inventory_qty": 1000,
+    "price": 299.99,
+    "sku": 2345673,
+    "specifications": {
+      "screen_size": 24.5,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 240,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "UltraGear 24GN60R-B",
+    "category": "monitor",
+    "brand": "LG",
+    "inventory_qty": 1050,
+    "price": 199.99,
+    "sku": 9012347,
+    "specifications": {
+      "screen_size": 23.8,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Predator XB253Q GZ",
+    "category": "monitor",
+    "brand": "Acer",
+    "inventory_qty": 1100,
+    "price": 399.99,
+    "sku": 6789021,
+    "specifications": {
+      "screen_size": 24.5,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 240,
+      "response_time": 0.5,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "ROG Strix XG258Q",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 1150,
+    "price": 329.99,
+    "sku": 3456791,
+    "specifications": {
+      "screen_size": 24.5,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 240,
+      "response_time": 1,
+      "panel_type": "TN",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "S3422DWG",
+    "category": "monitor",
+    "brand": "Dell",
+    "inventory_qty": 320,
+    "price": 449.99,
+    "sku": 7890127,
+    "specifications": {
+      "screen_size": 34,
+      "resolution": "3440 x 1440",
+      "refresh_rate": 144,
+      "response_time": 4,
+      "panel_type": "VA",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "MAG342CQR",
+    "category": "monitor",
+    "brand": "MSI",
+    "inventory_qty": 280,
+    "price": 399.99,
+    "sku": 4567894,
+    "specifications": {
+      "screen_size": 34,
+      "resolution": "3440 x 1440",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "VA",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "29WP60G-B",
+    "category": "monitor",
+    "brand": "LG",
+    "inventory_qty": 380,
+    "price": 299.99,
+    "sku": 1234571,
+    "specifications": {
+      "screen_size": 29,
+      "resolution": "2560 x 1080",
+      "refresh_rate": 75,
+      "response_time": 5,
+      "panel_type": "IPS",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "XV340CKPbmiiphzx",
+    "category": "monitor",
+    "brand": "Acer",
+    "inventory_qty": 420,
+    "price": 379.99,
+    "sku": 8901238,
+    "specifications": {
+      "screen_size": 34,
+      "resolution": "3440 x 1440",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "21:9"
+    }
+  },
+  {
+    "name": "TUF Gaming VG27AQ1A",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 480,
+    "price": 329.99,
+    "sku": 5678905,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 170,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "S2721DGF",
+    "category": "monitor",
+    "brand": "Dell",
+    "inventory_qty": 580,
+    "price": 399.99,
+    "sku": 9012348,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 165,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "27GN800-B",
+    "category": "monitor",
+    "brand": "LG",
+    "inventory_qty": 680,
+    "price": 349.99,
+    "sku": 3456792,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "VG27AQ",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 720,
+    "price": 379.99,
+    "sku": 0123454,
+    "specifications": {
+      "screen_size": 27,
+      "resolution": "2560 x 1440",
+      "refresh_rate": 165,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "S2421HGF",
+    "category": "monitor",
+    "brand": "Dell",
+    "inventory_qty": 800,
+    "price": 199.99,
+    "sku": 4567895,
+    "specifications": {
+      "screen_size": 23.8,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "TN",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "TUF Gaming VG249Q1R",
+    "category": "monitor",
+    "brand": "ASUS",
+    "inventory_qty": 920,
+    "price": 169.99,
+    "sku": 5678906,
+    "specifications": {
+      "screen_size": 23.8,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 165,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  },
+  {
+    "name": "Optix G241",
+    "category": "monitor",
+    "brand": "MSI",
+    "inventory_qty": 960,
+    "price": 159.99,
+    "sku": 2345675,
+    "specifications": {
+      "screen_size": 23.8,
+      "resolution": "1920 x 1080",
+      "refresh_rate": 144,
+      "response_time": 1,
+      "panel_type": "IPS",
+      "aspect_ratio": "16:9"
+    }
+  }
+]

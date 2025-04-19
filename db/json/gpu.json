@@ -1,0 +1,594 @@
+[
+  {
+    "name": "GeForce RTX 4090 GAMING OC",
+    "category": "video-card",
+    "brand": "Gigabyte",
+    "inventory_qty": 450,
+    "price": 1649.99,
+    "sku": 6511224,
+    "specifications": {
+      "chipset": "GeForce RTX 4090",
+      "memory": 24,
+      "core_clock": 1635,
+      "boost_clock": 2535,
+      "color": "Black",
+      "length": 340
+    }
+  },
+  {
+    "name": "ROG Strix GeForce RTX 4080 OC Edition",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 700,
+    "price": 1299.99,
+    "sku": 6543211,
+    "specifications": {
+      "chipset": "GeForce RTX 4080",
+      "memory": 16,
+      "core_clock": 1465,
+      "boost_clock": 2595,
+      "color": "Black",
+      "length": 357
+    }
+  },
+  {
+    "name": "GeForce RTX 4070 Ti GAMING X TRIO",
+    "category": "video-card",
+    "brand": "MSI",
+    "inventory_qty": 800,
+    "price": 899.99,
+    "sku": 6576545,
+    "specifications": {
+      "chipset": "GeForce RTX 4070 Ti",
+      "memory": 12,
+      "core_clock": 1310,
+      "boost_clock": 2640,
+      "color": "Black",
+      "length": 337
+    }
+  },
+  {
+    "name": "GeForce RTX 4070 AMP AIRO",
+    "category": "video-card",
+    "brand": "Zotac",
+    "inventory_qty": 900,
+    "price": 579.99,
+    "sku": 6588992,
+    "specifications": {
+      "chipset": "GeForce RTX 4070",
+      "memory": 12,
+      "core_clock": 1230,
+      "boost_clock": 2475,
+      "color": "White",
+      "length": 306
+    }
+  },
+  {
+    "name": "Radeon RX 7800 XT SWFT 319",
+    "category": "video-card",
+    "brand": "XFX",
+    "inventory_qty": 1000,
+    "price": 509.99,
+    "sku": 6559283,
+    "specifications": {
+      "chipset": "Radeon RX 7800 XT",
+      "memory": 16,
+      "core_clock": 1295,
+      "boost_clock": 2430,
+      "color": "Black",
+      "length": 319
+    }
+  },
+  {
+    "name": "GeForce RTX 4060 Ti GAMING OC 16G",
+    "category": "video-card",
+    "brand": "Gigabyte",
+    "inventory_qty": 750,
+    "price": 529.99,
+    "sku": 6565434,
+    "specifications": {
+      "chipset": "GeForce RTX 4060 Ti",
+      "memory": 16,
+      "core_clock": 1590,
+      "boost_clock": 2535,
+      "color": "Black",
+      "length": 282
+    }
+  },
+  {
+    "name": "ROG Strix GeForce RTX 4060 OC Edition",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 1100,
+    "price": 349.99,
+    "sku": 6578903,
+    "specifications": {
+      "chipset": "GeForce RTX 4060",
+      "memory": 8,
+      "core_clock": 1320,
+      "boost_clock": 2535,
+      "color": "Black",
+      "length": 272
+    }
+  },
+  {
+    "name": "Radeon RX 7600 XT GAMING X",
+    "category": "video-card",
+    "brand": "MSI",
+    "inventory_qty": 1200,
+    "price": 349.99,
+    "sku": 6512347,
+    "specifications": {
+      "chipset": "Radeon RX 7600 XT",
+      "memory": 8,
+      "core_clock": 1815,
+      "boost_clock": 2810,
+      "color": "Black",
+      "length": 241
+    }
+  },
+  {
+    "name": "GeForce RTX 3070 Ti AMP Holo",
+    "category": "video-card",
+    "brand": "Zotac",
+    "inventory_qty": 600,
+    "price": 649.99,
+    "sku": 6500113,
+    "specifications": {
+      "chipset": "GeForce RTX 3070 Ti",
+      "memory": 8,
+      "core_clock": 1575,
+      "boost_clock": 1860,
+      "color": "Black/Holo",
+      "length": 291
+    }
+  },
+  {
+    "name": "Radeon RX 6700 XT MERC 319",
+    "category": "video-card",
+    "brand": "XFX",
+    "inventory_qty": 850,
+    "price": 379.99,
+    "sku": 6599114,
+    "specifications": {
+      "chipset": "Radeon RX 6700 XT",
+      "memory": 12,
+      "core_clock": 2321,
+      "boost_clock": 2622,
+      "color": "Black",
+      "length": 319
+    }
+  },
+  {
+    "name": "GeForce RTX 4090 SUPRIM X",
+    "category": "video-card",
+    "brand": "MSI",
+    "inventory_qty": 350,
+    "price": 1699.99,
+    "sku": 6511225,
+    "specifications": {
+      "chipset": "GeForce RTX 4090",
+      "memory": 24,
+      "core_clock": 1635,
+      "boost_clock": 2610,
+      "color": "Black",
+      "length": 335
+    }
+  },
+  {
+    "name": "ROG Matrix GeForce RTX 4080",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 250,
+    "price": 1799.99,
+    "sku": 6543212,
+    "specifications": {
+      "chipset": "GeForce RTX 4080",
+      "memory": 16,
+      "core_clock": 1465,
+      "boost_clock": 2685,
+      "color": "Black",
+      "length": 357
+    }
+  },
+  {
+    "name": "GeForce RTX 4070 Ti TRINITY OC",
+    "category": "video-card",
+    "brand": "Zotac",
+    "inventory_qty": 700,
+    "price": 879.99,
+    "sku": 6576546,
+    "specifications": {
+      "chipset": "GeForce RTX 4070 Ti",
+      "memory": 12,
+      "core_clock": 1310,
+      "boost_clock": 2670,
+      "color": "Black",
+      "length": 307
+    }
+  },
+  {
+    "name": "Radeon RX 7900 XT MERC 310",
+    "category": "video-card",
+    "brand": "XFX",
+    "inventory_qty": 500,
+    "price": 919.99,
+    "sku": 6522335,
+    "specifications": {
+      "chipset": "Radeon RX 7900 XT",
+      "memory": 20,
+      "core_clock": 1500,
+      "boost_clock": 2430,
+      "color": "Black",
+      "length": 305
+    }
+  },
+  {
+    "name": "GeForce RTX 4060 Ti VENTUS 2X BLACK OC",
+    "category": "video-card",
+    "brand": "MSI",
+    "inventory_qty": 950,
+    "price": 419.99,
+    "sku": 6565435,
+    "specifications": {
+      "chipset": "GeForce RTX 4060 Ti",
+      "memory": 8,
+      "core_clock": 1590,
+      "boost_clock": 2535,
+      "color": "Black",
+      "length": 201
+    }
+  },
+  {
+    "name": "ROG TUF Gaming GeForce RTX 4070 OC Edition",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 1050,
+    "price": 569.99,
+    "sku": 6588993,
+    "specifications": {
+      "chipset": "GeForce RTX 4070",
+      "memory": 12,
+      "core_clock": 1230,
+      "boost_clock": 2520,
+      "color": "Black",
+      "length": 301
+    }
+  },
+  {
+    "name": "Radeon RX 7600 XT CHALLENGER D OC",
+    "category": "video-card",
+    "brand": "ASRock",
+    "inventory_qty": 1150,
+    "price": 339.99,
+    "sku": 6512348,
+    "specifications": {
+      "chipset": "Radeon RX 7600 XT",
+      "memory": 8,
+      "core_clock": 1815,
+      "boost_clock": 2790,
+      "color": "Black",
+      "length": 222
+    }
+  },
+  {
+    "name": "GeForce RTX 3080 Ti AMP Extreme Holo",
+    "category": "video-card",
+    "brand": "Zotac",
+    "inventory_qty": 300,
+    "price": 799.99,
+    "sku": 6500114,
+    "specifications": {
+      "chipset": "GeForce RTX 3080 Ti",
+      "memory": 12,
+      "core_clock": 1365,
+      "boost_clock": 1815,
+      "color": "Black/Holo",
+      "length": 317
+    }
+  },
+  {
+    "name": "GeForce RTX 4070 Ti AERO OC",
+    "category": "video-card",
+    "brand": "Gigabyte",
+    "inventory_qty": 650,
+    "price": 919.99,
+    "sku": 6576547,
+    "specifications": {
+      "chipset": "GeForce RTX 4070 Ti",
+      "memory": 12,
+      "core_clock": 1310,
+      "boost_clock": 2625,
+      "color": "White",
+      "length": 301
+    }
+  },
+  {
+    "name": "Arc A770 Limited Edition",
+    "category": "video-card",
+    "brand": "Intel",
+    "inventory_qty": 200,
+    "price": 349.99,
+    "sku": 6511227,
+    "specifications": {
+      "chipset": "Arc A770",
+      "memory": 16,
+      "core_clock": 2100,
+      "boost_clock": 2100,
+      "color": "Black",
+      "length": 280
+    }
+  },
+  {
+    "name": "Arc A750 Challenger D OC",
+    "category": "video-card",
+    "brand": "ASRock",
+    "inventory_qty": 250,
+    "price": 249.99,
+    "sku": 6543215,
+    "specifications": {
+      "chipset": "Arc A750",
+      "memory": 8,
+      "core_clock": 2200,
+      "boost_clock": 2200,
+      "color": "Black",
+      "length": 220
+    }
+  },
+  {
+    "name": "Arc A380 Low Profile",
+    "category": "video-card",
+    "brand": "ASRock",
+    "inventory_qty": 350,
+    "price": 129.99,
+    "sku": 6588997,
+    "specifications": {
+      "chipset": "Arc A380",
+      "memory": 6,
+      "core_clock": 2000,
+      "boost_clock": 2050,
+      "color": "Black",
+      "length": 169
+    }
+  },
+  {
+    "name": "Radeon RX 6600 Fighter",
+    "category": "video-card",
+    "brand": "PowerColor",
+    "inventory_qty": 400,
+    "price": 229.99,
+    "sku": 6559285,
+    "specifications": {
+      "chipset": "Radeon RX 6600",
+      "memory": 8,
+      "core_clock": 1626,
+      "boost_clock": 2491,
+      "color": "Black",
+      "length": 200
+    }
+  },
+  {
+    "name": "Radeon RX 7900 XTX Phantom Gaming Nova",
+    "category": "video-card",
+    "brand": "ASRock",
+    "inventory_qty": 380,
+    "price": 1029.99,
+    "sku": 6598767,
+    "specifications": {
+      "chipset": "Radeon RX 7900 XTX",
+      "memory": 24,
+      "core_clock": 1855,
+      "boost_clock": 2565,
+      "color": "Black",
+      "length": 330
+    }
+  },
+  {
+    "name": "GeForce RTX 4080 VENTUS 4X OC",
+    "category": "video-card",
+    "brand": "MSI",
+    "inventory_qty": 680,
+    "price": 1249.99,
+    "sku": 6543213,
+    "specifications": {
+      "chipset": "GeForce RTX 4080",
+      "memory": 16,
+      "core_clock": 1465,
+      "boost_clock": 2520,
+      "color": "Black",
+      "length": 322
+    }
+  },
+  {
+    "name": "GeForce RTX 4070 Ti EAGLE OC",
+    "category": "video-card",
+    "brand": "Gigabyte",
+    "inventory_qty": 780,
+    "price": 879.99,
+    "sku": 6576548,
+    "specifications": {
+      "chipset": "GeForce RTX 4070 Ti",
+      "memory": 12,
+      "core_clock": 1310,
+      "boost_clock": 2610,
+      "color": "Black",
+      "length": 301
+    }
+  },
+  {
+    "name": "GeForce RTX 4070 Trinity OC",
+    "category": "video-card",
+    "brand": "Zotac",
+    "inventory_qty": 880,
+    "price": 589.99,
+    "sku": 6588994,
+    "specifications": {
+      "chipset": "GeForce RTX 4070",
+      "memory": 12,
+      "core_clock": 1230,
+      "boost_clock": 2490,
+      "color": "Black",
+      "length": 307
+    }
+  },
+  {
+    "name": "GeForce RTX 4060 Ti WINDFORCE OC 16G",
+    "category": "video-card",
+    "brand": "Gigabyte",
+    "inventory_qty": 720,
+    "price": 519.99,
+    "sku": 6565436,
+    "specifications": {
+      "chipset": "GeForce RTX 4060 Ti",
+      "memory": 16,
+      "core_clock": 1590,
+      "boost_clock": 2535,
+      "color": "Black",
+      "length": 282
+    }
+  },
+  {
+    "name": "ROG TUF Gaming GeForce RTX 4060 Ti OC Edition",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 1080,
+    "price": 429.99,
+    "sku": 6578904,
+    "specifications": {
+      "chipset": "GeForce RTX 4060 Ti",
+      "memory": 8,
+      "core_clock": 1670,
+      "boost_clock": 2580,
+      "color": "Black",
+      "length": 300
+    }
+  },
+  {
+    "name": "Radeon RX 7600 XT Pulse",
+    "category": "video-card",
+    "brand": "Sapphire",
+    "inventory_qty": 1180,
+    "price": 329.99,
+    "sku": 6512349,
+    "specifications": {
+      "chipset": "Radeon RX 7600 XT",
+      "memory": 8,
+      "core_clock": 1815,
+      "boost_clock": 2755,
+      "color": "Black",
+      "length": 240
+    }
+  },
+  {
+    "name": "GeForce RTX 3070 Ti VENTUS 3X OC",
+    "category": "video-card",
+    "brand": "MSI",
+    "inventory_qty": 580,
+    "price": 629.99,
+    "sku": 6500115,
+    "specifications": {
+      "chipset": "GeForce RTX 3070 Ti",
+      "memory": 8,
+      "core_clock": 1575,
+      "boost_clock": 1830,
+      "color": "Black",
+      "length": 316
+    }
+  },
+  {
+    "name": "Radeon RX 6700 XT Fighter",
+    "category": "video-card",
+    "brand": "PowerColor",
+    "inventory_qty": 830,
+    "price": 359.99,
+    "sku": 6599116,
+    "specifications": {
+      "chipset": "Radeon RX 6700 XT",
+      "memory": 12,
+      "core_clock": 2321,
+      "boost_clock": 2581,
+      "color": "Black",
+      "length": 230
+    }
+  },
+  {
+    "name": "GeForce RTX 4090 TUF Gaming OC",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 330,
+    "price": 1679.99,
+    "sku": 6511226,
+    "specifications": {
+      "chipset": "GeForce RTX 4090",
+      "memory": 24,
+      "core_clock": 1635,
+      "boost_clock": 2595,
+      "color": "Black",
+      "length": 348
+    }
+  },
+  {
+    "name": "Radeon RX 7900 XT Taichi OC",
+    "category": "video-card",
+    "brand": "ASRock",
+    "inventory_qty": 480,
+    "price": 949.99,
+    "sku": 6522336,
+    "specifications": {
+      "chipset": "Radeon RX 7900 XT",
+      "memory": 20,
+      "core_clock": 1500,
+      "boost_clock": 2475,
+      "color": "Black",
+      "length": 320
+    }
+  },
+  {
+    "name": "GeForce RTX 4060 Ti XLR8 Gaming Verto Epic-X RGB",
+    "category": "video-card",
+    "brand": "PNY",
+    "inventory_qty": 930,
+    "price": 439.99,
+    "sku": 6565437,
+    "specifications": {
+      "chipset": "GeForce RTX 4060 Ti",
+      "memory": 8,
+      "core_clock": 1665,
+      "boost_clock": 2580,
+      "color": "Black",
+      "length": 247
+    }
+  },
+  {
+    "name": "ROG Strix GeForce RTX 3080 OC Edition",
+    "category": "video-card",
+    "brand": "ASUS",
+    "inventory_qty": 280,
+    "price": 749.99,
+    "sku": 6500116,
+    "specifications": {
+      "chipset": "GeForce RTX 3080",
+      "memory": 10,
+      "core_clock": 1440,
+      "boost_clock": 1900,
+      "color": "Black",
+      "length": 319
+    }
+  },
+  {
+    "name": "Radeon RX 6900 XT Gaming OC",
+    "category": "video-card",
+    "brand": "Gigabyte",
+    "inventory_qty": 380,
+    "price": 649.99,
+    "sku": 6599117,
+    "specifications": {
+      "chipset": "Radeon RX 6900 XT",
+      "memory": 16,
+      "core_clock": 2015,
+      "boost_clock": 2285,
+      "color": "Black",
+      "length": 322
+    }
+  }
+]
