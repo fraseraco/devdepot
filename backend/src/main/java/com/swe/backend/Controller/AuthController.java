@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
@@ -29,12 +30,12 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody AuthRequestDto body) {
         Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(body.username(), body.password()));
+                new UsernamePasswordAuthenticationToken(body.getUsername(), body.getPassword()));
 
         UserDetails principal = (UserDetails) authentication.getPrincipal();
         String token = jwtUtil.generate(principal.getUsername(),
                 principal.getAuthorities().stream()
-                        .map(a -> a.getAuthority())
+                        .map(GrantedAuthority::getAuthority)
                         .toArray(String[]::new));
 
         return ResponseEntity.ok(new AuthResponseDto(token));

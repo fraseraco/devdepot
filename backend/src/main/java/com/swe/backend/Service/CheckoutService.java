@@ -40,7 +40,7 @@ public class CheckoutService {
      * (e.g., insufficient inventory), an exception is thrown and the entire
      * transaction rolls back.
      */
-    @Transactional(rollbackOn = Exception.class)
+    @Transactional
     public OrderDto processCheckout(CheckoutRequestDto checkoutRequestDto) {
         User user = currentUser();
 
