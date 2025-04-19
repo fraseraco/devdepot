@@ -8,33 +8,21 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.Map;
 
-/**
- * DTO for {@link Product}
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductDto implements Serializable {
-    @NotNull
-    Long id;
-    @NotNull
-    String name;
-    @NotNull
-    String category;
-    @NotNull
-    String brand;
-    @NotNull
-    Integer inventoryQty;
-    @NotNull
-    BigDecimal price;
-    String description;
-    @NotNull
-    String sku;
-    @NotNull
-    List<Map<String, Object>> specifications;
+    @NotNull private Long id;
+    @NotNull private String name;
+    @NotNull private String category;
+    @NotNull private String brand;
+    @NotNull private Integer inventoryQty;
+    @NotNull private BigDecimal price;
+    private String description;
+    @NotNull private String sku;
+    @NotNull private Map<String, Object> specifications;
 
     public ProductDto(Product product) {
         this.id = product.getId();
