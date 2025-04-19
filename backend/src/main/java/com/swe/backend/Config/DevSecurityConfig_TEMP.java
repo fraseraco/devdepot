@@ -11,13 +11,14 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-public class DevSecurityConfig {
+public class DevSecurityConfig_TEMP {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
+                        // --- public (no‑auth) endpoints ---
                         .requestMatchers(
                                 "/v3/api-docs/**",
                                 "/swagger-ui/**",
@@ -26,6 +27,11 @@ public class DevSecurityConfig {
                                 "/webjars/**",
                                 "/api-docs.html"
                         ).permitAll()
+
+                        // --- endpoints that require the user to be authenticated ---
+                        .requestMatchers("/users/me").authenticated()
+
+                        // --- everything else is still open while you’re in dev ---
                         .anyRequest().permitAll()
                 );
 

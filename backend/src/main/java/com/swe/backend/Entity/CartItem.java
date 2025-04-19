@@ -2,6 +2,7 @@ package com.swe.backend.Entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.OnDelete;
@@ -15,6 +16,7 @@ import java.time.Instant;
         @Index(name = "cart_id", columnList = "cart_id"),
         @Index(name = "product_id", columnList = "product_id")
 })
+@NoArgsConstructor
 public class CartItem {
     public static final String TABLE_NAME = "cart_item";
     public static final String COLUMN_ID_NAME = "cart_item_id";
@@ -31,6 +33,13 @@ public class CartItem {
     private Integer quantity;
 
     private Instant addedAt;
+
+    public CartItem(Cart cart, Product product, int quantity) {
+        this.cart = cart;
+        this.product = product;
+        this.quantity = quantity;
+        this.addedAt = Instant.now();
+    }
 
 
     @Id

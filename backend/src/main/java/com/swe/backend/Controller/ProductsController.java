@@ -22,11 +22,6 @@ public class ProductsController {
         return ResponseEntity.ok(productService.getAllProducts());
     }
 
-    @GetMapping("/count")
-    public ResponseEntity<Long> getProductCount() {
-        return ResponseEntity.ok(productService.getProductCount());
-    }
-
     @GetMapping("/{id}")
     public ResponseEntity<ProductDto> getProductSummary(@PathVariable Long id) {
         return productService.getProductById(id)
@@ -39,6 +34,11 @@ public class ProductsController {
         return productService.getProductDetailById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/count")
+    public ResponseEntity<Long> getProductCount() {
+        return ResponseEntity.ok(productService.getProductCount());
     }
 }
 

@@ -10,6 +10,8 @@ import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = Cart.TABLE_NAME, schema = "devdepot", indexes = {
@@ -39,6 +41,9 @@ public class Cart{
     @Getter
     @Column(name = COLUMN_ISACTIVE_NAME)
     private Boolean isActive;
+
+    @Setter
+    private List<CartItem> cartItems = new ArrayList<>();
 
 
     @Id
@@ -81,5 +86,25 @@ public class Cart{
         this.updatedAt = updatedAt;
     }
 
+    @OneToMany(mappedBy = "cart",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            fetch = FetchType.LAZY)
+    public List<CartItem> getCartItems() { return cartItems; }
+
+    public void addOrIncrementItem(Product product, int qtyToAdd) {
+        if (qtyToAdd <= 0) throw new IllegalArgumentException("qtyToAdd must be positive");
+
+        CartItem item = cartItems.stream()
+                .filter(ci -> ci.getProduct().equals(product))
+                .findFirst()
+                .orElseGet(() -> {
+                    CartItem ci = new CartItem(this, product, 0);
+                    cartItems.add(ci);
+                    return ci;
+                });
+
+        item.setQuantity(item.getQuantity() + qtyToAdd);
+    }
 
 }
