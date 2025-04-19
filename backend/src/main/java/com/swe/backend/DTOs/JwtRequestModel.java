@@ -1,4 +1,4 @@
-
+package com.swe.backend.DTOs;
 
 import java.io.Serializable; 
 public class JwtRequestModel implements Serializable { 

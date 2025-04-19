@@ -1,3 +1,4 @@
+package com.swe.backend.DTOs;
 
 import java.io.Serializable; 
 public class JwtResponseModel implements Serializable {
