@@ -4,19 +4,13 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.swe.backend.Views.Views;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
-import jakarta.persistence.Table;
-import jakarta.persistence.UniqueConstraint;
 
 @Entity
 @Table(name = Product.TABLE_NAME, schema = "devdepot", uniqueConstraints = {
@@ -54,8 +48,9 @@ public class Product {
 
     private List<Map<String, Object>> specifications;
 
-    @JsonView(Views.Complete.class)
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = COLUMN_ID_NAME, nullable = false)
     public Long getId() {
         return id;
@@ -65,7 +60,6 @@ public class Product {
         this.id = id;
     }
 
-    @JsonView(Views.Public.class)
     @Column(name = COLUMN_NAME_NAME, nullable = false, length = 100)
     public String getName() {
         return name;
@@ -75,7 +69,6 @@ public class Product {
         this.name = name;
     }
 
-    @JsonView(Views.Public.class)
     @Column(name = COLUMN_CATEGORY_NAME, nullable = false, length = 25)
     public String getCategory() {
         return category;
@@ -86,7 +79,6 @@ public class Product {
     }
 
 
-    @JsonView(Views.Public.class)
     @Column(name = COLUMN_BRAND_NAME, nullable = false, length = 50)
     public String getBrand() {
         return brand;
@@ -97,7 +89,6 @@ public class Product {
     }
 
 
-    @JsonView(Views.Internal.class)
     @ColumnDefault("0")
     @Column(name = COLUMN_INVENTORYQTY_NAME, nullable = false)
     public Integer getInventoryQty() {
@@ -109,7 +100,6 @@ public class Product {
     }
 
 
-    @JsonView(Views.Public.class)
     @Column(name = COLUMN_PRICE_NAME, nullable = false, precision = 10, scale = 2)
     public BigDecimal getPrice() {
         return price;
@@ -119,7 +109,6 @@ public class Product {
         this.price = price;
     }
 
-    @JsonView(Views.Internal.class)
     @Lob
     @Column(name = COLUMN_DESCRIPTION_NAME)
     public String getDescription() {
@@ -130,7 +119,6 @@ public class Product {
         this.description = description;
     }
 
-    @JsonView(Views.Internal.class)
     @Column(name = COLUMN_SKU_NAME, nullable = false, length = 16)
     public String getSku() {
         return sku;
@@ -141,7 +129,6 @@ public class Product {
     }
 
 
-    @JsonView(Views.Internal.class)
     @Column(name = COLUMN_SPECIFICATIONS_NAME, nullable = false)
     @JdbcTypeCode(SqlTypes.JSON)
     public List<Map<String, Object>> getSpecifications() {

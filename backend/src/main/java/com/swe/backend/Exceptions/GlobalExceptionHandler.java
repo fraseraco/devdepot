@@ -19,8 +19,7 @@ public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public Map<String, String> handleValidationExceptions(
-            MethodArgumentNotValidException ex) {
+    public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
         ex.getBindingResult().getAllErrors().forEach((error) -> {
             String fieldName = ((FieldError) error).getField();
@@ -30,34 +29,16 @@ public class GlobalExceptionHandler {
         return errors;
     }
 
-    @ExceptionHandler(CartException.class)
-    public ResponseEntity<Map<String, Object>> handleUserNotFoundException(CartException ex, HttpServletRequest req) {
-        return getMapResponseEntity(req, ex);
-    }
-
-    @ExceptionHandler(ProductException.class)
-    public ResponseEntity<Map<String, Object>> handleProductException(ProductException ex, HttpServletRequest req) {
-        return getMapResponseEntity(req, ex);
-    }
-
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<Map<String, Object>> getMapResponseEntity(HttpServletRequest req, Exception ex) {
+    public ResponseEntity<Map<String, Object>> handleGenericException(HttpServletRequest req, Exception ex) {
+        ex.printStackTrace(); // Helpful during dev, remove or log in prod
+
         Map<String, Object> response = new HashMap<>();
         response.put("timestamp", LocalDateTime.now());
-        response.put("status", HttpStatus.NOT_FOUND.value());
+        response.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
+        response.put("message", ex.getMessage());
         response.put("path", req.getRequestURI());
-        response.put("error", "User Not Found");
 
-        return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-
-//    @ExceptionHandler(Exception.class)
-//    public ModelAndView handleError(HttpServletRequest req, Exception ex) {
-//
-//        ModelAndView mav = new ModelAndView();
-//        mav.addObject("exception", ex);
-//        mav.addObject("url", req.getRequestURL());
-////        mav.setViewName("error");
-//        return mav;
-//    }
 }

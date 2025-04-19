@@ -27,7 +27,7 @@ public interface UserMapper {
     //    @Mapping(source = "role", target = "role.roleName")
     @Mapping(target = "role", ignore = true)
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "passwordHash", ignore = true)
+    @Mapping(source = "password", target = "passwordHash", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "lastLogin", ignore = true)
     @InheritInverseConfiguration

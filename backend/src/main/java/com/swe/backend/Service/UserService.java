@@ -7,6 +7,7 @@ import com.swe.backend.Entity.Role;
 import com.swe.backend.Mappers.UserMapper;
 import com.swe.backend.Repository.RoleRepository;
 import org.mapstruct.factory.Mappers;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.swe.backend.Entity.User;
@@ -22,20 +23,24 @@ public class UserService {
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
     private final UserMapper userMapper;
+    private final PasswordEncoder passwordEncoder;
 
-    public UserService(UserRepository userRepository, RoleRepository roleRepository, UserMapper userMapper) {
+    public UserService(UserRepository userRepository, RoleRepository roleRepository, UserMapper userMapper, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
         this.userMapper = userMapper;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public UserDto registerNewUser(UserRegistrationDto dto) {
         if (userRepository.existsByUsername(dto.getUsername())) {
-            throw new IllegalArgumentException("Username already taken.");
+            throw new IllegalArgumentException("Username already taken. " + dto.getUsername());
         }
-        User user = userMapper.toUser(dto);
 
-        Role defaultRole = roleRepository.findByRoleName("CUSTOMER")
+        User user = userMapper.toUser(dto);
+        user.setPasswordHash(passwordEncoder.encode(dto.getPassword()));
+
+        Role defaultRole = roleRepository.findByRoleName("USER_BASIC")
                 .orElseThrow(() -> new IllegalStateException("Default role not found"));
         user.setRole(defaultRole);
 
