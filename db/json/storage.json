@@ -1,0 +1,664 @@
+[
+  {
+    "name": "Seagate Barracuda Compute 2TB",
+    "category": "internal-storage",
+    "brand": "Seagate",
+    "inventory_qty": 500,
+    "price": 54.99,
+    "sku": 7212616,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.027,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 7200,
+      "cache": 256
+    }
+  },
+  {
+    "name": "Western Digital Black 4TB",
+    "category": "internal-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 400,
+    "price": 149.99,
+    "sku": 3665702,
+    "specifications": {
+      "capacity": 4000,
+      "price_per_gb": 0.037,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 7200,
+      "cache": 256
+    }
+  },
+  {
+    "name": "Toshiba P300 3TB",
+    "category": "internal-storage",
+    "brand": "Toshiba",
+    "inventory_qty": 450,
+    "price": 74.99,
+    "sku": 7653106,
+    "specifications": {
+      "capacity": 3000,
+      "price_per_gb": 0.025,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 7200,
+      "cache": 64
+    }
+  },
+  {
+    "name": "Seagate IronWolf 4TB",
+    "category": "internal-storage",
+    "brand": "Seagate",
+    "inventory_qty": 350,
+    "price": 109.99,
+    "sku": 6919077,
+    "specifications": {
+      "capacity": 4000,
+      "price_per_gb": 0.027,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 5900,
+      "cache": 64,
+      "nas_rated": true
+    }
+  },
+  {
+    "name": "Western Digital Blue 1TB",
+    "category": "internal-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 600,
+    "price": 39.99,
+    "sku": 1472317,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.040,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 7200,
+      "cache": 64
+    }
+  },
+  {
+    "name": "Toshiba Canvio Basics 2TB External HDD",
+    "category": "external-storage",
+    "brand": "Toshiba",
+    "inventory_qty": 300,
+    "price": 59.99,
+    "sku": 1344146,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.030,
+      "type": "HDD",
+      "form_factor": "2.5 inch",
+      "interface": "USB 3.2 Gen 1",
+      "portable": true
+    }
+  },
+  {
+    "name": "Seagate Expansion Portable 4TB External HDD",
+    "category": "external-storage",
+    "brand": "Seagate",
+    "inventory_qty": 250,
+    "price": 89.99,
+    "sku": 2404711,
+    "specifications": {
+      "capacity": 4000,
+      "price_per_gb": 0.022,
+      "type": "HDD",
+      "form_factor": "2.5 inch",
+      "interface": "USB 3.0",
+      "portable": true
+    }
+  },
+  {
+    "name": "Western Digital Elements 1TB External HDD",
+    "category": "external-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 400,
+    "price": 44.99,
+    "sku": 2213534,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.045,
+      "type": "HDD",
+      "form_factor": "2.5 inch",
+      "interface": "USB 3.0",
+      "portable": true
+    }
+  },
+  {
+    "name": "Seagate Barracuda Compute 8TB",
+    "category": "internal-storage",
+    "brand": "Seagate",
+    "inventory_qty": 200,
+    "price": 149.99,
+    "sku": 5129173,
+    "specifications": {
+      "capacity": 8000,
+      "price_per_gb": 0.019,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 5400,
+      "cache": 256
+    }
+  },
+  {
+    "name": "Western Digital Red Plus 4TB",
+    "category": "internal-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 280,
+    "price": 129.99,
+    "sku": 2616801,
+    "specifications": {
+      "capacity": 4000,
+      "price_per_gb": 0.032,
+      "type": "HDD",
+      "form_factor": "3.5 inch",
+      "interface": "SATA 6Gb/s",
+      "rpm": 5400,
+      "cache": 256,
+      "nas_rated": true
+    }
+  },
+  {
+    "name": "Samsung 990 Pro 1TB",
+    "category": "internal-storage",
+    "brand": "Samsung",
+    "inventory_qty": 600,
+    "price": 89.99,
+    "sku": 5105699,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.090,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7450,
+      "sequential_write": 6900
+    }
+  },
+  {
+    "name": "Crucial P5 Plus 2TB",
+    "category": "internal-storage",
+    "brand": "Crucial",
+    "inventory_qty": 450,
+    "price": 109.99,
+    "sku": 9639278,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.055,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 6600,
+      "sequential_write": 5000
+    }
+  },
+  {
+    "name": "Western Digital Black SN850X 1TB",
+    "category": "internal-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 550,
+    "price": 79.99,
+    "sku": 2726314,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.080,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7300,
+      "sequential_write": 6350
+    }
+  },
+  {
+    "name": "Kingston KC3000 2TB",
+    "category": "internal-storage",
+    "brand": "Kingston",
+    "inventory_qty": 400,
+    "price": 119.99,
+    "sku": 1589324,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.060,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7000,
+      "sequential_write": 7000
+    }
+  },
+  {
+    "name": "Seagate FireCuda 530 1TB",
+    "category": "internal-storage",
+    "brand": "Seagate",
+    "inventory_qty": 500,
+    "price": 84.99,
+    "sku": 7188328,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.085,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7300,
+      "sequential_write": 6000
+    }
+  },
+  {
+    "name": "ADATA XPG SX8200 Pro 2TB",
+    "category": "internal-storage",
+    "brand": "ADATA",
+    "inventory_qty": 350,
+    "price": 99.99,
+    "sku": 8317077,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.050,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 3.0 X4",
+      "sequential_read": 3500,
+      "sequential_write": 3000
+    }
+  },
+  {
+    "name": "Sabrent Rocket 4 Plus 2TB",
+    "category": "internal-storage",
+    "brand": "Sabrent",
+    "inventory_qty": 400,
+    "price": 129.99,
+    "sku": 9801838,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.065,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7100,
+      "sequential_write": 6600
+    }
+  },
+  {
+    "name": "Team Group MP34 1TB",
+    "category": "internal-storage",
+    "brand": "Team Group",
+    "inventory_qty": 650,
+    "price": 59.99,
+    "sku": 3231485,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.060,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 3.0 X4",
+      "sequential_read": 3400,
+      "sequential_write": 3000
+    }
+  },
+  {
+    "name": "Silicon Power A80 1TB",
+    "category": "internal-storage",
+    "brand": "Silicon Power",
+    "inventory_qty": 500,
+    "price": 64.99,
+    "sku": 9020756,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.065,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 3.0 X4",
+      "sequential_read": 3400,
+      "sequential_write": 3000
+    }
+  },
+  {
+    "name": "Gigabyte AORUS Gen4 7000s 1TB",
+    "category": "internal-storage",
+    "brand": "Gigabyte",
+    "inventory_qty": 450,
+    "price": 94.99,
+    "sku": 2759958,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.095,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7000,
+      "sequential_write": 5500
+    }
+  },
+  {
+    "name": "Samsung 980 Pro 2TB",
+    "category": "internal-storage",
+    "brand": "Samsung",
+    "inventory_qty": 300,
+    "price": 159.99,
+    "sku": 1508809,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.080,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7000,
+      "sequential_write": 5100
+    }
+  },
+  {
+    "name": "Crucial P3 Plus 4TB",
+    "category": "internal-storage",
+    "brand": "Crucial",
+    "inventory_qty": 250,
+    "price": 179.99,
+    "sku": 2836390,
+    "specifications": {
+      "capacity": 4000,
+      "price_per_gb": 0.045,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 5000,
+      "sequential_write": 4200
+    }
+  },
+  {
+    "name": "Western Digital Black SN770 2TB",
+    "category": "internal-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 350,
+    "price": 119.99,
+    "sku": 4544371,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.060,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 5150,
+      "sequential_write": 4850
+    }
+  },
+  {
+    "name": "Kingston NV2 2TB",
+    "category": "internal-storage",
+    "brand": "Kingston",
+    "inventory_qty": 400,
+    "price": 99.99,
+    "sku": 8453248,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.050,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 3500,
+      "sequential_write": 2800
+    }
+  },
+  {
+    "name": "Seagate FireCuda 530 2TB",
+    "category": "internal-storage",
+    "brand": "Seagate",
+    "inventory_qty": 300,
+    "price": 169.99,
+    "sku": 4343660,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.085,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7300,
+      "sequential_write": 6900
+    }
+  },
+  {
+    "name": "ADATA XPG SX8200 Pro 1TB",
+    "category": "internal-storage",
+    "brand": "ADATA",
+    "inventory_qty": 450,
+    "price": 69.99,
+    "sku": 3363242,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.070,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 3.0 X4",
+      "sequential_read": 3500,
+      "sequential_write": 3000
+    }
+  },
+  {
+    "name": "Sabrent Rocket 4 Plus 1TB",
+    "category": "internal-storage",
+    "brand": "Sabrent",
+    "inventory_qty": 350,
+    "price": 79.99,
+    "sku": 2575109,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.080,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 7000,
+      "sequential_write": 5500
+    }
+  },
+  {
+    "name": "Team Group MP44 2TB",
+    "category": "internal-storage",
+    "brand": "Team Group",
+    "inventory_qty": 500,
+    "price": 104.99,
+    "sku": 9909715,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.052,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 5000,
+      "sequential_write": 4800
+    }
+  },
+  {
+    "name": "Silicon Power UD90 2TB",
+    "category": "internal-storage",
+    "brand": "Silicon Power",
+    "inventory_qty": 450,
+    "price": 94.99,
+    "sku": 3669517,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.047,
+      "type": "SSD",
+      "form_factor": "M.2-2280",
+      "interface": "M.2 PCIe 4.0 X4",
+      "sequential_read": 4800,
+      "sequential_write": 4200
+    }
+  },
+  {
+    "name": "Samsung 870 EVO 1TB",
+    "category": "internal-storage",
+    "brand": "Samsung",
+    "inventory_qty": 400,
+    "price": 79.99,
+    "sku": 2152448,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.080,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 560,
+      "sequential_write": 530
+    }
+  },
+  {
+    "name": "Crucial MX500 2TB",
+    "category": "internal-storage",
+    "brand": "Crucial",
+    "inventory_qty": 350,
+    "price": 119.99,
+    "sku": 3771270,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.060,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 560,
+      "sequential_write": 510
+    }
+  },
+  {
+    "name": "Western Digital Blue SA510 1TB",
+    "category": "internal-storage",
+    "brand": "Western Digital",
+    "inventory_qty": 450,
+    "price": 69.99,
+    "sku": 8484380,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.070,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 560,
+      "sequential_write": 530
+    }
+  },
+  {
+    "name": "SanDisk Ultra 3D 2TB",
+    "category": "internal-storage",
+    "brand": "SanDisk",
+    "inventory_qty": 300,
+    "price": 109.99,
+    "sku": 3695328,
+    "specifications": {
+      "capacity": 2000,
+      "price_per_gb": 0.055,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 560,
+      "sequential_write": 530
+    }
+  },
+  {
+    "name": "Kingston A400 960GB",
+    "category": "internal-storage",
+    "brand": "Kingston",
+    "inventory_qty": 500,
+    "price": 59.99,
+    "sku": 1556755,
+    "specifications": {
+      "capacity": 960,
+      "price_per_gb": 0.062,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 500,
+      "sequential_write": 450
+    }
+  },
+  {
+    "name": "Team Group AX2 1TB",
+    "category": "internal-storage",
+    "brand": "Team Group",
+    "inventory_qty": 400,
+    "price": 54.99,
+    "sku": 9948655,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.055,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 530,
+      "sequential_write": 480
+    }
+  },
+  {
+    "name": "Silicon Power Ace A55 1TB",
+    "category": "internal-storage",
+    "brand": "Silicon Power",
+    "inventory_qty": 420,
+    "price": 57.99,
+    "sku": 5161528,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.058,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 560,
+      "sequential_write": 530
+    }
+  },
+  {
+    "name": "ADATA SU650 960GB",
+    "category": "internal-storage",
+    "brand": "ADATA",
+    "inventory_qty": 480,
+    "price": 56.99,
+    "sku": 1600500,
+    "specifications": {
+      "capacity": 960,
+      "price_per_gb": 0.059,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 520,
+      "sequential_write": 450
+    }
+  },
+  {
+    "name": "PNY CS900 1TB",
+    "category": "internal-storage",
+    "brand": "PNY",
+    "inventory_qty": 380,
+    "price": 59.99,
+    "sku": 8756800,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.060,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 535,
+      "sequential_write": 515
+    }
+  },
+  {
+    "name": "Lexar NS100 1TB",
+    "category": "internal-storage",
+    "brand": "Lexar",
+    "inventory_qty": 420,
+    "price": 55.99,
+    "sku": 1041805,
+    "specifications": {
+      "capacity": 1000,
+      "price_per_gb": 0.056,
+      "type": "SSD",
+      "form_factor": "2.5 inch",
+      "interface": "SATA 6Gb/s",
+      "sequential_read": 550,
+      "sequential_write": 510
+    }
+  }
+]
