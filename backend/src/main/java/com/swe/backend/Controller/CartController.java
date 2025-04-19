@@ -15,6 +15,14 @@ public class CartController {
 
     public CartController(CartService cartService) { this.cartService = cartService; }
 
+
+//    GET /cart → get current user’s active cart
+//    POST /cart/items → add item to cart
+//    PUT /cart/items/{productId} → update item quantity
+//    DELETE /cart/items/{productId} → remove item from cart
+//    GET /cart/count → get number of items (optional)
+
+
     @GetMapping("/all")
     public ResponseEntity<List<CartDto>> getCart(){
         return cartService.getCarts();
