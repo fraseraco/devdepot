@@ -18,7 +18,6 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductDto implements Serializable {
-    @NotNull
     Long id;
     @NotNull
     String name;

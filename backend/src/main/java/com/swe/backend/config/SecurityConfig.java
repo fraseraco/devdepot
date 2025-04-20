@@ -42,6 +42,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // allow both login & register without a token
                         .requestMatchers("/auth/login", "/auth/register").permitAll()
+                        // expose public /products
+                        .requestMatchers("/products/**").permitAll()
                         // still allow Swagger/OpenAPI docs through
                         .requestMatchers("/v3/api-docs/**", "/swagger-ui/**").permitAll()
                         .anyRequest().authenticated()

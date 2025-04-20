@@ -22,7 +22,10 @@ public class AdminService {
     }
 
     public ProductDto adminAddProduct(ProductDto productDto) {
-        if (productRepository.existsById(productDto.getId())) {
+        if (productDto.getId() != null) {
+            throw new IllegalArgumentException("New products should not have an ID.");
+        }
+        if (productRepository.existsByName(productDto.getName())) {
             throw new IllegalArgumentException("Product already exists with id: " + productDto.getId());
         }
         Product product = productMapper.toProduct(productDto);
@@ -33,7 +36,7 @@ public class AdminService {
     public List<ProductDto> getAllProducts() {
         return productRepository.findAll().stream()
                 .map(productMapper::toProductDto)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public Optional<ProductDto> getProductById(Long id) {

@@ -12,7 +12,7 @@ import java.util.List;
 public interface ProductMapper {
 
     ProductDto toProductDto(Product product);
-    List<ProductDto> map(List<Product> product);
+    
     SlimProductDto toSlimProductDto(Product product);
     Product toProduct(ProductDto productDto);
 

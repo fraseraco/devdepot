@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
+import com.swe.backend.parsejson.SpecificationConverter;
 import jakarta.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.JdbcTypeCode;
@@ -125,8 +126,10 @@ public class Product {
     }
 
 
-    @Column(name = COLUMN_SPECIFICATIONS_NAME, nullable = false)
+
     @JdbcTypeCode(SqlTypes.JSON)
+    @Convert(converter = SpecificationConverter.class)
+    @Column(name = COLUMN_SPECIFICATIONS_NAME, nullable = false, columnDefinition = "json")
     public List<Map<String, Object>> getSpecifications() {
         return specifications;
     }
