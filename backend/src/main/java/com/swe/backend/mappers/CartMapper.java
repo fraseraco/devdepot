@@ -9,13 +9,13 @@ import org.mapstruct.Mapping;
 public interface CartMapper {
 
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "active", ignore = true)
-    @Mapping(target = "isActive", ignore = true)
+    @Mapping(source = "isActive", target = "isActive")
     @Mapping(target = "user", ignore = true)
     @Mapping(target = "cartItems", ignore = true)
     Cart toCart(CartDto cartDto);
 
-    @Mapping(source = "id", target = "cartId")
+
     @Mapping(source = "user.username", target = "username")
+    @Mapping(source = "isActive", target = "isActive")
     CartDto toCartDto(Cart cart);
 }

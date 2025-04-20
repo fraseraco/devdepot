@@ -29,6 +29,7 @@ public class User {
     public static final String COLUMN_LASTNAME_NAME = "last_name";
     public static final String COLUMN_CREATEDAT_NAME = "created_at";
     public static final String COLUMN_LASTLOGIN_NAME = "last_login";
+    public static final String COLUMN_ISACTIVE_NAME = "is_active";
 
 
     private Long id;
@@ -40,6 +41,7 @@ public class User {
     private Role role;
     private Instant createdAt;
     private Instant lastLogin;
+    private Boolean isActive;
 
 
     @Id
@@ -131,4 +133,13 @@ public class User {
         this.lastLogin = lastLogin;
     }
 
+
+    @Column(name = COLUMN_ISACTIVE_NAME, nullable = false, columnDefinition="tinyint(1) default 1")
+    public boolean getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Boolean isActive) {
+        this.isActive = isActive;
+    }
 }

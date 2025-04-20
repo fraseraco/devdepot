@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public class CartDto implements Serializable {
     @NotNull
-    Long cartId;
+    Long id;
     @NotNull
     String username;
 
@@ -29,13 +29,17 @@ public class CartDto implements Serializable {
 
     Instant updatedAt;
 
+    @NotNull
+    private Boolean isActive;
+
     List<CartItemDto> cartItems;
 
     public CartDto(Cart cart, List<CartItem> cartItems) {
-        this.cartId = cart.getId();
+        this.id = cart.getId();
         this.username = cart.getUser().getUsername();  // assuming Cart has a User
         this.updatedAt = cart.getUpdatedAt();
         this.createdAt = cart.getCreatedAt();
         this.cartItems = cartItems.stream().map(CartItemDto::new).collect(Collectors.toList());
+        this.isActive = cart.getIsActive();
     }
 }

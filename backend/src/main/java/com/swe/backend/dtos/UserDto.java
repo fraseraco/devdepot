@@ -24,6 +24,7 @@ public class UserDto implements Serializable {
     String roleName;
     Instant createdAt;
     Instant lastLogin;
+    Boolean isActive;
 
     public UserDto(User user) {
         this.id = user.getId();
@@ -35,6 +36,7 @@ public class UserDto implements Serializable {
         this.roleName = user.getRole().getRoleName();
         this.createdAt = user.getCreatedAt();
         this.lastLogin = user.getLastLogin();
+        this.isActive = user.getIsActive();
     }
 
 }

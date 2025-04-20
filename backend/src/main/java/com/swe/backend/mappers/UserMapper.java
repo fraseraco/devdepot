@@ -19,6 +19,7 @@ public interface UserMapper {
         return role;
     }
     @Mapping(source = "role.roleName", target = "roleName")
+    @Mapping(source = "isActive", target = "isActive")
     UserDto toUserDto(User user);
 
     @Mapping(source = "role.roleName", target = "roleName")
@@ -30,6 +31,7 @@ public interface UserMapper {
     @Mapping(source = "password", target = "passwordHash", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "lastLogin", ignore = true)
+    @Mapping(target = "isActive", ignore = true)
     @InheritInverseConfiguration
     User toUser(UserRegistrationDto registrationDto);
 
@@ -42,5 +44,6 @@ public interface UserMapper {
     @Mapping(source = "email", target = "email")
     @Mapping(source = "firstName", target = "firstName")
     @Mapping(source = "lastName", target = "lastName")
+    @Mapping(source = "isActive", target = "isActive")
     User toUser(UserDto dto);
 }

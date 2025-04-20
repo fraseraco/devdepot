@@ -37,8 +37,6 @@ public class Cart{
     @Column(name = "updated_at")
     private Instant updatedAt;
 
-    @Setter
-    @Getter
     @Column(name = COLUMN_ISACTIVE_NAME)
     private Boolean isActive;
 
@@ -67,13 +65,13 @@ public class Cart{
         return createdAt;
     }
 
-    @NotNull
-    public Boolean getActive() {
+    @Column(name = COLUMN_ISACTIVE_NAME, nullable = false)
+    public Boolean getIsActive() {
         return isActive;
     }
 
-    public void setActive(Boolean active) {
-        isActive = active;
+    public void setIsActive(Boolean isActive) {
+        this.isActive = isActive;
     }
 
     @Column(name = COLUMN_UPDATEDAT_NAME)

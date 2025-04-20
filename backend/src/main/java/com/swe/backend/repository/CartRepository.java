@@ -12,5 +12,5 @@ public interface CartRepository extends JpaRepository<Cart, Long> {
 
     Optional<Cart> findByUserIdAndIsActive(Long uid, boolean is_active);
 
-    Optional<Cart> findByUserAndIsActive(User user, Boolean isActive);
+    Optional<Cart> findByUserAndIsActive(User user, boolean is_active);
 }
