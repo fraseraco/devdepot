@@ -46,7 +46,7 @@ const StoreItem = ({products}) => {
                 <Slider {...settings}>
                     {products.map((product, index) => (
                         <div key={index} className="slider-div">
-                            <img src= '/src/resources/6523595.jpg'/>
+                            <img src={`/src/resources/${product.sku}.jpg`} alt={product.name} />
                             <h3>{product.name}</h3>
                             <p>Price: ${product.price.toFixed(2)}</p>
                         </div>

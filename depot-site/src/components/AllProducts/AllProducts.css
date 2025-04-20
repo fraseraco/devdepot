@@ -13,6 +13,7 @@
 .product-box {
     perspective: 1000px; /* Enable 3D perspective */
  /* Scale down the box by 20% */
+    
 }
 
 .product-inner {
@@ -51,6 +52,7 @@
 .product-back {
     transform: rotateY(180deg); /* Rotate the back side */
     background-color: var(--secondary-color); /* Optional: Different background for the back */
+    z-index: 1; /* Ensure the back side is visible when flipped */
 }
 
 .add-to-cart-button {

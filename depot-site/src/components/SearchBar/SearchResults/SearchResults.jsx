@@ -13,8 +13,20 @@ const SearchResults = () => {
                 {results.length > 0 ? (
                     results.map((product, index) => (
                         <div key={index} className="result-box">
-                            <h3>{product.name}</h3>
-                            <p>Price: ${product.price.toFixed(2)}</p>
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    {/* Front Side */}
+                                    <div className="flip-card-front">
+                                        <img src={`/src/resources/${product.sku}.jpg`} alt={product.name} />
+                                        <h3>{product.name}</h3>
+                                        <p>Price: ${product.price.toFixed(2)}</p>
+                                    </div>
+                                    {/* Back Side */}
+                                    <div className="flip-card-back">
+                                        <button className="add-to-cart-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     ))
                 ) : (

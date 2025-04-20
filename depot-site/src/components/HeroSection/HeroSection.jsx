@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import StoreFront from '../StoreFront/StoreFront';
+import TerminalPage from '../Terminals/TerminalPage';
 const HeroSection = () => {
     return (
         <div>
@@ -8,7 +9,8 @@ const HeroSection = () => {
             
         
         </div>
-        <StoreFront />
+        <TerminalPage />
+        <StoreFront/>
         </div>
 
     );

@@ -1,12 +1,10 @@
 .hero-container {
-    height: 85vh;
-    width: 100vw;
+    
     display: flex;
 
     flex-direction: column;
-    background-image: url('/src/resources/herobanner.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    
+    
 background-position: center 20%;
     margin-top: 0px; /* Adjust this value based on your navbar height */
 }
