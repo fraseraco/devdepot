@@ -7,8 +7,8 @@ const SearchResults = () => {
     const results = location.state?.results || []; // Get the filtered results from state
 
     return (
-        <div className="search-results-container">
-            <h1>Search Results</h1>
+        <div className="search-results-container" style={{ textAlign: 'center' }}>
+            <t className='search-head'>Search Results</t>
             <div className="results-grid">
                 {results.length > 0 ? (
                     results.map((product, index) => (
@@ -30,7 +30,7 @@ const SearchResults = () => {
                         </div>
                     ))
                 ) : (
-                    <h1 className='no-results'>No results found.</h1>
+                    <t className='search-head'>No results found.</t>
                 )}
             </div>
         </div>

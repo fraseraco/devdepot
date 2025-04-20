@@ -1,48 +1,43 @@
-.search-results-container {
-    padding: 20px;
-    text-align: center;
-}
-
+/* Container for the grid layout */
 .results-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px; /* Space between the boxes */
-    margin-top: 20px;
-    margin-left: 60px;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid */
+    gap: 20px; /* Add spacing between grid items */
+    padding: 20px;
+    background-color: var(--background-color);
+    text-align: center; 
+    
 }
 
-
-
-.no-results {
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Ensure it takes up the full height of the container */
-    /* Optional: Adjust font size */
-    color: black; /* Optional: Adjust text color */
-    width: 100vw;
-    padding-top: 50px;
-    padding-right: 10px;
+.search-head {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Container for the flip card */
 .flip-card {
     perspective: 1000px; /* Perspective for the 3D effect */
-    
+    width: 80%; /* Reduce the width to 80% of the grid cell */
+    height: 300px; /* Set a fixed height for the card */
+    margin: 0 auto; /* Center the card horizontally within the grid cell */
 }
 
+/* Inner container for the flip card */
 .flip-card-inner {
     position: relative;
-    width: 80%; /* Reduce width to make the boxes less wide */
-    height: 240px; /* Reduce height by 20% */
+    width: 100%; /* Match the width of the parent */
+    height: 100%; /* Match the height of the parent */
     transform-style: preserve-3d; /* Enable 3D transforms */
     transition: transform 0.6s;
 }
 
+/* Flip the card on hover */
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Flip the card on hover */
+    transform: rotateY(180deg);
 }
 
+/* Front and back sides of the card */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -58,27 +53,16 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Front side of the card */
 .flip-card-front {
-    background-color: #fff;
+    background-color: #fff; /* Ensure the front side has a visible background */
+    z-index: 2; /* Ensure the front side is on top by default */
 }
 
+/* Back side of the card */
 .flip-card-back {
-    background-color: var(--secondary-color); /* 
+    background-color: var(--secondary-color); /* Use your secondary color */
     color: #fff;
     transform: rotateY(180deg); /* Position the back side */
-}
-
-.add-to-cart-button {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.add-to-cart-button:hover {
-    background-color: var(--acce);
+    z-index: 1; /* Ensure the back side is behind the front side by default */
 }
