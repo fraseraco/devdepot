@@ -19,7 +19,7 @@
 
 .product-inner {
     position: relative;
-    width: 81%; /* Reduce width to make the boxes less wide */
+    width: 80%; /* Reduce width to make the boxes less wide */
     height: 240px; /* Reduce height by 20% */
     transform-style: preserve-3d; /* Enable 3D transforms */
     transition: transform 0.6s; /* Smooth flipping animation */
