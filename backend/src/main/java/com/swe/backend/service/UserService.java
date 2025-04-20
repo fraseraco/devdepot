@@ -40,7 +40,7 @@ public class UserService {
         Role defaultRole = roleRepository.findByRoleName("USER_BASIC")
                 .orElseThrow(() -> new IllegalStateException("Default role not found"));
         user.setRole(defaultRole);
-
+        user.setIsActive(true);
         return userMapper.toUserDto(userRepository.save(user));
     }
 
