@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 :root {
@@ -42,4 +43,5 @@ body {
   height:85vh; /* Router section occupies 85% of the viewport height */
  /* Enable scrolling if content overflows */
   width: 100vw;
+  
 }

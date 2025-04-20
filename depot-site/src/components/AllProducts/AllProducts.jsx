@@ -30,7 +30,7 @@ const AllProducts = () => {
                         <div className="product-inner">
                             {/* Front Side */}
                             <div className="product-front">
-                                <img src="/src/resources/6523595.jpg" alt={product.name} />
+                                <img src={`/src/resources/${product.sku}.jpg`} alt={product.name} />
                                 <h3>{product.name}</h3>
                                 <p>Price: ${product.price.toFixed(2)}</p>
                             </div>

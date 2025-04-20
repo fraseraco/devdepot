@@ -1,9 +1,20 @@
 .terminal-container {
     width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    height: 85vh;
     background-color: #1e1e1e; /* Match the terminal background */
     display: flex;
     justify-content: center;
+    align-items: center; /* Center content vertically */
+    margin-top: var(--navbar-height); /* Add margin to avoid overlap */
+    overflow: hidden !important; /* Prevent scrolling */
+    position: relative !important; /* Ensure proper positioning */
+    box-sizing: content-box !important; /* Exclude padding and border from dimensions */
+    
+}
+
+.xterm .xterm-viewport {
+    overflow-y: hidden !important; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* Prevent scrolling */
 }

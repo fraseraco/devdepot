@@ -14,6 +14,7 @@ const Search = () => {
                 const response = await fetch('/products/all');
                 const data = await response.json();
                 setProducts(data); 
+                console.log('Fetched products:', data);
             } catch (error) {
                 console.error('Error fetching products:', error);
             }
@@ -26,7 +27,9 @@ const Search = () => {
     const handleSearch = () => {
         const filtered = products.filter((product) =>
             product.name.toLowerCase().includes(query.toLowerCase())
+            
         );
+        console.log('Filtered products:', filtered); 
         navigate('/search', { state: { results: filtered } }); 
     };
 

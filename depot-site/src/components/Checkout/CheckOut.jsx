@@ -30,6 +30,7 @@ const CheckOut = () => {
                         name={product.name}
                         price={product.price}
                         quantity={product.quantity}
+                        sku = {product.sku}
                     />
                 ))}
             </div>
