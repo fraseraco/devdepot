@@ -31,7 +31,6 @@ CREATE TABLE IF NOT EXISTS `devdepot`.`role` (
   `last_update` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`role_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -56,7 +55,6 @@ CREATE TABLE IF NOT EXISTS `devdepot`.`user` (
     FOREIGN KEY (`role_id`)
     REFERENCES `devdepot`.`role` (`role_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 16
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -103,7 +101,6 @@ CREATE TABLE IF NOT EXISTS `devdepot`.`product` (
   `specifications` JSON NOT NULL,
   PRIMARY KEY (`product_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 8
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -224,7 +221,6 @@ CREATE TABLE IF NOT EXISTS `devdepot`.`permission` (
   `description` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`permission_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 6
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
