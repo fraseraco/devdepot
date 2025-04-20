@@ -9,9 +9,7 @@ import java.time.Instant;
 
 @Setter
 @Entity
-@Table(name = Payment.TABLE_NAME, schema = "devdepot", indexes = {
-        @Index(name = "fk_payments_orderid", columnList = "order_id")
-})
+@Table(name = Payment.TABLE_NAME, schema = "devdepot")
 public class Payment {
     public static final String TABLE_NAME = "payment";
     public static final String COLUMN_ID_NAME = "transaction_id";
@@ -38,14 +36,10 @@ public class Payment {
     private Instant paymentDate;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = COLUMN_ID_NAME, nullable = false)
     public Long getId() {
         return id;
-    }
-
-    @Column(name = COLUMN_ORDERID_NAME, nullable = false)
-    public Long getOrderId() {
-        return orderId;
     }
 
     @Lob

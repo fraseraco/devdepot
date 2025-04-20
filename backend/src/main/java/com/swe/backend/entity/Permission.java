@@ -1,10 +1,6 @@
 package com.swe.backend.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import jakarta.persistence.UniqueConstraint;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = Permission.TABLE_NAME, schema = "depotTEST", uniqueConstraints = {
@@ -24,6 +20,7 @@ public class Permission {
     private String description;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = COLUMN_ID_NAME, nullable = false)
     public Long getId() {
         return id;

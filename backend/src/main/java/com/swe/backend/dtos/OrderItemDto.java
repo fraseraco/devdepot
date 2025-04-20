@@ -17,7 +17,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class OrderItemDto implements Serializable {
     OrderItemId id;
-    OrderDto order;
     ProductDto product;
     Integer quantity;
     BigDecimal pricePerUnit;

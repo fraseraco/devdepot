@@ -9,6 +9,7 @@ import com.swe.backend.mappers.OrderMapper;
 import com.swe.backend.repository.*;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.Instant;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,6 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,7 +33,7 @@ public class CheckoutService {
     private final PaymentRepository paymentRepo;
     private final OrderMapper orderMapper;
     private final CartToOrderItemMapper cartToOrderItemMapper;
-    private UserRepository userRepo;
+    private final UserRepository userRepo;
 
     /**
      * Perform checkout as a single ACID transaction. If any pre‑condition fails
@@ -56,33 +58,54 @@ public class CheckoutService {
             productRepo.save(p); // write‑back new stock level
         }
 
-        // 2. Create Order + OrderItems -------------------------------------
-        Order order = new Order();
-        order.setUser(user);
-        order.setOrderStatus("PENDING");
-        order.setOrderDate(Instant.now());
-        order.setShippingAddress(checkoutRequestDto.getShippingAddress());
 
-        List<OrderItem> orderItems = cart.getCartItems().stream()
-                .map(cartToOrderItemMapper::toOrderItem)
-                .toList();
-        order.setOrderItems(orderItems);
+        Order order = new Order();
+        List<OrderItem> orderItems = new ArrayList<>();
+
+        for (CartItem cartItem : cart.getCartItems()) {
+            OrderItem item = new OrderItem();
+            item.setOrder(order);
+
+            item.setProduct(cartItem.getProduct());
+            item.setQuantity(cartItem.getQuantity());
+            item.setPricePerUnit(cartItem.getProduct().getPrice());
+
+            OrderItemId id = new OrderItemId();
+            // ❌ DON'T call order.getId() here unless order is already saved
+            id.setProductId(cartItem.getProduct().getId());
+            item.setId(id);
+
+            orderItems.add(item);
+        }
+
 
         BigDecimal subtotal = orderItems.stream()
                 .map(oi -> oi.getPricePerUnit().multiply(BigDecimal.valueOf(oi.getQuantity())))
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
+        BigDecimal tax = subtotal.setScale(2, RoundingMode.HALF_UP).multiply(BigDecimal.valueOf(0.05));
 
-        order.setTotalCost(subtotal); // taxes/discounts omitted for MVP
 
+        // Process payment
+        Payment payment = new Payment();
+        payment.setPaymentMethod(checkoutRequestDto.getPaymentMethod());
+        payment.setPaymentStatus("PAID");
+        payment.setSubtotal(subtotal);
+        payment.setTaxTotal(tax);
+        payment.setPaymentDate(Instant.now());
+        paymentRepo.save(payment);
+
+        // 2. Create Order + OrderItems -------------------------------------
+        order.setUser(user);
+        order.setShippingAddress(checkoutRequestDto.getShippingAddress());
+        order.setDiscountPromotion(BigDecimal.ZERO);
+        order.setOrderDate(Instant.now());
+        order.setOrderStatus("PENDING");
+        order.setTransaction(payment);
+        order.setOrderItems(orderItems);
+        order.setTotalCost(subtotal.add(tax)); // taxes/discounts omitted for MVP
+        order.setOrderItems(orderItems);
         orderRepo.save(order);
 
-        // 3. Create Payment --------------------------------------------------
-        Payment payment = new Payment();
-        payment.setOrderId(order.getId());
-        payment.setPaymentMethod(checkoutRequestDto.getPaymentMethod());
-        payment.setPaymentStatus("PENDING");
-        payment.setSubtotal(subtotal);
-        paymentRepo.save(payment);
 
         // 4. Deactivate cart -----------------------------------------------
         cart.setIsActive(false);

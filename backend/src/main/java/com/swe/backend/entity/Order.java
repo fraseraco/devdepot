@@ -49,6 +49,7 @@ public class Order {
     private List<OrderItem> orderItems = new ArrayList<>();
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = COLUMN_ID_NAME, nullable = false)
     public Long getId() {
         return id;

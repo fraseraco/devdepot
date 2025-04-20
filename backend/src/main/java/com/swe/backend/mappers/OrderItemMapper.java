@@ -3,11 +3,13 @@ package com.swe.backend.mappers;
 import com.swe.backend.dtos.OrderItemDto;
 import com.swe.backend.entity.OrderItem;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-@Mapper(componentModel = "spring", uses = { UserMapper.class })
+@Mapper(componentModel = "spring", uses = { ProductMapper.class })  // or whatever mappers you use
 public interface OrderItemMapper {
-    OrderItemMapper INSTANCE = Mappers.getMapper(OrderItemMapper.class);
-    OrderItemDto toOrderItemDto(OrderItem orderItem);
-    OrderItem toOrderItem(OrderItemDto orderItemDto);
+    @Mapping(target = "order", ignore = true)
+    OrderItem toOrderItem(OrderItemDto dto);
+
+    OrderItemDto toOrderItemDto(OrderItem entity);
 }

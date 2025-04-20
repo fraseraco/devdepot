@@ -6,13 +6,13 @@ import com.swe.backend.entity.OrderItem;
 import com.swe.backend.entity.OrderItemId;
 import org.mapstruct.*;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = { ProductMapper.class })
 public interface CartToOrderItemMapper {
     @Mapping(target = "id", ignore = true)              // composite key generated later
-    @Mapping(target = "order", ignore = true)
     @Mapping(target = "product", source = "product")
     @Mapping(target = "quantity", source = "quantity")
     @Mapping(target = "pricePerUnit", source = "product.price")
+    @Mapping(target = "order", ignore = true)
     OrderItem toOrderItem(CartItem cartItem);
 
     /**

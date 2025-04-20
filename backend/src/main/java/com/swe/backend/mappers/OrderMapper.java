@@ -8,14 +8,16 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 
-@Mapper(componentModel = "spring", uses = { UserMapper.class })
+@Mapper(componentModel = "spring", uses = { UserMapper.class, PaymentMapper.class, OrderItemMapper.class })
 public interface OrderMapper {
-    OrderMapper INSTANCE = Mappers.getMapper(OrderMapper.class);
+
     @Mapping(source = "user", target = "user")
+    @Mapping(source = "transaction", target = "transaction")
     OrderDto toOrderDto(Order order);
 
     @InheritInverseConfiguration
     @Mapping(target = "user.role", ignore = true)
     @Mapping(source = "orderItems", target = "orderItems")
+    @Mapping(target = "transaction.orderId", ignore = true) // 👈 quiet down nested payment.orderId warning
     Order toOrder(OrderDto orderDto);
 }
