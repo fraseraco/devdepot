@@ -1,10 +1,10 @@
-package com.swe.backend.Controller;
+package com.swe.backend.controller;
 
-import com.swe.backend.DTOs.AuthRequestDto_TEMP;
-import com.swe.backend.DTOs.AuthResponseDto_TEMP;
-import com.swe.backend.DTOs.UserDto;
-import com.swe.backend.DTOs.UserRegistrationDto;
-import com.swe.backend.Service.UserService;
+import com.swe.backend.dtos.AuthRequestDto_TEMP;
+import com.swe.backend.dtos.AuthResponseDto_TEMP;
+import com.swe.backend.dtos.UserDto;
+import com.swe.backend.dtos.UserRegistrationDto;
+import com.swe.backend.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
