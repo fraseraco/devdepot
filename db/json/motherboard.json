@@ -3,606 +3,721 @@
     "name": "B650 GAMING X AX",
     "category": "motherboard",
     "brand": "Gigabyte",
-    "inventory_qty": 1000,
+    "inventoryQty": 1000,
     "price": 179.99,
-    "sku": 6582206,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 192
-    }
+    "description": null,
+    "sku": "6582206",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 192
+      }
+    ]
   },
   {
     "name": "Z790 AORUS MASTER",
     "category": "motherboard",
     "brand": "Gigabyte",
-    "inventory_qty": 500,
+    "inventoryQty": 500,
     "price": 499.99,
-    "sku": 1122335,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z790",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "1122335",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z790",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "ROG Strix B650-E Gaming WiFi",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 700,
+    "inventoryQty": 700,
     "price": 299.99,
-    "sku": 5566779,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650E",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "5566779",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650E",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "MPG Z790 CARBON WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 600,
+    "inventoryQty": 600,
     "price": 379.99,
-    "sku": 9988777,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z790",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "9988777",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z790",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "X670E Taichi",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 400,
+    "inventoryQty": 400,
     "price": 399.99,
-    "sku": 3322111,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "X670E",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "3322111",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "X670E",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "PRIME B760-PLUS D4",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 800,
+    "inventoryQty": 800,
     "price": 159.99,
-    "sku": 4455668,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "B760",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128,
-      "memory_type": "DDR4"
-    }
+    "description": null,
+    "sku": "4455668",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "B550 Tomahawk",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 900,
+    "inventoryQty": 900,
     "price": 169.99,
-    "sku": 6677890,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "B550",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "6677890",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "B550",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "H670 Steel Legend",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 1100,
+    "inventoryQty": 1100,
     "price": 149.99,
-    "sku": 7788991,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "H670",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "7788991",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "H670",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "ROG Crosshair X670E Hero",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 599.99,
-    "sku": 2233446,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "X670E",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "2233446",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "X670E",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "MAG B760 TOMAHAWK WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 650,
+    "inventoryQty": 650,
     "price": 199.99,
-    "sku": 8899002,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "B760",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "8899002",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "X570 Taichi",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 279.99,
-    "sku": 9900113,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "X570",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "9900113",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "X570",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "PRIME B650M-A WIFI",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 750,
+    "inventoryQty": 750,
     "price": 199.99,
-    "sku": 3344557,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 192
-    }
+    "description": null,
+    "sku": "3344557",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 192
+      }
+    ]
   },
   {
     "name": "PRO B760M-A WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 850,
+    "inventoryQty": 850,
     "price": 179.99,
-    "sku": 6677891,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "B760",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "6677891",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "B650M PG Riptide",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 950,
+    "inventoryQty": 950,
     "price": 159.99,
-    "sku": 1122336,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "1122336",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "ROG Strix Z790-E Gaming WiFi",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 450,
+    "inventoryQty": 450,
     "price": 449.99,
-    "sku": 5566780,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z790",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "5566780",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z790",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "MAG B650 TOMAHAWK WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 700,
+    "inventoryQty": 700,
     "price": 219.99,
-    "sku": 9988778,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "9988778",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "Z690 Steel Legend WiFi 6E",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 600,
+    "inventoryQty": 600,
     "price": 239.99,
-    "sku": 3322112,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z690",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "3322112",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z690",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "TUF Gaming B650-Plus WiFi",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 800,
+    "inventoryQty": 800,
     "price": 229.99,
-    "sku": 4455669,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "4455669",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "MPG B760I EDGE WIFI DDR4",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 900,
+    "inventoryQty": 900,
     "price": 189.99,
-    "sku": 6677892,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "B760",
-      "form_factor": "Mini-ITX",
-      "memory_slots": 2,
-      "max_memory": 64,
-      "memory_type": "DDR4"
-    }
+    "description": null,
+    "sku": "6677892",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "form_factor": "Mini-ITX",
+        "memory_slots": 2,
+        "max_memory": 64,
+        "memory_type": "DDR4"
+      }
+    ]
   },
   {
     "name": "B650I AORUS ULTRA",
     "category": "motherboard",
     "brand": "Gigabyte",
-    "inventory_qty": 500,
+    "inventoryQty": 500,
     "price": 249.99,
-    "sku": 7788992,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "Mini-ITX",
-      "memory_slots": 2,
-      "max_memory": 96
-    }
+    "description": null,
+    "sku": "7788992",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "Mini-ITX",
+        "memory_slots": 2,
+        "max_memory": 96
+      }
+    ]
   },
   {
     "name": "ROG Strix Z690-I Gaming WiFi",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 400,
+    "inventoryQty": 400,
     "price": 349.99,
-    "sku": 2233447,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z690",
-      "form_factor": "Mini-ITX",
-      "memory_slots": 2,
-      "max_memory": 64
-    }
+    "description": null,
+    "sku": "2233447",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z690",
+        "form_factor": "Mini-ITX",
+        "memory_slots": 2,
+        "max_memory": 64
+      }
+    ]
   },
   {
     "name": "MEG Z790 ACE",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 549.99,
-    "sku": 8899003,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z790",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "8899003",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z790",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "X670E Steel Legend",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 329.99,
-    "sku": 9900114,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "X670E",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "9900114",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "X670E",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "PRIME Z790-A WIFI",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 650,
+    "inventoryQty": 650,
     "price": 319.99,
-    "sku": 3344558,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "Z790",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "3344558",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "Z790",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "MAG B650M MORTAR WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 750,
+    "inventoryQty": 750,
     "price": 199.99,
-    "sku": 6677893,
-    "specifications": {
-      "socket": "AM5",
-      "chipset": "B650",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "6677893",
+    "specifications": [
+      {
+        "socket": "AM5",
+        "chipset": "B650",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "B760M Steel Legend WiFi",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 850,
+    "inventoryQty": 850,
     "price": 169.99,
-    "sku": 1122337,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "B760",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "1122337",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "TUF Gaming B550-Plus",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 950,
+    "inventoryQty": 950,
     "price": 159.99,
-    "sku": 5566781,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "B550",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "5566781",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "B550",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "MPG B550 GAMING PLUS",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 149.99,
-    "sku": 9988779,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "B550",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "9988779",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "B550",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "B450 Tomahawk MAX II",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 700,
+    "inventoryQty": 700,
     "price": 109.99,
-    "sku": 2233448,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "B450",
-      "form_factor": "ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "2233448",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "B450",
+        "form_factor": "ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "H510M-A PRO",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 800,
+    "inventoryQty": 800,
     "price": 79.99,
-    "sku": 8899004,
-    "specifications": {
-      "socket": "LGA 1200",
-      "chipset": "H510",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 64
-    }
+    "description": null,
+    "sku": "8899004",
+    "specifications": [
+      {
+        "socket": "LGA 1200",
+        "chipset": "H510",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 64
+      }
+    ]
   },
   {
     "name": "A520M DS3H",
     "category": "motherboard",
     "brand": "Gigabyte",
-    "inventory_qty": 900,
+    "inventoryQty": 900,
     "price": 69.99,
-    "sku": 9900115,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "A520",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 64
-    }
+    "description": null,
+    "sku": "9900115",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "A520",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 64
+      }
+    ]
   },
   {
     "name": "PRIME H610M-K D4",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 750,
+    "inventoryQty": 750,
     "price": 89.99,
-    "sku": 3344559,
-    "specifications": {
-      "socket": "LGA 1700",
-      "chipset": "H610",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 64,
-      "memory_type": "DDR4"
-    }
+    "description": null,
+    "sku": "3344559",
+    "specifications": [
+      {
+        "socket": "LGA 1700",
+        "chipset": "H610",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 64
+      }
+    ]
   },
   {
     "name": "B460M MORTAR WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 650,
+    "inventoryQty": 650,
     "price": 129.99,
-    "sku": 6677895,
-    "specifications": {
-      "socket": "LGA 1200",
-      "chipset": "B460",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "6677895",
+    "specifications": [
+      {
+        "socket": "LGA 1200",
+        "chipset": "B460",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "B560M PRO-VDH WIFI",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 119.99,
-    "sku": 1122339,
-    "specifications": {
-      "socket": "LGA 1200",
-      "chipset": "B560",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "1122339",
+    "specifications": [
+      {
+        "socket": "LGA 1200",
+        "chipset": "B560",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "TUF Gaming B450M-Plus II",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 850,
+    "inventoryQty": 850,
     "price": 99.99,
-    "sku": 5566783,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "B450",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 4,
-      "max_memory": 128
-    }
+    "description": null,
+    "sku": "5566783",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "B450",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 4,
+        "max_memory": 128
+      }
+    ]
   },
   {
     "name": "H410M S2H V2",
     "category": "motherboard",
     "brand": "Gigabyte",
-    "inventory_qty": 950,
+    "inventoryQty": 950,
     "price": 64.99,
-    "sku": 9988781,
-    "specifications": {
-      "socket": "LGA 1200",
-      "chipset": "H410",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 64
-    }
+    "description": null,
+    "sku": "9988781",
+    "specifications": [
+      {
+        "socket": "LGA 1200",
+        "chipset": "H410",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 64
+      }
+    ]
   },
   {
     "name": "A320M-K",
     "category": "motherboard",
     "brand": "ASUS",
-    "inventory_qty": 1000,
+    "inventoryQty": 1000,
     "price": 59.99,
-    "sku": 3322114,
-    "specifications": {
-      "socket": "AM4",
-      "chipset": "A320",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 32
-    }
+    "description": null,
+    "sku": "3322114",
+    "specifications": [
+      {
+        "socket": "AM4",
+        "chipset": "A320",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 32
+      }
+    ]
   },
   {
     "name": "B75M-HDV R4.0",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 600,
+    "inventoryQty": 600,
     "price": 74.99,
-    "sku": 4455671,
-    "specifications": {
-      "socket": "LGA 1155",
-      "chipset": "B75",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 16,
-      "obsolete": true
-    }
+    "description": null,
+    "sku": "4455671",
+    "specifications": [
+      {
+        "socket": "LGA 1155",
+        "chipset": "B75",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 16
+      }
+    ]
   },
   {
     "name": "FM2A68M-HD+",
     "category": "motherboard",
     "brand": "ASRock",
-    "inventory_qty": 500,
+    "inventoryQty": 500,
     "price": 69.99,
-    "sku": 6677896,
-    "specifications": {
-      "socket": "FM2+",
-      "chipset": "A68H",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 32,
-      "obsolete": true
-    }
+    "description": null,
+    "sku": "6677896",
+    "specifications": [
+      {
+        "socket": "FM2+",
+        "chipset": "A68H",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 32
+      }
+    ]
   },
   {
     "name": "H81M-P33",
     "category": "motherboard",
     "brand": "MSI",
-    "inventory_qty": 700,
+    "inventoryQty": 700,
     "price": 59.99,
-    "sku": 7788994,
-    "specifications": {
-      "socket": "LGA 1150",
-      "chipset": "H81",
-      "form_factor": "Micro-ATX",
-      "memory_slots": 2,
-      "max_memory": 16,
-      "obsolete": true
-    }
+    "description": null,
+    "sku": "7788994",
+    "specifications": [
+      {
+        "socket": "LGA 1150",
+        "chipset": "H81",
+        "form_factor": "Micro-ATX",
+        "memory_slots": 2,
+        "max_memory": 16
+      }
+    ]
   }
 ]

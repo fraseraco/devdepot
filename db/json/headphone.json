@@ -3,292 +3,352 @@
     "name": "Logitech G PRO X Wireless LIGHTSPEED Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Logitech",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 199.99,
-    "sku": 9448849,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Blue VO!CE",
-      "surround_sound": "DTS Headphone:X 2.0",
-      "battery_life_hours": 20
-    }
+    "sku": "9448849",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Blue VO!CE",
+        "surround_sound": "DTS Headphone:X 2.0",
+        "battery_life_hours": 20
+      }
+    ]
   },
   {
     "name": "Razer BlackShark V2 Pro Wireless Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Razer",
-    "inventory_qty": 220,
+    "inventoryQty": 220,
     "price": 179.99,
-    "sku": 1021045,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "HyperClear Super Wideband Mic",
-      "surround_sound": "THX Spatial Audio",
-      "battery_life_hours": 70
-    }
+    "sku": "1021045",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "HyperClear Super Wideband Mic",
+        "surround_sound": "THX Spatial Audio",
+        "battery_life_hours": 70
+      }
+    ]
   },
   {
     "name": "Corsair Virtuoso RGB Wireless XT High-Fidelity Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Corsair",
-    "inventory_qty": 180,
+    "inventoryQty": 180,
     "price": 269.99,
-    "sku": 9094564,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Broadcast-grade detachable",
-      "surround_sound": "Dolby Atmos",
-      "battery_life_hours": 15
-    }
+    "sku": "9094564",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Broadcast-grade detachable",
+        "surround_sound": "Dolby Atmos",
+        "battery_life_hours": 15
+      }
+    ]
   },
   {
     "name": "SteelSeries Arctis Nova Pro Wireless Gaming Headset",
     "category": "gaming-headphone",
     "brand": "SteelSeries",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 349.99,
-    "sku": 8153014,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "ClearCast Gen 2",
-      "surround_sound": "360° Spatial Audio",
-      "battery_life_hours": 22
-    }
+    "sku": "8153014",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "ClearCast Gen 2",
+        "surround_sound": "360° Spatial Audio",
+        "battery_life_hours": 22
+      }
+    ]
   },
   {
     "name": "HyperX Cloud III Wireless Gaming Headset",
     "category": "gaming-headphone",
     "brand": "HyperX",
-    "inventory_qty": 280,
+    "inventoryQty": 280,
     "price": 159.99,
-    "sku": 9566821,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Detachable noise-cancelling",
-      "surround_sound": "DTS Headphone:X Spatial Audio",
-      "battery_life_hours": 120
-    }
+    "sku": "9566821",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Detachable noise-cancelling",
+        "surround_sound": "DTS Headphone:X Spatial Audio",
+        "battery_life_hours": 120
+      }
+    ]
   },
   {
     "name": "Astro A50 Wireless + Base Station Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Astro Gaming",
-    "inventory_qty": 150,
+    "inventoryQty": 150,
     "price": 299.99,
-    "sku": 7069693,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Flip-up mute",
-      "surround_sound": "Dolby Audio",
-      "battery_life_hours": 15
-    }
+    "sku": "7069693",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Flip-up mute",
+        "surround_sound": "Dolby Audio",
+        "battery_life_hours": 15
+      }
+    ]
   },
   {
     "name": "Sennheiser GSP 600 Wired Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Sennheiser",
-    "inventory_qty": 190,
+    "inventoryQty": 190,
     "price": 199.95,
-    "sku": 6151017,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "Noise-cancelling broadcast-quality",
-      "surround_sound": false
-    }
+    "sku": "6151017",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "Noise-cancelling broadcast-quality",
+        "surround_sound": false
+      }
+    ]
   },
   {
     "name": "EPOS H6PRO Open Acoustic Gaming Headset",
     "category": "gaming-headphone",
     "brand": "EPOS",
-    "inventory_qty": 210,
+    "inventoryQty": 210,
     "price": 179.00,
-    "sku": 1639896,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "Lift-to-mute detachable",
-      "surround_sound": false
-    }
+    "sku": "1639896",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "Lift-to-mute detachable",
+        "surround_sound": false
+      }
+    ]
   },
   {
     "name": "Beyerdynamic TYGR 300 R Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Beyerdynamic",
-    "inventory_qty": 160,
+    "inventoryQty": 160,
     "price": 199.00,
-    "sku": 6468021,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": false,
-      "open_back": true
-    }
+    "sku": "6468021",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": false,
+        "open_back": true
+      }
+    ]
   },
   {
     "name": "Audio-Technica ATH-G1WL Wireless Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Audio-Technica",
-    "inventory_qty": 140,
+    "inventoryQty": 140,
     "price": 229.00,
-    "sku": 6309814,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Detachable boom",
-      "surround_sound": false,
-      "battery_life_hours": 15
-    }
+    "sku": "6309814",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Detachable boom",
+        "surround_sound": false,
+        "battery_life_hours": 15
+      }
+    ]
   },
   {
     "name": "Logitech G733 LIGHTSPEED Wireless RGB Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Logitech",
-    "inventory_qty": 230,
+    "inventoryQty": 230,
     "price": 129.99,
-    "sku": 5146951,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Detachable with Blue VO!CE filters",
-      "surround_sound": "DTS Headphone:X 2.0",
-      "battery_life_hours": 29
-    }
+    "sku": "5146951",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Detachable with Blue VO!CE filters",
+        "surround_sound": "DTS Headphone:X 2.0",
+        "battery_life_hours": 29
+      }
+    ]
   },
   {
     "name": "Razer Barracuda Pro Wireless Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Razer",
-    "inventory_qty": 170,
+    "inventoryQty": 170,
     "price": 249.99,
-    "sku": 4497145,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Integrated beamforming noise-cancelling",
-      "surround_sound": "THX Spatial Audio",
-      "battery_life_hours": 40
-    }
+    "sku": "4497145",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Integrated beamforming noise-cancelling",
+        "surround_sound": "THX Spatial Audio",
+        "battery_life_hours": 40
+      }
+    ]
   },
   {
     "name": "Corsair HS80 MAX WIRELESS Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Corsair",
-    "inventory_qty": 260,
+    "inventoryQty": 260,
     "price": 179.99,
-    "sku": 3654898,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Broadcast-grade omni-directional",
-      "surround_sound": "Dolby Atmos",
-      "battery_life_hours": 65
-    }
+    "sku": "3654898",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Broadcast-grade omni-directional",
+        "surround_sound": "Dolby Atmos",
+        "battery_life_hours": 65
+      }
+    ]
   },
   {
     "name": "SteelSeries Arctis Nova 3 Multi-System Gaming Headset",
     "category": "gaming-headphone",
     "brand": "SteelSeries",
-    "inventory_qty": 220,
+    "inventoryQty": 220,
     "price": 99.99,
-    "sku": 6071990,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "ClearCast Gen 2 noise-cancelling",
-      "surround_sound": "Spatial Audio"
-    }
+    "sku": "6071990",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "ClearCast Gen 2 noise-cancelling",
+        "surround_sound": "Spatial Audio"
+      }
+    ]
   },
   {
     "name": "HyperX Cloud Alpha Wireless Gaming Headset",
     "category": "gaming-headphone",
     "brand": "HyperX",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 199.99,
-    "sku": 8251262,
-    "specifications": {
-      "type": "Over-ear",
-      "wireless": true,
-      "microphone": "Detachable noise-cancelling",
-      "surround_sound": "DTS Headphone:X Spatial Audio",
-      "battery_life_hours": 300
-    }
+    "sku": "8251262",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wireless": true,
+        "microphone": "Detachable noise-cancelling",
+        "surround_sound": "DTS Headphone:X Spatial Audio",
+        "battery_life_hours": 300
+      }
+    ]
   },
   {
     "name": "Astro A40 TR Headset + MixAmp Pro TR",
     "category": "gaming-headphone",
     "brand": "Astro Gaming",
-    "inventory_qty": 130,
+    "inventoryQty": 130,
     "price": 249.99,
-    "sku": 5043373,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "Swappable boom",
-      "surround_sound": "Dolby Audio"
-    }
+    "sku": "5043373",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "Swappable boom",
+        "surround_sound": "Dolby Audio"
+      }
+    ]
   },
   {
     "name": "Sennheiser GAME ONE Open Back Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Sennheiser",
-    "inventory_qty": 180,
+    "inventoryQty": 180,
     "price": 179.95,
-    "sku": 4104813,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "Noise-cancelling",
-      "open_back": true
-    }
+    "sku": "4104813",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "Noise-cancelling",
+        "open_back": true
+      }
+    ]
   },
   {
     "name": "EPOS H3 Hybrid Wired Gaming Headset",
     "category": "gaming-headphone",
     "brand": "EPOS",
-    "inventory_qty": 240,
+    "inventoryQty": 240,
     "price": 119.00,
-    "sku": 6297015,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "wireless": true,
-      "microphone": "Lift-to-mute detachable",
-      "surround_sound": false
-    }
+    "sku": "6297015",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "wireless": true,
+        "microphone": "Lift-to-mute detachable",
+        "surround_sound": false
+      }
+    ]
   },
   {
     "name": "Beyerdynamic MMX 150 Wired Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Beyerdynamic",
-    "inventory_qty": 150,
+    "inventoryQty": 150,
     "price": 149.00,
-    "sku": 4516514,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "META VOICE cardioid condenser",
-      "surround_sound": false
-    }
+    "sku": "4516514",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "META VOICE cardioid condenser",
+        "surround_sound": false
+      }
+    ]
   },
   {
     "name": "Audio-Technica ATH-PDG1a High-Fidelity Gaming Headset",
     "category": "gaming-headphone",
     "brand": "Audio-Technica",
-    "inventory_qty": 170,
+    "inventoryQty": 170,
     "price": 129.00,
-    "sku": 1236782,
-    "specifications": {
-      "type": "Over-ear",
-      "wired": true,
-      "microphone": "Boom microphone",
-      "open_back": true
-    }
+    "sku": "1236782",
+    "description": null,
+    "specifications": [
+      {
+        "type": "Over-ear",
+        "wired": true,
+        "microphone": "Boom microphone",
+        "open_back": true
+      }
+    ]
   }
 ]

@@ -3,608 +3,719 @@
     "name": "Vengeance LPX 16GB (2x8GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 2000,
+    "inventoryQty": 2000,
     "price": 59.99,
-    "sku": 6562314,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 8],
-      "price_per_gb": 3.75,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562314",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 8],
+        "price_per_gb": 3.75,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Trident Z5 Neo 32GB (2x16GB) DDR5 6000MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 1200,
+    "inventoryQty": 1200,
     "price": 129.99,
-    "sku": 6562315,
-    "specifications": {
-      "speed": [6000],
-      "modules": [2, 16],
-      "price_per_gb": 4.06,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 30
-    }
+    "sku": "6562315",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [6000],
+        "modules": [2, 16],
+        "price_per_gb": 4.06,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 30
+      }
+    ]
   },
   {
     "name": "Fury Beast 16GB (2x8GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 1800,
+    "inventoryQty": 1800,
     "price": 64.99,
-    "sku": 6562316,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 8],
-      "price_per_gb": 4.06,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 17
-    }
+    "sku": "6562316",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 8],
+        "price_per_gb": 4.06,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 17
+      }
+    ]
   },
   {
     "name": "Dominator Platinum RGB 32GB (2x16GB) DDR5 5600MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 900,
+    "inventoryQty": 900,
     "price": 149.99,
-    "sku": 6562317,
-    "specifications": {
-      "speed": [5600],
-      "modules": [2, 16],
-      "price_per_gb": 4.69,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 36,
-      "rgb": true
-    }
+    "sku": "6562317",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5600],
+        "modules": [2, 16],
+        "price_per_gb": 4.69,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 36,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Ripjaws V 16GB (2x8GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 1500,
+    "inventoryQty": 1500,
     "price": 57.99,
-    "sku": 6562318,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 8],
-      "price_per_gb": 3.62,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562318",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 8],
+        "price_per_gb": 3.62,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Ballistix 16GB (2x8GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Crucial",
-    "inventory_qty": 1700,
+    "inventoryQty": 1700,
     "price": 55.99,
-    "sku": 6562319,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 8],
-      "price_per_gb": 3.50,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562319",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 8],
+        "price_per_gb": 3.50,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Viper Steel 16GB (2x8GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Patriot",
-    "inventory_qty": 1400,
+    "inventoryQty": 1400,
     "price": 54.99,
-    "sku": 6562320,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 8],
-      "price_per_gb": 3.44,
-      "color": "Gray",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562320",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 8],
+        "price_per_gb": 3.44,
+        "color": "Gray",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Fury Impact 32GB (2x16GB) DDR4 3200MHz SODIMM",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 800,
+    "inventoryQty": 800,
     "price": 109.99,
-    "sku": 6562322,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 16],
-      "price_per_gb": 3.44,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 20,
-      "form_factor": "SODIMM"
-    }
+    "sku": "6562322",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 16],
+        "price_per_gb": 3.44,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 20,
+        "form_factor": "SODIMM"
+      }
+    ]
   },
   {
     "name": "Trident Z Royal 16GB (2x8GB) DDR4 3600MHz RGB",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 700,
+    "inventoryQty": 700,
     "price": 89.99,
-    "sku": 6562323,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 8],
-      "price_per_gb": 5.62,
-      "color": "Silver/Gold",
-      "first_word_latency": 10,
-      "cas_latency": 18,
-      "rgb": true
-    }
+    "sku": "6562323",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 8],
+        "price_per_gb": 5.62,
+        "color": "Silver/Gold",
+        "first_word_latency": 10,
+        "cas_latency": 18,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Vengeance RGB Pro 16GB (2x8GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 1300,
+    "inventoryQty": 1300,
     "price": 69.99,
-    "sku": 6562324,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 8],
-      "price_per_gb": 4.37,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16,
-      "rgb": true
-    }
+    "sku": "6562324",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 8],
+        "price_per_gb": 4.37,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Fury Beast 32GB (2x16GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 1000,
+    "inventoryQty": 1000,
     "price": 104.99,
-    "sku": 6562325,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 16],
-      "price_per_gb": 3.28,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562325",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 16],
+        "price_per_gb": 3.28,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Ripjaws V 32GB (2x16GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 850,
+    "inventoryQty": 850,
     "price": 119.99,
-    "sku": 6562326,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 16],
-      "price_per_gb": 3.75,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 18
-    }
+    "sku": "6562326",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 16],
+        "price_per_gb": 3.75,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 18
+      }
+    ]
   },
   {
     "name": "Ballistix 32GB (2x16GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Crucial",
-    "inventory_qty": 950,
+    "inventoryQty": 950,
     "price": 99.99,
-    "sku": 6562327,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 16],
-      "price_per_gb": 3.12,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562327",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 16],
+        "price_per_gb": 3.12,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Viper Steel 32GB (2x16GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "Patriot",
-    "inventory_qty": 750,
+    "inventoryQty": 750,
     "price": 109.99,
-    "sku": 6562328,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 16],
-      "price_per_gb": 3.44,
-      "color": "Gray",
-      "first_word_latency": 10,
-      "cas_latency": 18
-    }
+    "sku": "6562328",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 16],
+        "price_per_gb": 3.44,
+        "color": "Gray",
+        "first_word_latency": 10,
+        "cas_latency": 18
+      }
+    ]
   },
   {
     "name": "Trident Z5 32GB (2x16GB) DDR5 5600MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 119.99,
-    "sku": 6562330,
-    "specifications": {
-      "speed": [5600],
-      "modules": [2, 16],
-      "price_per_gb": 3.75,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 28
-    }
+    "sku": "6562330",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5600],
+        "modules": [2, 16],
+        "price_per_gb": 3.75,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 28
+      }
+    ]
   },
   {
     "name": "Vengeance 64GB (2x32GB) DDR5 5200MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 450,
+    "inventoryQty": 450,
     "price": 219.99,
-    "sku": 6562331,
-    "specifications": {
-      "speed": [5200],
-      "modules": [2, 32],
-      "price_per_gb": 3.44,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 40
-    }
+    "sku": "6562331",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5200],
+        "modules": [2, 32],
+        "price_per_gb": 3.44,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 40
+      }
+    ]
   },
   {
     "name": "Fury Beast 64GB (2x32GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 199.99,
-    "sku": 6562332,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 32],
-      "price_per_gb": 3.12,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16
-    }
+    "sku": "6562332",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 32],
+        "price_per_gb": 3.12,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16
+      }
+    ]
   },
   {
     "name": "Ripjaws S5 32GB (2x16GB) DDR5 5200MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 109.99,
-    "sku": 6562333,
-    "specifications": {
-      "speed": [5200],
-      "modules": [2, 16],
-      "price_per_gb": 3.44,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 28
-    }
+    "sku": "6562333",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5200],
+        "modules": [2, 16],
+        "price_per_gb": 3.44,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 28
+      }
+    ]
   },
   {
     "name": "Corsair Vengeance 16GB (2x8GB) DDR5 5200MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 600,
+    "inventoryQty": 600,
     "price": 79.99,
-    "sku": 6562334,
-    "specifications": {
-      "speed": [5200],
-      "modules": [2, 8],
-      "price_per_gb": 5.00,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 40
-    }
+    "sku": "6562334",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5200],
+        "modules": [2, 8],
+        "price_per_gb": 5.00,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 40
+      }
+    ]
   },
   {
     "name": "G.Skill Ripjaws S5 32GB (2x16GB) DDR5 6000MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 400,
+    "inventoryQty": 400,
     "price": 139.99,
-    "sku": 6562335,
-    "specifications": {
-      "speed": [6000],
-      "modules": [2, 16],
-      "price_per_gb": 4.37,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 32
-    }
+    "sku": "6562335",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [6000],
+        "modules": [2, 16],
+        "price_per_gb": 4.37,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 32
+      }
+    ]
   },
   {
     "name": "Kingston Fury Beast RGB 16GB (2x8GB) DDR4 3200MHz",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 700,
+    "inventoryQty": 700,
     "price": 69.99,
-    "sku": 6562336,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 8],
-      "price_per_gb": 4.37,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16,
-      "rgb": true
-    }
+    "sku": "6562336",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 8],
+        "price_per_gb": 4.37,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Corsair Dominator Platinum RGB 32GB (2x16GB) DDR5 6000MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 300,
+    "inventoryQty": 300,
     "price": 169.99,
-    "sku": 6562337,
-    "specifications": {
-      "speed": [6000],
-      "modules": [2, 16],
-      "price_per_gb": 5.31,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 36,
-      "rgb": true
-    }
+    "sku": "6562337",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [6000],
+        "modules": [2, 16],
+        "price_per_gb": 5.31,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 36,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "G.Skill Trident Z Neo RGB 32GB (2x16GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 500,
+    "inventoryQty": 500,
     "price": 124.99,
-    "sku": 6562338,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 16],
-      "price_per_gb": 3.91,
-      "color": "Black/Silver",
-      "first_word_latency": 10,
-      "cas_latency": 18,
-      "rgb": true
-    }
+    "sku": "6562338",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 16],
+        "price_per_gb": 3.91,
+        "color": "Black/Silver",
+        "first_word_latency": 10,
+        "cas_latency": 18,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Crucial Ballistix RGB 16GB (2x8GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "Crucial",
-    "inventory_qty": 650,
+    "inventoryQty": 650,
     "price": 67.99,
-    "sku": 6562339,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 8],
-      "price_per_gb": 4.25,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 16,
-      "rgb": true
-    }
+    "sku": "6562339",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 8],
+        "price_per_gb": 4.25,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 16,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "ADATA XPG Spectrix D50 RGB 16GB (2x8GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "ADATA",
-    "inventory_qty": 450,
+    "inventoryQty": 450,
     "price": 72.99,
-    "sku": 6562341,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 8],
-      "price_per_gb": 4.56,
-      "color": "White",
-      "first_word_latency": 10,
-      "cas_latency": 18,
-      "rgb": true
-    }
+    "sku": "6562341",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 8],
+        "price_per_gb": 4.56,
+        "color": "White",
+        "first_word_latency": 10,
+        "cas_latency": 18,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Kingston Fury Impact 64GB (2x32GB) DDR4 3200MHz SODIMM",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 219.99,
-    "sku": 6562342,
-    "specifications": {
-      "speed": [3200],
-      "modules": [2, 32],
-      "price_per_gb": 3.44,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 20,
-      "form_factor": "SODIMM"
-    }
+    "sku": "6562342",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [2, 32],
+        "price_per_gb": 3.44,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 20,
+        "form_factor": "SODIMM"
+      }
+    ]
   },
   {
     "name": "G.Skill Trident Z Royal Elite 32GB (2x16GB) DDR4 4000MHz RGB",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 179.99,
-    "sku": 6562343,
-    "specifications": {
-      "speed": [4000],
-      "modules": [2, 16],
-      "price_per_gb": 5.62,
-      "color": "Silver/Gold",
-      "first_word_latency": 10,
-      "cas_latency": 18,
-      "rgb": true
-    }
+    "sku": "6562343",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [4000],
+        "modules": [2, 16],
+        "price_per_gb": 5.62,
+        "color": "Silver/Gold",
+        "first_word_latency": 10,
+        "cas_latency": 18,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 109.99,
-    "sku": 6562344,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 16],
-      "price_per_gb": 3.44,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 18
-    }
+    "sku": "6562344",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 16],
+        "price_per_gb": 3.44,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 18
+      }
+    ]
   },
   {
     "name": "Kingston Fury Renegade 32GB (2x16GB) DDR5 6000MHz",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 144.99,
-    "sku": 6562345,
-    "specifications": {
-      "speed": [6000],
-      "modules": [2, 16],
-      "price_per_gb": 4.53,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 32
-    }
+    "sku": "6562345",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [6000],
+        "modules": [2, 16],
+        "price_per_gb": 4.53,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 32
+      }
+    ]
   },
   {
     "name": "G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5 6000MHz",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 300,
+    "inventoryQty": 300,
     "price": 154.99,
-    "sku": 6562346,
-    "specifications": {
-      "speed": [6000],
-      "modules": [2, 16],
-      "price_per_gb": 4.84,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 32,
-      "rgb": true
-    }
+    "sku": "6562346",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [6000],
+        "modules": [2, 16],
+        "price_per_gb": 4.84,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 32,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Crucial Ballistix MAX RGB 32GB (2x16GB) DDR4 4000MHz",
     "category": "memory",
     "brand": "Crucial",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 134.99,
-    "sku": 6562347,
-    "specifications": {
-      "speed": [4000],
-      "modules": [2, 16],
-      "price_per_gb": 4.22,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 18,
-      "rgb": true
-    }
+    "sku": "6562347",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [4000],
+        "modules": [2, 16],
+        "price_per_gb": 4.22,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 18,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Patriot Viper Elite II 32GB (2x16GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "Patriot",
-    "inventory_qty": 400,
+    "inventoryQty": 400,
     "price": 104.99,
-    "sku": 6562348,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 16],
-      "price_per_gb": 3.28,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 18
-    }
+    "sku": "6562348",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 16],
+        "price_per_gb": 3.28,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 18
+      }
+    ]
   },
   {
     "name": "ADATA XPG Lancer RGB 32GB (2x16GB) DDR5 5200MHz",
     "category": "memory",
     "brand": "ADATA",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 119.99,
-    "sku": 6562349,
-    "specifications": {
-      "speed": [5200],
-      "modules": [2, 16],
-      "price_per_gb": 3.75,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 38,
-      "rgb": true
-    }
+    "sku": "6562349",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5200],
+        "modules": [2, 16],
+        "price_per_gb": 3.75,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 38,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "Corsair Vengeance RGB RT 32GB (2x16GB) DDR4 3600MHz",
     "category": "memory",
     "brand": "Corsair",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 129.99,
-    "sku": 6562350,
-    "specifications": {
-      "speed": [3600],
-      "modules": [2, 16],
-      "price_per_gb": 4.06,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 18,
-      "rgb": true
-    }
+    "sku": "6562350",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3600],
+        "modules": [2, 16],
+        "price_per_gb": 4.06,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 18,
+        "rgb": true
+      }
+    ]
   },
   {
     "name": "G.Skill Flare X5 32GB (2x16GB) DDR5 5600MHz AMD EXPO",
     "category": "memory",
     "brand": "G.Skill",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 114.99,
-    "sku": 6562351,
-    "specifications": {
-      "speed": [5600],
-      "modules": [2, 16],
-      "price_per_gb": 3.59,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 28,
-      "amd_expo": true
-    }
+    "sku": "6562351",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5600],
+        "modules": [2, 16],
+        "price_per_gb": 3.59,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 28,
+        "amd_expo": true
+      }
+    ]
   },
   {
     "name": "Kingston FURY Beast 64GB (2x32GB) DDR5 5600MHz",
     "category": "memory",
     "brand": "Kingston",
-    "inventory_qty": 150,
+    "inventoryQty": 150,
     "price": 249.99,
-    "sku": 6562352,
-    "specifications": {
-      "speed": [5600],
-      "modules": [2, 32],
-      "price_per_gb": 3.91,
-      "color": "Black",
-      "first_word_latency": 10,
-      "cas_latency": 40
-    }
+    "sku": "6562352",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [5600],
+        "modules": [2, 32],
+        "price_per_gb": 3.91,
+        "color": "Black",
+        "first_word_latency": 10,
+        "cas_latency": 40
+      }
+    ]
   },
   {
     "name": "Crucial CT16G4DFRA32A 16GB DDR4 3200MHz",
     "category": "memory",
     "brand": "Crucial",
-    "inventory_qty": 800,
+    "inventoryQty": 800,
     "price": 52.99,
-    "sku": 6562353,
-    "specifications": {
-      "speed": [3200],
-      "modules": [1, 16],
-      "price_per_gb": 3.31,
-      "color": "Green",
-      "first_word_latency": 10,
-      "cas_latency": 22
-    }
+    "sku": "6562353",
+    "description": null,
+    "specifications": [
+      {
+        "speed": [3200],
+        "modules": [1, 16],
+        "price_per_gb": 3.31,
+        "color": "Green",
+        "first_word_latency": 10,
+        "cas_latency": 22
+      }
+    ]
   }
 ]

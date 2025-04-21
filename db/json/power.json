@@ -3,595 +3,706 @@
     "name": "RM850x (2021)",
     "category": "power-supply",
     "brand": "Corsair",
-    "inventory_qty": 400,
+    "inventoryQty": 400,
     "price": 149.99,
-    "sku": 9876543,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "9876543",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Seasonic FOCUS GX-750",
     "category": "power-supply",
     "brand": "Seasonic",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 119.99,
-    "sku": 2345699,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "2345699",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "EVGA SuperNOVA 850 GA",
     "category": "power-supply",
     "brand": "EVGA",
-    "inventory_qty": 450,
+    "inventoryQty": 450,
     "price": 129.99,
-    "sku": 1234599,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "1234599",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Corsair RM750x (2021)",
     "category": "power-supply",
     "brand": "Corsair",
-    "inventory_qty": 500,
+    "inventoryQty": 500,
     "price": 129.99,
-    "sku": 8765432,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "8765432",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "NZXT C750",
     "category": "power-supply",
     "brand": "NZXT",
-    "inventory_qty": 300,
+    "inventoryQty": 300,
     "price": 109.99,
-    "sku": 3456799,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "3456799",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Seasonic FOCUS GX-650",
     "category": "power-supply",
     "brand": "Seasonic",
-    "inventory_qty": 400,
+    "inventoryQty": 400,
     "price": 109.99,
-    "sku": 7654321,
-    "specifications": {
-      "wattage": 650,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "7654321",
+    "specifications": [
+      {
+        "wattage": 650,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "EVGA SuperNOVA 650 GA",
     "category": "power-supply",
     "brand": "EVGA",
-    "inventory_qty": 550,
+    "inventoryQty": 550,
     "price": 99.99,
-    "sku": 2345670,
-    "specifications": {
-      "wattage": 650,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "2345670",
+    "specifications": [
+      {
+        "wattage": 650,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Corsair CX650M (2021)",
     "category": "power-supply",
     "brand": "Corsair",
-    "inventory_qty": 600,
+    "inventoryQty": 600,
     "price": 79.99,
-    "sku": 6543210,
-    "specifications": {
-      "wattage": 650,
-      "efficiency_rating": "80+ Bronze",
-      "modularity": "Semi",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6543210",
+    "specifications": [
+      {
+        "wattage": 650,
+        "efficiency_rating": "80+ Bronze",
+        "modularity": "Semi",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "NZXT C650",
     "category": "power-supply",
     "brand": "NZXT",
-    "inventory_qty": 350,
+    "inventoryQty": 350,
     "price": 99.99,
-    "sku": 4567899,
-    "specifications": {
-      "wattage": 650,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "4567899",
+    "specifications": [
+      {
+        "wattage": 650,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Corsair CV650",
     "category": "power-supply",
     "brand": "Corsair",
-    "inventory_qty": 650,
+    "inventoryQty": 650,
     "price": 69.99,
-    "sku": 1928374,
-    "specifications": {
-      "wattage": 650,
-      "efficiency_rating": "80+ Bronze",
-      "modularity": "Non-Modular",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "1928374",
+    "specifications": [
+      {
+        "wattage": 650,
+        "efficiency_rating": "80+ Bronze",
+        "modularity": "Non-Modular",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "NZXT C850 (2022)",
     "category": "power-supply",
     "brand": "NZXT",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 139.99,
-    "sku": 2837465,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "2837465",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Seasonic PRIME TX-850",
     "category": "power-supply",
     "brand": "Seasonic",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 219.99,
-    "sku": 3746592,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Titanium",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "3746592",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Titanium",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "EVGA SuperNOVA 750 GT",
     "category": "power-supply",
     "brand": "EVGA",
-    "inventory_qty": 300,
+    "inventoryQty": 300,
     "price": 109.99,
-    "sku": 4659283,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "4659283",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Corsair HX1000 (2023)",
     "category": "power-supply",
     "brand": "Corsair",
-    "inventory_qty": 150,
+    "inventoryQty": 150,
     "price": 249.99,
-    "sku": 5928374,
-    "specifications": {
-      "wattage": 1000,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 140,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "5928374",
+    "specifications": [
+      {
+        "wattage": 1000,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 140,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Seasonic PRIME PX-750",
     "category": "power-supply",
     "brand": "Seasonic",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 169.99,
-    "sku": 6837459,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6837459",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "EVGA SuperNOVA 1000 G6",
     "category": "power-supply",
     "brand": "EVGA",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 199.99,
-    "sku": 7459283,
-    "specifications": {
-      "wattage": 1000,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "7459283",
+    "specifications": [
+      {
+        "wattage": 1000,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Cooler Master MWE Gold 750 V2",
     "category": "power-supply",
     "brand": "Cooler Master",
-    "inventory_qty": 300,
+    "inventoryQty": 300,
     "price": 99.99,
-    "sku": 8374592,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "8374592",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "be quiet! Straight Power 11 750W",
     "category": "power-supply",
     "brand": "be quiet!",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 129.99,
-    "sku": 9283745,
-    "specifications": {
-      "wattage": 750,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "9283745",
+    "specifications": [
+      {
+        "wattage": 750,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Seasonic PRIME TX-1000",
     "category": "power-supply",
     "brand": "Seasonic",
-    "inventory_qty": 150,
+    "inventoryQty": 150,
     "price": 279.99,
-    "sku": 6598712,
-    "specifications": {
-      "wattage": 1000,
-      "efficiency_rating": "80+ Titanium",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6598712",
+    "specifications": [
+      {
+        "wattage": 1000,
+        "efficiency_rating": "80+ Titanium",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Corsair AX1600i",
     "category": "power-supply",
     "brand": "Corsair",
-    "inventory_qty": 100,
+    "inventoryQty": 100,
     "price": 449.99,
-    "sku": 6512345,
-    "specifications": {
-      "wattage": 1600,
-      "efficiency_rating": "80+ Titanium",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 140,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6512345",
+    "specifications": [
+      {
+        "wattage": 1600,
+        "efficiency_rating": "80+ Titanium",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 140,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "EVGA SuperNOVA 1200 P2",
     "category": "power-supply",
     "brand": "EVGA",
-    "inventory_qty": 120,
+    "inventoryQty": 120,
     "price": 299.99,
-    "sku": 6567890,
-    "specifications": {
-      "wattage": 1200,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 140,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6567890",
+    "specifications": [
+      {
+        "wattage": 1200,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 140,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "be quiet! Dark Power Pro 12 1200W",
     "category": "power-supply",
     "brand": "be quiet!",
-    "inventory_qty": 80,
+    "inventoryQty": 80,
     "price": 349.99,
-    "sku": 6523456,
-    "specifications": {
-      "wattage": 1200,
-      "efficiency_rating": "80+ Titanium",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 300000
-    }
+    "description": null,
+    "sku": "6523456",
+    "specifications": [
+      {
+        "wattage": 1200,
+        "efficiency_rating": "80+ Titanium",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 300000
+      }
+    ]
   },
   {
     "name": "Fractal Design Ion+ 2 Platinum 860W",
     "category": "power-supply",
     "brand": "Fractal Design",
-    "inventory_qty": 180,
+    "inventoryQty": 180,
     "price": 179.99,
-    "sku": 6578901,
-    "specifications": {
-      "wattage": 860,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 140,
-      "mtbf_hours": 120000
-    }
+    "description": null,
+    "sku": "6578901",
+    "specifications": [
+      {
+        "wattage": 860,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 140,
+        "mtbf_hours": 120000
+      }
+    ]
   },
   {
     "name": "Thermaltake Toughpower GF3 850W",
     "category": "power-supply",
     "brand": "Thermaltake",
-    "inventory_qty": 220,
+    "inventoryQty": 220,
     "price": 139.99,
-    "sku": 6534567,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 140,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6534567",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 140,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Cooler Master XG850 Plus Platinum",
     "category": "power-supply",
     "brand": "Cooler Master",
-    "inventory_qty": 160,
+    "inventoryQty": 160,
     "price": 169.99,
-    "sku": 6589012,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6589012",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "SilverStone Strider Platinum ST85F-PT",
     "category": "power-supply",
     "brand": "SilverStone",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 159.99,
-    "sku": 6545678,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6545678",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "ASUS ROG Thor 850W Platinum II",
     "category": "power-supply",
     "brand": "ASUS",
-    "inventory_qty": 140,
+    "inventoryQty": 140,
     "price": 219.99,
-    "sku": 6590123,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Platinum",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000,
-      "oled_display": true
-    }
+    "description": null,
+    "sku": "6590123",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Platinum",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000,
+        "oled_display": true
+      }
+    ]
   },
   {
     "name": "Gigabyte UD850GM PG5",
     "category": "power-supply",
     "brand": "Gigabyte",
-    "inventory_qty": 250,
+    "inventoryQty": 250,
     "price": 129.99,
-    "sku": 6556789,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000,
-      "pcie_5_ready": true
-    }
+    "description": null,
+    "sku": "6556789",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000,
+        "pcie_5_ready": true
+      }
+    ]
   },
   {
     "name": "MSI MPG A850G PCIE5",
     "category": "power-supply",
     "brand": "MSI",
-    "inventory_qty": 230,
+    "inventoryQty": 230,
     "price": 149.99,
-    "sku": 6511223,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 140,
-      "mtbf_hours": 100000,
-      "pcie_5_ready": true
-    }
+    "description": null,
+    "sku": "6511223",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 140,
+        "mtbf_hours": 100000,
+        "pcie_5_ready": true
+      }
+    ]
   },
   {
     "name": "Antec HCG Gold 850W",
     "category": "power-supply",
     "brand": "Antec",
-    "inventory_qty": 210,
+    "inventoryQty": 210,
     "price": 119.99,
-    "sku": 6566334,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6566334",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "XPG Core Reactor 850W",
     "category": "power-supply",
     "brand": "XPG",
-    "inventory_qty": 240,
+    "inventoryQty": 240,
     "price": 124.99,
-    "sku": 6522445,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 105000
-    }
+    "description": null,
+    "sku": "6522445",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 105000
+      }
+    ]
   },
   {
     "name": "Enermax Revolution D.F. 850W",
     "category": "power-supply",
     "brand": "Enermax",
-    "inventory_qty": 190,
+    "inventoryQty": 190,
     "price": 134.99,
-    "sku": 6577556,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6577556",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Super Flower Leadex III Gold 850W",
     "category": "power-supply",
     "brand": "Super Flower",
-    "inventory_qty": 170,
+    "inventoryQty": 170,
     "price": 129.99,
-    "sku": 6533667,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 130,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6533667",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 130,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Montech Century Gold 850W",
     "category": "power-supply",
     "brand": "Montech",
-    "inventory_qty": 260,
+    "inventoryQty": 260,
     "price": 114.99,
-    "sku": 6588778,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6588778",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Phanteks AMP 850W",
     "category": "power-supply",
     "brand": "Phanteks",
-    "inventory_qty": 220,
+    "inventoryQty": 220,
     "price": 129.99,
-    "sku": 6599001,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6599001",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "Rosewill Photon Series 850W",
     "category": "power-supply",
     "brand": "Rosewill",
-    "inventory_qty": 200,
+    "inventoryQty": 200,
     "price": 109.99,
-    "sku": 6555112,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 135,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6555112",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 135,
+        "mtbf_hours": 100000
+      }
+    ]
   },
   {
     "name": "SilverStone DA850 Gold",
     "category": "power-supply",
     "brand": "SilverStone",
-    "inventory_qty": 180,
+    "inventoryQty": 180,
     "price": 119.99,
-    "sku": 6511229,
-    "specifications": {
-      "wattage": 850,
-      "efficiency_rating": "80+ Gold",
-      "modularity": "Full",
-      "form_factor": "ATX",
-      "fan_size": 120,
-      "mtbf_hours": 100000
-    }
+    "description": null,
+    "sku": "6511229",
+    "specifications": [
+      {
+        "wattage": 850,
+        "efficiency_rating": "80+ Gold",
+        "modularity": "Full",
+        "form_factor": "ATX",
+        "fan_size": 120,
+        "mtbf_hours": 100000
+      }
+    ]
   }
 ]
