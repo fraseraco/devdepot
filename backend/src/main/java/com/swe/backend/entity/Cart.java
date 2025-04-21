@@ -96,7 +96,7 @@ public class Cart{
                 .filter(ci -> ci.getProduct().equals(product))
                 .findFirst()
                 .orElseGet(() -> {
-                    CartItem ci = new CartItem(product, 0);
+                    CartItem ci = new CartItem(this, product, 0);
                     cartItems.add(ci);
                     return ci;
                 });
