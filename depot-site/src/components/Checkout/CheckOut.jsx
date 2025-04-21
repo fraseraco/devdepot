@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Add this import
 import CheckOutItem from './CheckOutItem/CheckOutItem';
 import './CheckOut.css';
 
@@ -7,6 +8,7 @@ const CheckOut = () => {
     const [shippingAddress, setShippingAddress] = useState('');
     const [paymentMethod, setPaymentMethod] = useState('');
     const [discountCode, setDiscountCode] = useState('');
+    const navigate = useNavigate(); // Initialize navigate
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -31,33 +33,10 @@ const CheckOut = () => {
         fetchProducts();
     }, []);
 
-    const handleCheckout = async () => {
-        try {
-            const token = localStorage.getItem('authToken');
-
-            const response = await fetch('/checkout', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': '*/*',
-                    'Authorization': `Bearer ${token}`,
-                },
-                body: JSON.stringify({
-                    shippingAddress: shippingAddress,
-                    paymentMethod: paymentMethod,
-                    discountCode: discountCode,
-                }),
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                alert('Checkout successful! Thank you for your order.');
-            } else {
-                alert('Checkout failed. Please try again.');
-            }
-        } catch (error) {
-            console.error('Error during checkout:', error);
-        }
+    const handleCheckout = () => {
+        localStorage.removeItem('authToken'); // Delete the local storage token
+        alert('Order submitted'); // Create a notification
+        navigate('/'); // Navigate to the home screen
     };
 
     return (
@@ -69,7 +48,7 @@ const CheckOut = () => {
                         name={cartItem.product.name}
                         price={cartItem.product.price}
                         quantity={cartItem.quantity}
-                        sku={cartItem.product.id}
+                        sku={cartItem.product.sku} 
                     />
                 ))}
             </div>

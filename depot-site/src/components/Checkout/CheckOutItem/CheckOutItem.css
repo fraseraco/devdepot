@@ -1,18 +1,26 @@
 .checkout-item {
     display: flex;
-    justify-content:space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     height: 200px;
-    width: 600px;
+    width: 650px;
     background-color: var(--accent-color);
     border-radius: 25px;
     margin: 10px 0;
+    text-align: left;
+    gap: 20px;
+}
+
+.checkout-item > div {
+    text-align: center;
+    flex: 1;
 }
 
 img {
     width: 150px;
     height: 150px;
     border-radius: 25px;
+    margin: 0;
 }
