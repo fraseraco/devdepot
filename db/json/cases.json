@@ -138,7 +138,7 @@
       "form_factor": "Mid-Tower",
       "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX", "E-ATX"],
       "included_fans": 2,
-      "drive_bays": {"3.5": 2, "2.5": 4+2},
+      "drive_bays": {"3.5": 2, "2.5": 6},
       "front_panel_io": ["2x USB 3.2 Gen 1 Type-A", "1x USB 3.2 Gen 2 Type-C", "Headset Audio Jack"],
       "color": "Black"
     }
@@ -218,7 +218,8 @@
       "form_factor": "Mid-Tower",
       "motherboard_support": ["ATX", "E-ATX (up to 277mm)", "Micro-ATX", "Mini-ITX"],
       "included_fans": 2,
-      "drive_bays": {"3.5": 2, "2.5": 2+3"},
+ "drive_bays": {"3.5": 2,"2.5": 5},
+
       "front_panel_io": ["2x USB 3.0", "1x USB 3.1 Type-C", "Headphone/Microphone Jack"],
       "color": "Black"
     }
@@ -234,7 +235,7 @@
       "form_factor": "Mid-Tower",
       "motherboard_support": ["ATX", "Micro-ATX", "Mini-ITX", "E-ATX"],
       "included_fans": 0,
-      "drive_bays": {"3.5": 2, "2.5": 4+2},
+      "drive_bays": {"3.5": 2, "2.5": 6},
       "front_panel_io": ["2x USB 3.2 Gen 1 Type-A", "1x USB 3.2 Gen 2 Type-C", "Headset Audio Jack"],
       "color": "Black"
     }

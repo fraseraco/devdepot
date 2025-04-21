@@ -137,14 +137,14 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    isActive
+    is_active
     )
 VALUES (
 	'admin1',
     'admin1',
     'fake1@mail.com',
     1,
-    TRUE
+    1
     );
 
 INSERT INTO user (
@@ -152,13 +152,13 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    isActive
+    is_active
     )
 VALUES (
 	'staff1',
     'staff1',
     'fake2@mail.com',
-    2
+    2,
     TRUE
     );
     
@@ -167,55 +167,54 @@ INSERT INTO user (
     password_hash,
     email,
     role_id,
-    isActive
+    is_active
     )
 VALUES (
 	'user1',
     'user1',
     'fake3@mail.com',
-    3
-    TRUE);
+    3,
+    1);
     
 INSERT INTO user (
 	username, 
     password_hash,
     email,
     role_id,
-    isActive
+    is_active
     )
 VALUES (
 	'user2',
     'user2',
     'fake4@mail.com',
-    3)
-    TRUE
-    ;
+    3,
+    1
+    );
 
 INSERT INTO user (
 	username, 
     password_hash,
     email,
     role_id,
-    isActive
+    is_active
     )
 VALUES (
 	'staff2',
     'staff2',
     'fake5@mail.com',
-    2
-    TRUE);
+    2,
+    1);
     
 INSERT INTO user (
 	username, 
     password_hash,
     email,
     role_id,
-    isActive
+    is_active
     )
 VALUES (
 	'user3',
     'user3',
     'fake6@mail.com',
-    3
-    TRUE
-    );
+    3,
+    1);
