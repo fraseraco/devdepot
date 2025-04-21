@@ -8,23 +8,21 @@ const CheckOut = () => {
     const [paymentMethod, setPaymentMethod] = useState('');
     const [discountCode, setDiscountCode] = useState('');
 
-    // Fetch product data from the API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const token = localStorage.getItem('authToken'); // Retrieve the token from localStorage
+                const token = localStorage.getItem('authToken');
 
                 const response = await fetch('/carts/me', {
                     method: 'GET',
                     headers: {
                         'Accept': '*/*',
-                        'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
+                        'Authorization': `Bearer ${token}`,
                     },
                 });
 
                 const data = await response.json();
-                console.log('Fetched data:', data); // Log the fetched data
-                setProducts(data.cartItems || []); // Assuming the API returns an object with a 'cartItems' array
+                setProducts(data.cartItems || []);
             } catch (error) {
                 console.error('Error fetching products:', error);
             }
@@ -35,14 +33,14 @@ const CheckOut = () => {
 
     const handleCheckout = async () => {
         try {
-            const token = localStorage.getItem('authToken'); // Retrieve the token from localStorage
+            const token = localStorage.getItem('authToken');
 
             const response = await fetch('/checkout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': '*/*',
-                    'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
+                    'Authorization': `Bearer ${token}`,
                 },
                 body: JSON.stringify({
                     shippingAddress: shippingAddress,
@@ -53,10 +51,8 @@ const CheckOut = () => {
 
             if (response.ok) {
                 const data = await response.json();
-                console.log('Checkout successful:', data);
                 alert('Checkout successful! Thank you for your order.');
             } else {
-                console.error('Checkout failed:', response.status);
                 alert('Checkout failed. Please try again.');
             }
         } catch (error) {
@@ -67,14 +63,13 @@ const CheckOut = () => {
     return (
         <div className="checkout">
             <div className="checkout-items">
-                {/* Map over the products and pass data to CheckOutItem */}
                 {products.map((cartItem, index) => (
                     <CheckOutItem
                         key={index}
                         name={cartItem.product.name}
                         price={cartItem.product.price}
                         quantity={cartItem.quantity}
-                        sku={cartItem.product.id} // Assuming 'id' is used as SKU
+                        sku={cartItem.product.id}
                     />
                 ))}
             </div>
@@ -87,7 +82,7 @@ const CheckOut = () => {
                     </div>
                     <div className="checkout-summary-item">
                         <h3>Shipping</h3>
-                        <h3>$19.99</h3> {/* Replace with dynamic shipping cost if available */}
+                        <h3>$19.99</h3>
                     </div>
                     <div className="checkout-summary-item">
                         <h3>Total</h3>

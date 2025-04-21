@@ -4,8 +4,8 @@ import './SignIn.css';
 const SignIn = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [email, setEmail] = useState(''); // Add email state
-    const [role, setRole] = useState(''); // Add role state
+    const [email, setEmail] = useState(''); 
+    const [role, setRole] = useState(''); 
 
 
     

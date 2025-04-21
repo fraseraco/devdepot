@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom'; 
 import './Search.css';
 
 const Search = () => {
@@ -43,7 +43,7 @@ const Search = () => {
                 onChange={(e) => setQuery(e.target.value)} 
             />
             <button className="search-button" onClick={handleSearch}>
-                <i className="fas fa-search"></i> {/* Font Awesome icon */}
+                <i className="fas fa-search"></i> 
             </button>
         </div>
     );

@@ -14,7 +14,7 @@ return (
             <li>
                     <Link to="/signin" className="signin-icon">
                         <div className="icon-text-container">
-                            <i className="fas fa-sign-in-alt"></i> {/* Font Awesome Sign In icon */}
+                            <i className="fas fa-sign-in-alt"></i> 
                             <span>Sign In</span>
                         </div>
                     </Link>
@@ -22,7 +22,7 @@ return (
             
             <li>
                     <Link to="/checkout" className="cart-icon">
-                        <i className="fas fa-shopping-cart"></i> {/* Font Awesome cart icon */}
+                        <i className="fas fa-shopping-cart"></i> 
                     </Link>
                 </li>
             
