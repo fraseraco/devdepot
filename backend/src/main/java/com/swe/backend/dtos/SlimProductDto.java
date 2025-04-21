@@ -1,6 +1,7 @@
 package com.swe.backend.dtos;
 
 import com.swe.backend.entity.Product;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,9 +16,15 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SlimProductDto implements Serializable {
+
+    @NotNull
     Long id;
+    @NotNull
     String name;
+    @NotNull
     BigDecimal price;
+    @NotNull
+    String sku;
 
 
     public SlimProductDto(Product product) {
