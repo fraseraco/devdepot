@@ -7,6 +7,8 @@ const SignIn = () => {
     const [email, setEmail] = useState(''); // Add email state
     const [role, setRole] = useState(''); // Add role state
 
+
+    
     const handleSignIn = async () => {
         try {
             const response = await fetch('/auth/login', {
