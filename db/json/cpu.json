@@ -285,7 +285,7 @@
       "socket": "BGA 1744"
     }
   },
-[
+
   {
     "name": "Ryzen 9 7900",
     "category": "cpu",
@@ -352,7 +352,7 @@
     "brand": "AMD",
     "inventory_qty": 700,
     "price": 159.99,
-    "sku": 0123456,
+    "sku": 7123456,
     "specifications": {
       "core_count": 6,
       "core_clock": 3.9,
@@ -413,7 +413,7 @@
     "brand": "AMD",
     "inventory_qty": 350,
     "price": 449.99,
-    "sku": 8901234,
+    "sku": 3901234,
     "specifications": {
       "core_count": 8,
       "core_clock": 3.3,
@@ -505,7 +505,7 @@
     "brand": "AMD",
     "inventory_qty": 700,
     "price": 179.99,
-    "sku": 0123451,
+    "sku": 123451,
     "specifications": {
       "core_count": 6,
       "core_clock": 3.5,
