@@ -34,7 +34,7 @@ public class CartItem {
 
     private Instant addedAt;
 
-    public CartItem(Product product, int quantity) {
+    public CartItem(Cart cart, Product product, int quantity) {
         this.cart = cart;
         this.product = product;
         this.quantity = quantity;
