@@ -35,8 +35,8 @@ const TerminalPage = () => {
                     terminal.writeln('clear - Clear the terminal');
                     terminal.writeln('exit - Exit the terminal');
                     terminal.writeln('search <term> - Search for an item in the shop');
-                    terminal.writeln('add <item-sku> - Add an item to the cart');
-                    terminal.writeln('cart <command> - Manage the shopping cart');
+                    terminal.writeln('cart add <product-id> - Add to the shopping cart');
+                    terminal.writeln('cart display - Display the shopping cart');
                     terminal.writeln('checkout - Proceed to checkout');
                     terminal.writeln('signin - Sign in to your account');
                 } else if (inputBuffer.trim() === 'clear') {
@@ -61,10 +61,65 @@ const TerminalPage = () => {
                             if (results.length > 0) {
                                 terminal.writeln('Search Results:');
                                 results.forEach((product) => {
-                                    terminal.writeln(`- ${product.name} (SKU: ${product.sku})`);
+                                    terminal.writeln(`- ${product.name} (Product ID: ${product.id})`);
                                 });
                             } else {
                                 terminal.writeln('No products found.');
+                            }
+                        })
+                        .catch((error) => {
+                            terminal.writeln(`Error: ${error.message}`);
+                        });
+                } else if (inputBuffer.trim().startsWith('cart add')) {
+                    const productId = inputBuffer.trim().substring(9);
+                    terminal.writeln(`Adding product ID ${productId} to the cart...`);
+                    fetch('/carts/items', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
+                        },
+                        body: JSON.stringify({
+                            productId: parseInt(productId, 10),
+                            quantity: 1,
+                        }),
+                    })
+                        .then((response) => {
+                            if (response.ok) {
+                                terminal.writeln('Product added to the cart successfully.');
+                            } else {
+                                throw new Error('Failed to add product to the cart');
+                            }
+                        })
+                        .catch((error) => {
+                            terminal.writeln(`Error: ${error.message}`);
+                        });
+                } else if (inputBuffer.trim() === 'cart display') {
+                    terminal.writeln('Fetching cart contents...');
+                    fetch('/carts/me', {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
+                        },
+                    })
+                        .then((response) => {
+                            if (!response.ok) {
+                                throw new Error('Failed to fetch cart contents');
+                            }
+                            return response.json();
+                        })
+                        .then((cart) => {
+                            console.log(cart);
+                            const { cartItems } = cart;
+                            if (cartItems && cartItems.length > 0) {
+                                terminal.writeln('Cart Contents:');
+                                cartItems.forEach((item) => {
+                                    terminal.writeln(
+                                        `- ${item.product.name} (Product ID: ${item.product.id}, Price: $${item.product.price.toFixed(2)}, Quantity: ${item.quantity})`
+                                    );
+                                });
+                            } else {
+                                terminal.writeln('Your cart is empty.');
                             }
                         })
                         .catch((error) => {
@@ -88,9 +143,7 @@ const TerminalPage = () => {
                             if (response.ok) {
                                 return response.json().then((data) => {
                                     localStorage.setItem('authToken', data.token);
-                                
                                 });
-
                             } else {
                                 throw new Error('Failed to sign in');
                             }

@@ -8,13 +8,21 @@ const CheckOut = () => {
     const [paymentMethod, setPaymentMethod] = useState('');
     const [discountCode, setDiscountCode] = useState('');
 
-    // Fetch product data from the API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('/products'); // Replace with your API URL
+                const token = localStorage.getItem('authToken');
+
+                const response = await fetch('/carts/me', {
+                    method: 'GET',
+                    headers: {
+                        'Accept': '*/*',
+                        'Authorization': `Bearer ${token}`,
+                    },
+                });
+
                 const data = await response.json();
-                setProducts(data); // Assuming the API returns an array of products
+                setProducts(data.cartItems || []);
             } catch (error) {
                 console.error('Error fetching products:', error);
             }
@@ -25,14 +33,14 @@ const CheckOut = () => {
 
     const handleCheckout = async () => {
         try {
-            const token = localStorage.getItem('authToken'); // Retrieve the token from localStorage
+            const token = localStorage.getItem('authToken');
 
             const response = await fetch('/checkout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': '*/*',
-                    'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
+                    'Authorization': `Bearer ${token}`,
                 },
                 body: JSON.stringify({
                     shippingAddress: shippingAddress,
@@ -43,10 +51,8 @@ const CheckOut = () => {
 
             if (response.ok) {
                 const data = await response.json();
-                console.log('Checkout successful:', data);
                 alert('Checkout successful! Thank you for your order.');
             } else {
-                console.error('Checkout failed:', response.status);
                 alert('Checkout failed. Please try again.');
             }
         } catch (error) {
@@ -57,14 +63,13 @@ const CheckOut = () => {
     return (
         <div className="checkout">
             <div className="checkout-items">
-                {/* Map over the products and pass data to CheckOutItem */}
-                {products.map((product, index) => (
+                {products.map((cartItem, index) => (
                     <CheckOutItem
                         key={index}
-                        name={product.name}
-                        price={product.price}
-                        quantity={product.quantity}
-                        sku={product.sku}
+                        name={cartItem.product.name}
+                        price={cartItem.product.price}
+                        quantity={cartItem.quantity}
+                        sku={cartItem.product.id}
                     />
                 ))}
             </div>
@@ -73,7 +78,7 @@ const CheckOut = () => {
                 <div className="summary-item-container">
                     <div className="checkout-summary-item">
                         <h3>Subtotal</h3>
-                        <h3>${products.reduce((sum, product) => sum + product.price * (product.quantity || 1), 0).toFixed(2)}</h3>
+                        <h3>${products.reduce((sum, cartItem) => sum + cartItem.product.price * cartItem.quantity, 0).toFixed(2)}</h3>
                     </div>
                     <div className="checkout-summary-item">
                         <h3>Shipping</h3>
@@ -81,7 +86,7 @@ const CheckOut = () => {
                     </div>
                     <div className="checkout-summary-item">
                         <h3>Total</h3>
-                        <h3>${(products.reduce((sum, product) => sum + product.price * (product.quantity || 1), 0) + 19.99).toFixed(2)}</h3>
+                        <h3>${(products.reduce((sum, cartItem) => sum + cartItem.product.price * cartItem.quantity, 0) + 19.99).toFixed(2)}</h3>
                     </div>
                 </div>
                 <div className="checkout-inputs">

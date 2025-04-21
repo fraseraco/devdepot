@@ -39,7 +39,7 @@
 
 .button-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;    /* Center vertically */
-    width: 100%;            /* Ensure it spans the full width of the container */
+    justify-content: center; 
+    align-items: center;    
+    width: 100%;            
 }
