@@ -1,0 +1,251 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema devdepot
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `devdepot` ;
+
+-- -----------------------------------------------------
+-- Schema devdepot
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `devdepot` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `devdepot` ;
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`role`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`role` (
+  `role_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `role_name` VARCHAR(50) NOT NULL,
+  `brief_desc` VARCHAR(50) NULL DEFAULT NULL,
+  `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_update` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`role_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE UNIQUE INDEX `role_name` ON `devdepot`.`role` (`role_name` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`user`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`user` (
+  `user_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(32) NOT NULL,
+  `password_hash` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `first_name` VARCHAR(50) NULL DEFAULT NULL,
+  `last_name` VARCHAR(50) NULL DEFAULT NULL,
+  `role_id` BIGINT NULL DEFAULT NULL,
+  `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_login` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `is_active` TINYINT(1) NULL DEFAULT '1',
+  PRIMARY KEY (`user_id`),
+  CONSTRAINT `fk_user_role`
+    FOREIGN KEY (`role_id`)
+    REFERENCES `devdepot`.`role` (`role_id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 9
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE UNIQUE INDEX `username` ON `devdepot`.`user` (`username` ASC) VISIBLE;
+
+CREATE UNIQUE INDEX `email` ON `devdepot`.`user` (`email` ASC) VISIBLE;
+
+CREATE INDEX `fk_user_role` ON `devdepot`.`user` (`role_id` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`cart`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`cart` (
+  `cart_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `user_id` BIGINT NOT NULL,
+  `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `is_active` TINYINT(1) NULL DEFAULT '1',
+  PRIMARY KEY (`cart_id`),
+  CONSTRAINT `cart_ibfk_1`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `devdepot`.`user` (`user_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE INDEX `user_id` ON `devdepot`.`cart` (`user_id` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`product`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`product` (
+  `product_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `category` VARCHAR(25) NOT NULL,
+  `brand` VARCHAR(50) NOT NULL,
+  `inventory_qty` INT NOT NULL DEFAULT '0',
+  `price` DECIMAL(10,2) NOT NULL,
+  `description` TINYTEXT NULL DEFAULT NULL,
+  `sku` VARCHAR(16) NOT NULL,
+  `specifications` JSON NOT NULL,
+  PRIMARY KEY (`product_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE UNIQUE INDEX `name` ON `devdepot`.`product` (`name` ASC) VISIBLE;
+
+CREATE UNIQUE INDEX `sku` ON `devdepot`.`product` (`sku` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`cart_item`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`cart_item` (
+  `cart_item_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `cart_id` BIGINT NOT NULL,
+  `product_id` BIGINT NOT NULL,
+  `quantity` INT NOT NULL DEFAULT '1',
+  `added_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`cart_item_id`),
+  CONSTRAINT `cart_item_ibfk_1`
+    FOREIGN KEY (`cart_id`)
+    REFERENCES `devdepot`.`cart` (`cart_id`)
+    ON DELETE CASCADE,
+  CONSTRAINT `cart_item_ibfk_2`
+    FOREIGN KEY (`product_id`)
+    REFERENCES `devdepot`.`product` (`product_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE INDEX `cart_id` ON `devdepot`.`cart_item` (`cart_id` ASC) VISIBLE;
+
+CREATE INDEX `product_id` ON `devdepot`.`cart_item` (`product_id` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`payment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`payment` (
+  `transaction_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `payment_method` TINYTEXT NOT NULL,
+  `subtotal` DECIMAL(10,2) NOT NULL,
+  `tax_total` DECIMAL(10,2) NOT NULL,
+  `payment_status` TINYTEXT NULL DEFAULT NULL,
+  `payment_date` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`transaction_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`order`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`order` (
+  `order_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `customer_id` BIGINT NOT NULL,
+  `order_date` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  `total_cost` DECIMAL(10,2) NOT NULL,
+  `shipping_address` VARCHAR(255) NOT NULL,
+  `order_status` TINYTEXT NOT NULL,
+  `tracking_num` VARCHAR(50) NULL DEFAULT NULL,
+  `discount_promotion` DECIMAL(5,2) NULL DEFAULT '0.00',
+  `transaction_id` BIGINT NOT NULL,
+  PRIMARY KEY (`order_id`),
+  CONSTRAINT `order_ibfk_1`
+    FOREIGN KEY (`customer_id`)
+    REFERENCES `devdepot`.`user` (`user_id`)
+    ON DELETE CASCADE,
+  CONSTRAINT `order_ibfk_2`
+    FOREIGN KEY (`transaction_id`)
+    REFERENCES `devdepot`.`payment` (`transaction_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE UNIQUE INDEX `tracking_num` ON `devdepot`.`order` (`tracking_num` ASC) VISIBLE;
+
+CREATE INDEX `customer_id` ON `devdepot`.`order` (`customer_id` ASC) VISIBLE;
+
+CREATE INDEX `transaction_id` ON `devdepot`.`order` (`transaction_id` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`order_item`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`order_item` (
+  `order_id` BIGINT NOT NULL,
+  `product_id` BIGINT NOT NULL,
+  `quantity` INT NOT NULL DEFAULT '1',
+  `price_per_unit` DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (`order_id`, `product_id`),
+  CONSTRAINT `order_item_ibfk_1`
+    FOREIGN KEY (`order_id`)
+    REFERENCES `devdepot`.`order` (`order_id`)
+    ON DELETE CASCADE,
+  CONSTRAINT `order_item_ibfk_2`
+    FOREIGN KEY (`product_id`)
+    REFERENCES `devdepot`.`product` (`product_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE INDEX `product_id` ON `devdepot`.`order_item` (`product_id` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`permission`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`permission` (
+  `permission_id` BIGINT NOT NULL AUTO_INCREMENT,
+  `permission_name` VARCHAR(50) NOT NULL,
+  `description` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`permission_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE UNIQUE INDEX `permission_name` ON `devdepot`.`permission` (`permission_name` ASC) VISIBLE;
+
+
+-- -----------------------------------------------------
+-- Table `devdepot`.`role_permission`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `devdepot`.`role_permission` (
+  `role_id` BIGINT NOT NULL,
+  `permission_id` BIGINT NOT NULL,
+  PRIMARY KEY (`role_id`, `permission_id`),
+  CONSTRAINT `fk_role_permission_permission`
+    FOREIGN KEY (`permission_id`)
+    REFERENCES `devdepot`.`permission` (`permission_id`)
+    ON DELETE CASCADE,
+  CONSTRAINT `fk_role_permission_role`
+    FOREIGN KEY (`role_id`)
+    REFERENCES `devdepot`.`role` (`role_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE INDEX `fk_role_permission_permission` ON `devdepot`.`role_permission` (`permission_id` ASC) VISIBLE;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

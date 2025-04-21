@@ -149,7 +149,7 @@
     "brand": "MSI",
     "inventory_qty": 700,
     "price": 399.99,
-    "sku": 0123452,
+    "sku": 4123452,
     "specifications": {
       "screen_size": 27,
       "resolution": "2560 x 1440",
@@ -421,7 +421,7 @@
     "brand": "ASUS",
     "inventory_qty": 720,
     "price": 379.99,
-    "sku": 0123454,
+    "sku": 6123454,
     "specifications": {
       "screen_size": 27,
       "resolution": "2560 x 1440",
