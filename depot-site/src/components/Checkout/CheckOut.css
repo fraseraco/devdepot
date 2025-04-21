@@ -75,3 +75,18 @@
     height: calc(100% - 20px); /* Ensure it fits within the container */
     box-sizing: border-box; /* Include padding in height calculation */
 }
+
+.checkout-inputs label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.checkout-inputs input {
+    display: block;
+    margin-top: 5px;
+    padding: 8px;
+    
+    max-width: 500px; /* Increased width */
+    box-sizing: border-box;
+}

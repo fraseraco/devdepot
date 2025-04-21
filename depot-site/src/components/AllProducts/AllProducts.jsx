@@ -9,7 +9,7 @@ const AllProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('/products/all');
+                const response = await fetch('/products');
                 const data = await response.json();
                 setProducts(data);
                 console.log('Fetched products:', data);

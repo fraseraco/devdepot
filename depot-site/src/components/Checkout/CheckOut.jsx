@@ -9,7 +9,7 @@ const CheckOut = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('/products/all'); // Replace with your API URL
+                const response = await fetch('/products'); // Replace with your API URL
                 const data = await response.json();
                 setProducts(data); // Assuming the API returns an array of products
             } catch (error) {
@@ -39,7 +39,7 @@ const CheckOut = () => {
                 <div className='summary-item-container'>
                     <div className='checkout-summary-item'>
                         <h3>Subtotal</h3>
-                        <h3>${products.reduce((sum, product) => sum + product.price * product.quantity, 0).toFixed(2)}</h3>
+                        <h3>${products.reduce((sum, product) => sum + product.price * (product.quantity || 1), 0).toFixed(2)}</h3>
                     </div>
                     <div className='checkout-summary-item'>
                         <h3>Shipping</h3>
@@ -47,8 +47,18 @@ const CheckOut = () => {
                     </div>
                     <div className='checkout-summary-item'>
                         <h3>Total</h3>
-                        <h3>${(products.reduce((sum, product) => sum + product.price * product.quantity, 0) + 19.99).toFixed(2)}</h3>
+                        <h3>${(products.reduce((sum, product) => sum + product.price * (product.quantity || 1), 0) + 19.99).toFixed(2)}</h3>
                     </div>
+                </div>
+                <div className='checkout-inputs'>
+                    <label>
+                        Credit Card Number:
+                        <input type="text" placeholder="Enter your credit card number" />
+                    </label>
+                    <label>
+                        Discount Code:
+                        <input type="text" placeholder="Enter discount code" />
+                    </label>
                 </div>
                 <button className='checkout-button'>Checkout</button>   
             </div>
