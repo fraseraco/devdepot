@@ -49,7 +49,7 @@ public class CheckoutService {
 
         if (cart.getCartItems().isEmpty())
             throw new IllegalStateException("Cart is empty");
-        // 1. Verify & reserve inventory ------------------------------------
+        // Verify & reserve inventory
         for (CartItem cartItem : cart.getCartItems()) {
             Product p = cartItem.getProduct();
             if (p.getInventoryQty() < cartItem.getQuantity())
@@ -58,8 +58,14 @@ public class CheckoutService {
             productRepo.save(p); // write‑back new stock level
         }
 
-
+        // Create Order + OrderItems
         Order order = new Order();
+        order.setUser(user);
+        order.setShippingAddress(checkoutRequestDto.getShippingAddress());
+        order.setDiscountPromotion(BigDecimal.ZERO);
+        order.setOrderDate(Instant.now());
+        order.setOrderStatus("PENDING");
+
         List<OrderItem> orderItems = new ArrayList<>();
 
         for (CartItem cartItem : cart.getCartItems()) {
@@ -94,12 +100,7 @@ public class CheckoutService {
         payment.setPaymentDate(Instant.now());
         paymentRepo.save(payment);
 
-        // 2. Create Order + OrderItems -------------------------------------
-        order.setUser(user);
-        order.setShippingAddress(checkoutRequestDto.getShippingAddress());
-        order.setDiscountPromotion(BigDecimal.ZERO);
-        order.setOrderDate(Instant.now());
-        order.setOrderStatus("PENDING");
+
         order.setTransaction(payment);
         order.setOrderItems(orderItems);
         order.setTotalCost(subtotal.add(tax)); // taxes/discounts omitted for MVP
