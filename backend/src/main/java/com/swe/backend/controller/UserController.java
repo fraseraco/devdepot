@@ -33,6 +33,14 @@ public class UserController {
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
 
+    @GetMapping("/me")
+    public ResponseEntity<UserDto> userOrderHistory(Authentication authentication) {
+        String username = authentication.getName();
+        return userService.getOrderHistory(username)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
+    }
+
     /* @ToDo Allow User to change password */
 
 }

@@ -18,11 +18,13 @@ public class SlimProductDto implements Serializable {
     Long id;
     String name;
     BigDecimal price;
+    String sku;
 
 
     public SlimProductDto(Product product) {
         this.id = product.getId();
         this.name = product.getName();
         this.price = product.getPrice();
+        this.sku = product.getSku();
     }
 }
