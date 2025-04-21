@@ -40,11 +40,38 @@ const StoreItem = ({ products }) => {
       ],
     };
 
-    // Add spacing between slides
     const sliderStyle = {
       '.slick-slide': {
-        margin: '0 10px', // Adjust the margin as needed
+        margin: '0 10px',
       },
+    };
+
+    const onAddToCart = async (product) => {
+      const token = localStorage.getItem('authToken');
+        try {
+            const response = await fetch('/carts/items', {
+                method: 'POST',
+                headers: {
+                    'accept': '*/*',
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    productId: product.id,
+                    quantity: 1,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to add item to cart');
+            }
+
+            console.log('Item added to cart successfully');
+            
+            alert('Item added to cart successfully!');
+        } catch (error) {
+            console.error('Error adding item to cart:', error);
+        }
     };
 
     return (
@@ -59,7 +86,10 @@ const StoreItem = ({ products }) => {
                             />
                             <h4>{product.name}</h4>
                             <p>Price: ${product.price.toFixed(2)}</p>
-                            <button className="add-to-cart-button">
+                            <button
+                                className="add-to-cart-button"
+                                onClick={() => onAddToCart(product)}
+                            >
                                 Add to Cart
                             </button>
                         </div>

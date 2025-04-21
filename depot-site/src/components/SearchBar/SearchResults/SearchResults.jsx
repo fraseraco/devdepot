@@ -6,6 +6,37 @@ const SearchResults = () => {
     const location = useLocation();
     const results = location.state?.results || []; // Get the filtered results from state
 
+    const handleAddToCart = async (product) => {
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+            alert('You must be logged in to add items to the cart.');
+            return;
+        }
+
+        try {
+            const response = await fetch('/carts/items', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${token}`,
+                },
+                body: JSON.stringify({
+                    productId: product.id,
+                    quantity: 1,
+                }),
+            });
+
+            if (response.ok) {
+                alert(`${product.name} has been added to your cart.`);
+            } else {
+                alert('Failed to add item to cart.');
+            }
+        } catch (error) {
+            console.error('Error adding to cart:', error);
+            alert('An error occurred. Please try again.');
+        }
+    };
+
     return (
         <div className="search-results-container" style={{ textAlign: 'center' }}>
             <t className='search-head'>Search Results</t>
@@ -23,7 +54,12 @@ const SearchResults = () => {
                                     </div>
                                     {/* Back Side */}
                                     <div className="flip-card-back">
-                                        <button className="add-to-cart-button">Add to Cart</button>
+                                        <button
+                                            className="add-to-cart-button"
+                                            onClick={() => handleAddToCart(product)}
+                                        >
+                                            Add to Cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
