@@ -48,16 +48,6 @@ API DOCS
 With the backend running, you can access the API docs in your browser by going to `localhost:8080/api-docs.html`
 Click around and you'll find information pertaining to each of the API endpoints. 
 
-For example, /user/{id} is expecting an int64 for the parameter, and will return a JSON with the format:
-{
-  "username": "string",
-  "firstName": "string",
-  "role": {
-    "roleName": "string"
-  }
-}
-
-
 ADDITIONAL NOTES
 * MySQL server needs to be running before you spin up the backend
 * You may run into issues. Screenshot the error messages and post them to the discord with the command(s) you've run to get that output
