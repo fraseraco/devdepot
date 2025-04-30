@@ -82,7 +82,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-## 3. 💻 Run the React Frontend
+## 3. Run the React Frontend
 
 ### 3a. Install dependencies
 
